@@ -1,0 +1,54 @@
+#STATION OUTPUT INCREASE
+building_station_production_overseer_1 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	planet_modifier = {
+		job_station_production_overseer_add = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			station_parts = 1
+		}
+	}
+
+	upgrades = {
+		"building_station_production_overseer_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_station_oversight"
+	}
+}
+
+building_station_production_overseer_2 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	planet_modifier = {
+		job_station_production_overseer_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+			station_parts = 2
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_station_oversight"
+	}
+}

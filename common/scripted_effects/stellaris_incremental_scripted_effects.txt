@@ -1,0 +1,29 @@
+#Adds Max buildings and jobs to said buildings based on megastructures
+#@numberBuildingsPerMegastructure = 2
+#@numberJobsPerBuilding = 2
+
+#set_max_buildings_station_production_overseer_allowed = {
+
+#	set_variable = { 
+#		which = building_station_production_overseer_number
+#		value = country.megastructure_station_improvement_number 
+#	}
+#
+#	multiply_variable = { 
+#		which = building_station_production_overseer_number 
+#		value = 2
+#	}
+#}
+
+#set_max_jobs_station_production_overseer_allowed = {
+#
+#	set_variable = { 
+#		which = jobs_station_production_overseer_number
+#		value = country.megastructure_station_improvement_number 
+#	}
+#
+#	multiply_variable = { 
+#		which = jobs_station_production_overseer_number 
+#		value = 2
+#	}
+#}

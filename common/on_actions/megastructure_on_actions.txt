@@ -1,0 +1,5 @@
+on_monthly_pulse_country = {	
+	events = { 
+		stellaris_incremental.100 #Update variables for max buildings and job numbers
+	} 
+} 

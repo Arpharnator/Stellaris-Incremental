@@ -1,0 +1,181 @@
+# Station Improvement Hub
+station_improvement_hub_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "stellaris_incremental_tech_station_oversight" }
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+
+# Mega Art Installation 1
+station_improvement_hub_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+}
+
+station_improvement_hub_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 150
+			station_parts = 1
+		}
+
+		upkeep = {
+			energy = 30
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
