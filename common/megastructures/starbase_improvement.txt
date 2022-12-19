@@ -113,12 +113,8 @@ starbase_improvement_hub_1 = {
 			unity = 2500
 		}
 
-		produces = {
-			alloys = 50
-		}
-
 		upkeep = {
-			energy = 10
+			alloys = 30
 		}
 	}
 
@@ -126,11 +122,11 @@ starbase_improvement_hub_1 = {
 		starbase_improvement_hub_0
 	}
 
-	prerequisites = { stellaris_incremental_tech_starbase_oversight }
+	prerequisites = { stellaris_incremental_tech_starbase_oversight_2 }
 
 	country_modifier = {
-		shipclass_starbase_hull_mult = 0.05
-		shipclass_starbase_damage_mult = 0.03
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
 	}
 }
 
@@ -149,12 +145,11 @@ starbase_improvement_hub_2 = {
 		}
 
 		produces = {
-			alloys = 75
-			starbase_parts = 1
+			starbase_prototype_parts = 1
 		}
 
 		upkeep = {
-			energy = 30
+			alloys = 60
 		}
 	}
 
@@ -165,8 +160,122 @@ starbase_improvement_hub_2 = {
 	prerequisites = { stellaris_incremental_tech_starbase_oversight }
 
 	country_modifier = {
-		shipclass_starbase_hull_mult = 0.05
-		shipclass_starbase_damage_mult = 0.03
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+starbase_improvement_hub_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 3
+			starbase_prototype_schematics = 1
+		}
+
+		upkeep = {
+			alloys = 120
+			energy = 40
+			engineering_research = 30
+			society_research = 30
+			physics_research = 30
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_starbase_oversight_3 }
+
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		shipsize_starbase_outpost_hull_add = 100
+		shipsize_starbase_starport_hull_add = 200
+		shipsize_starbase_starhold_hull_add = 400
+		shipsize_starbase_starfortress_hull_add = 800
+		shipsize_starbase_citadel_hull_add = 1600
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+starbase_improvement_hub_4 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 9
+			starbase_prototype_schematics = 5
+		}
+
+		upkeep = {
+			alloys = 270
+			energy = 120
+			engineering_research = 90
+			society_research = 90
+			physics_research = 90
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_starbase_oversight_4 }
+
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		shipsize_starbase_outpost_hull_add = 100
+		shipsize_starbase_starport_hull_add = 200
+		shipsize_starbase_starhold_hull_add = 400
+		shipsize_starbase_starfortress_hull_add = 800
+		shipsize_starbase_citadel_hull_add = 1600
 	}
 
 	

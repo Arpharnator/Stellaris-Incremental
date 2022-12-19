@@ -144,11 +144,14 @@ station_improvement_hub_2 = {
 		}
 
 		produces = {
-			station_parts = 1
+			station_data_feed = 1
 		}
 
 		upkeep = {
-			energy = 10
+			energy = 5
+			engineering_research = 3
+			society_research = 3
+			physics_research = 3
 		}
 	}
 
@@ -190,11 +193,14 @@ station_improvement_hub_3 = {
 		}
 
 		produces = {
-			station_parts = 6
+			station_data_feed = 6
 		}
 
 		upkeep = {
 			energy = 30
+			engineering_research = 18
+			society_research = 18
+			physics_research = 18
 		}
 	}
 
@@ -236,11 +242,13 @@ station_improvement_hub_4 = {
 		}
 
 		produces = {
-			station_parts = 16
+			station_data_feed = 16
 		}
-
 		upkeep = {
 			energy = 80
+			engineering_research = 48
+			society_research = 48
+			physics_research = 48
 		}
 	}
 
@@ -282,11 +290,14 @@ station_improvement_hub_5 = {
 		}
 
 		produces = {
-			station_parts = 25
+			station_data_feed = 25
 		}
 
 		upkeep = {
 			energy = 125
+			engineering_research = 75
+			society_research = 75
+			physics_research = 75
 		}
 	}
 
@@ -328,11 +339,14 @@ station_improvement_hub_6 = {
 		}
 
 		produces = {
-			station_parts = 25
+			station_data_feed = 25
 		}
 
 		upkeep = {
-			energy = 250
+			energy = 125
+			engineering_research = 75
+			society_research = 75
+			physics_research = 75
 		}
 	}
 
@@ -359,17 +373,17 @@ station_improvement_hub_6 = {
 
 }
 
-#SURVEYING STAGE 6
+#SURVEYING AT STAGE 6
 station_improvement_hub_survey = {
 	entity = ""
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 1200
+			energy = 20000
 		}
 	}
 

@@ -1,0 +1,23 @@
+spriteTypes = {
+	#################
+	### Resources ###
+	#################
+	spriteType = {
+		name = "GFX_resource_station_data_feed"
+		textureFile = "gfx/interface/icons/resources/station_data_feed.dds"
+	}
+	spriteType = { 
+		name = "GFX_resource_station_data_feed_grey"	
+		textureFile = "gfx/interface/icons/resources/station_data_feed_grey.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_resource_starbase_prototype_schematics"
+		textureFile = "gfx/interface/icons/resources/starbase_prototype_schematics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_starbase_prototype_parts"
+		textureFile = "gfx/interface/icons/resources/starbase_prototype_parts.dds"
+	}
+}

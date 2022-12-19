@@ -1,11 +1,17 @@
-#STARBASE DAMAGE AND HULL + UPKEEP
+####################
+# STARBASE BONUSES
+####################
+
+#STARBASE DAMAGE AND HULL PERCENTAGE + UPKEEP
 building_starbase_integrity_overseer_1 = {
 	base_buildtime = @b1_time
 
 	category = army
 
-	planet_modifier = {
-		job_starbase_integrity_overseer_add = 1
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
 	}
 
 	resources = {
@@ -15,7 +21,7 @@ building_starbase_integrity_overseer_1 = {
 		}
 		upkeep = {
 			energy = 1
-			starbase_parts = 1
+			starbase_prototype_parts = 1
 		}
 	}
 
@@ -24,7 +30,7 @@ building_starbase_integrity_overseer_1 = {
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_starbase_oversight"
+		"stellaris_incremental_tech_starbase_oversight_2"
 	}
 }
 
@@ -33,6 +39,12 @@ building_starbase_integrity_overseer_2 = {
 	can_build = no
 
 	category = army
+
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
+	}
 
 	planet_modifier = {
 		job_starbase_integrity_overseer_add = 2
@@ -45,23 +57,29 @@ building_starbase_integrity_overseer_2 = {
 		}
 		upkeep = {
 			energy = 2
-			starbase_parts = 2
+			starbase_prototype_parts = 2
 		}
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_starbase_oversight"
+		"stellaris_incremental_tech_starbase_oversight_3"
 	}
 }
 
-#SHIP BUILD SPEED AND STARBASE UPGRADE SPEED
-building_starbase_shipyard_upgrade_overseer_1 = {
+#STARBASE HULL FLAT + UPGRADE COST AND UPGRADE SPEED
+building_starbase_schematics_engineering_1 = {
 	base_buildtime = @b1_time
 
-	category = army	
+	category = army
 
-	planet_modifier = {
-		job_starbase_shipyard_upgrade_overseer_add = 1
+	country_modifier = {
+		shipsize_starbase_outpost_hull_add = 100
+		shipsize_starbase_starport_hull_add = 200
+		shipsize_starbase_starhold_hull_add = 400
+		shipsize_starbase_starfortress_hull_add = 800
+		shipsize_starbase_citadel_hull_add = 1600
+		starbase_upgrade_speed_mult = -0.03
+		starbase_upgrade_cost_mult = 0.03
 	}
 
 	resources = {
@@ -71,7 +89,74 @@ building_starbase_shipyard_upgrade_overseer_1 = {
 		}
 		upkeep = {
 			energy = 1
-			starbase_parts = 1
+			starbase_prototype_schematics = 1
+		}
+	}
+
+	upgrades = {
+		"building_starbase_schematics_engineering_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_3"
+	}
+}
+
+building_starbase_schematics_engineering_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = army
+
+	country_modifier = {
+		shipsize_starbase_outpost_hull_add = 100
+		shipsize_starbase_starport_hull_add = 200
+		shipsize_starbase_starhold_hull_add = 400
+		shipsize_starbase_starfortress_hull_add = 800
+		shipsize_starbase_citadel_hull_add = 1600
+		starbase_upgrade_speed_mult = -0.03
+		starbase_upgrade_cost_mult = 0.03
+	}
+
+
+	planet_modifier = {
+		job_starbase_integrity_overseer_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+			starbase_prototype_schematics = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_4"
+	}
+}
+
+#STARBASE UPGRADE SPEED
+building_starbase_shipyard_upgrade_overseer_1 = {
+	base_buildtime = @b1_time
+
+	category = army	
+
+	country_modifier = {
+		starbase_upgrade_speed_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			starbase_prototype_parts = 1
 		}
 	}
 
@@ -80,7 +165,7 @@ building_starbase_shipyard_upgrade_overseer_1 = {
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_starbase_oversight"
+		"stellaris_incremental_tech_starbase_oversight_2"
 	}
 }
 
@@ -89,6 +174,10 @@ building_starbase_shipyard_upgrade_overseer_2 = {
 	can_build = no
 
 	category = army	
+
+	country_modifier = {
+		starbase_upgrade_speed_mult = 0.05
+	}
 
 	planet_modifier = {
 		job_starbase_shipyard_upgrade_overseer_add = 2
@@ -101,11 +190,133 @@ building_starbase_shipyard_upgrade_overseer_2 = {
 		}
 		upkeep = {
 			energy = 2
-			starbase_parts = 2
+			starbase_prototype_parts = 2
 		}
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_starbase_oversight"
+		"stellaris_incremental_tech_starbase_oversight_3"
+	}
+}
+
+###############
+# PRODUCTION
+###############
+
+#STARBASE PROTOTYPE PARTS
+building_starbase_prototype_parts_production_1 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			starbase_prototype_parts = 1
+		}
+		upkeep = {
+			alloys = 45
+		}
+	}
+
+	upgrades = {
+		"building_starbase_prototype_parts_production_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_2"
+	}
+}
+
+building_starbase_prototype_parts_production_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = resources
+
+	planet_modifier = {
+		job_starbase_prototype_parts_fabricator_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			starbase_prototype_parts = 1
+		}
+		upkeep = {
+			alloys = 45
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_3"
+	}
+}
+
+#STARBASE PROTOTYPE SCHEMATICS
+building_starbase_prototype_schematics_production_1 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			starbase_prototype_schematics = 1
+		}
+		upkeep = {
+			energy = 30
+			engineering_research = 22
+			society_research = 22
+			physics_research = 22
+		}
+	}
+
+	upgrades = {
+		"building_starbase_prototype_parts_production_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_3"
+	}
+}
+
+building_starbase_prototype_schematics_production_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = resources
+
+	planet_modifier = {
+		job_starbase_schematics_scientist_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			starbase_prototype_schematics = 1
+		}
+		upkeep = {
+			energy = 30
+			engineering_research = 22
+			society_research = 22
+			physics_research = 22
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_starbase_oversight_4"
 	}
 }

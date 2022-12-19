@@ -14,7 +14,7 @@ station_production_overseer = {
 	
 	resources = {
 		upkeep = {
-			station_parts = 1
+			station_data_feed = 1
 		}
 	}
 
@@ -34,7 +34,7 @@ station_production_overseer = {
 }
 
 #STATION PARTS PRODUCTION
-station_parts_fabricator = {
+station_data_feed_scientist = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -49,10 +49,13 @@ station_parts_fabricator = {
 	
 	resources = {
 		produces = {
-			station_parts = 1
+			station_data_feed = 1
 		}
 		upkeep = {
-			alloys = 10
+			energy = 10
+			engineering_research = 6
+			society_research = 6
+			physics_research = 6
 		}
 	}
 

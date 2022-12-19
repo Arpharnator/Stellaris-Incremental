@@ -4,8 +4,8 @@ building_station_production_overseer_1 = {
 
 	category = resources
 
-	planet_modifier = {
-		job_station_production_overseer_add = 1
+	country_modifier = {
+		stations_produces_mult = 0.05
 	}
 
 	resources = {
@@ -15,7 +15,7 @@ building_station_production_overseer_1 = {
 		}
 		upkeep = {
 			energy = 1
-			station_parts = 1
+			station_data_feed = 1
 		}
 	}
 
@@ -33,6 +33,10 @@ building_station_production_overseer_2 = {
 	can_build = no
 	category = resources
 
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
 	planet_modifier = {
 		job_station_production_overseer_add = 2
 	}
@@ -44,7 +48,7 @@ building_station_production_overseer_2 = {
 		}
 		upkeep = {
 			energy = 2
-			station_parts = 1
+			station_data_feed = 1
 		}
 	}
 
@@ -63,6 +67,10 @@ building_station_production_overseer_3 = {
 
 	category = resources
 
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
 	planet_modifier = {
 		job_station_production_overseer_add = 4
 	}
@@ -74,7 +82,7 @@ building_station_production_overseer_3 = {
 		}
 		upkeep = {
 			energy = 3
-			station_parts = 1
+			station_data_feed = 1
 		}
 	}
 
@@ -83,8 +91,12 @@ building_station_production_overseer_3 = {
 	}
 }
 
+##############
+# PRODUCTION
+##############
+
 #STATION PARTS BUILDINGS PRODUCTION
-building_station_parts_production_1 = {
+building_station_data_feed_production_1 = {
 	base_buildtime = @b1_time
 
 	category = resources
@@ -95,16 +107,18 @@ building_station_parts_production_1 = {
 			minerals = 200
 		}
 		produces = {
-			station_parts = 1
+			station_data_feed = 1
 		}
 		upkeep = {
-			energy = 1
-			alloys = 5
+			energy = 7
+			engineering_research = 4
+			society_research = 4
+			physics_research = 4
 		}
 	}
 
 	upgrades = {
-		"building_station_parts_production_2"
+		"building_station_data_feed_production_2"
 	}
 
 	prerequisites = {
@@ -112,14 +126,14 @@ building_station_parts_production_1 = {
 	}
 }
 
-building_station_parts_production_2 = {
+building_station_data_feed_production_2 = {
 	base_buildtime = @b1_time
 	can_build = no
 
 	category = resources
 
 	planet_modifier = {
-		station_parts_fabricator = 2
+		job_station_data_feed_scientist_add = 2
 	}
 
 	resources = {
@@ -128,11 +142,13 @@ building_station_parts_production_2 = {
 			minerals = 200
 		}
 		produces = {
-			station_parts = 1
+			station_data_feed = 1
 		}
 		upkeep = {
-			energy = 1
-			alloys = 5
+			energy = 7
+			engineering_research = 4
+			society_research = 4
+			physics_research = 4
 		}
 	}
 

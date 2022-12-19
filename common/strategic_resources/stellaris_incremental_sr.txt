@@ -1,9 +1,9 @@
-station_parts = {
+station_data_feed = {
 	tradable = no
 	category = rare
 	max = 1000000
 
-	deficit_situation = situation_station_parts_deficit
+	deficit_situation = situation_station_data_feed_deficit
 
 	ai_weight = {
 		weight = 20
@@ -14,12 +14,28 @@ station_parts = {
 	}
 }
 
-starbase_parts = {
+starbase_prototype_parts = {
 	tradable = no
 	category = rare
 	max = 1000000
 
-	deficit_situation = situation_starbase_parts_deficit
+	deficit_situation = situation_starbase_prototype_parts_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+starbase_prototype_schematics = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_starbase_prototype_schematics_deficit
 
 	ai_weight = {
 		weight = 20

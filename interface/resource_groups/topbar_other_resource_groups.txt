@@ -1,20 +1,3 @@
-sectors_others_group = {
-	resources = {
-		volatile_motes
-		exotic_gases
-		rare_crystals
-		sr_living_metal
-		sr_zro
-		sr_dark_matter
-		nanites
-		station_parts
-	}
-	localization = {
-		"RESOURCE_GROUP_BALANCE_ONLY" = default
-		"RESOURCE_GROUP_BALANCE_ONLY_NEG" = { balance < 0 }
-	}
-}
-
 tb_others_group = {
 	resources = {
 		volatile_motes
@@ -24,7 +7,10 @@ tb_others_group = {
 		sr_zro
 		sr_dark_matter
 		nanites
-		station_parts
+		minor_artifacts
+		station_data_feed
+		starbase_prototype_parts
+		starbase_prototype_schematics
 	}
 	localization = {
 		"RESOURCE_GROUP_DEFAULT" = default
