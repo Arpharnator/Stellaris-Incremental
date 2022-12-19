@@ -99,7 +99,7 @@ building_station_parts_production_1 = {
 		}
 		upkeep = {
 			energy = 1
-			alloys = 20
+			alloys = 5
 		}
 	}
 
@@ -132,7 +132,7 @@ building_station_parts_production_2 = {
 		}
 		upkeep = {
 			energy = 1
-			alloys = 20
+			alloys = 5
 		}
 	}
 

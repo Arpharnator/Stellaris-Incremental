@@ -113,12 +113,8 @@ station_improvement_hub_1 = {
 			unity = 2500
 		}
 
-		produces = {
-			minerals = 100
-		}
-
 		upkeep = {
-			energy = 10
+			energy = 5
 		}
 	}
 
@@ -148,12 +144,11 @@ station_improvement_hub_2 = {
 		}
 
 		produces = {
-			minerals = 150
 			station_parts = 1
 		}
 
 		upkeep = {
-			energy = 30
+			energy = 10
 		}
 	}
 
@@ -195,12 +190,11 @@ station_improvement_hub_3 = {
 		}
 
 		produces = {
-			minerals = 250
 			station_parts = 6
 		}
 
 		upkeep = {
-			energy = 100
+			energy = 30
 		}
 	}
 
@@ -242,12 +236,11 @@ station_improvement_hub_4 = {
 		}
 
 		produces = {
-			minerals = 350
 			station_parts = 16
 		}
 
 		upkeep = {
-			energy = 300
+			energy = 80
 		}
 	}
 
@@ -289,12 +282,11 @@ station_improvement_hub_5 = {
 		}
 
 		produces = {
-			minerals = 250
 			station_parts = 25
 		}
 
 		upkeep = {
-			energy = 800
+			energy = 125
 		}
 	}
 
@@ -336,12 +328,11 @@ station_improvement_hub_6 = {
 		}
 
 		produces = {
-			minerals = 250
 			station_parts = 25
 		}
 
 		upkeep = {
-			energy = 2000
+			energy = 250
 		}
 	}
 

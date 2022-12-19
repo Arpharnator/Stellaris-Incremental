@@ -14,7 +14,6 @@ station_production_overseer = {
 	
 	resources = {
 		upkeep = {
-			energy = 20
 			station_parts = 1
 		}
 	}
@@ -53,7 +52,7 @@ station_parts_fabricator = {
 			station_parts = 1
 		}
 		upkeep = {
-			alloys = 20
+			alloys = 10
 		}
 	}
 
