@@ -161,7 +161,7 @@ station_improvement_hub_2 = {
 		station_improvement_hub_1
 	}
 
-	prerequisites = { stellaris_incremental_tech_station_oversight }
+	prerequisites = { stellaris_incremental_tech_station_oversight_2 }
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -177,5 +177,237 @@ station_improvement_hub_2 = {
 	#		value = 1
 	#	}
 	#}
+
+}
+
+station_improvement_hub_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 250
+			station_parts = 6
+		}
+
+		upkeep = {
+			energy = 100
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_3 }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+station_improvement_hub_4 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 350
+			station_parts = 16
+		}
+
+		upkeep = {
+			energy = 300
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_3
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_4 }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+station_improvement_hub_5 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 250
+			station_parts = 25
+		}
+
+		upkeep = {
+			energy = 800
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_4
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_5 }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+station_improvement_hub_6 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			minerals = 250
+			station_parts = 25
+		}
+
+		upkeep = {
+			energy = 2000
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_5
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+#SURVEYING STAGE 6
+station_improvement_hub_survey = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 1200
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_6
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			save_global_event_target_as = stellaris_incremental_mega_survey_planet
+			solar_system = {
+				spawn_megastructure = {
+					type = station_improvement_hub_6
+					planet = event_target:stellaris_incremental_mega_survey_planet
+					owner = space_owner
+				}
+			}
+		}
+		owner = {
+			country_event = { id = story.335 }
+		}
+		
+		remove_megastructure = fromfrom
+
+		
+	}
 
 }

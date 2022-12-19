@@ -13,3 +13,35 @@ station_parts = {
 		base = 5
 	}
 }
+
+starbase_parts = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_starbase_parts_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+megastructure_parts = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_megastructure_parts_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}

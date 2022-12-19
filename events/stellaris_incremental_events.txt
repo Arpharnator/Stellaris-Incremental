@@ -1,4 +1,4 @@
-namespace = giga_frameworld_origin
+namespace = stellaris_incremental
 
 ### game start
 country_event = {

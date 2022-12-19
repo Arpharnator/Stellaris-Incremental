@@ -1,3 +1,4 @@
+#MEGASTRUCTURE BUILD SPEED
 megastructure_construction_overseer = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
@@ -14,6 +15,7 @@ megastructure_construction_overseer = {
 	resources = {
 		upkeep = {
 			alloys = 100
+			megastructure_parts = 1
 		}
 	}
 
@@ -32,6 +34,7 @@ megastructure_construction_overseer = {
 	}
 }
 
+#MEGASTRUCTURE PRODUCTION
 megastructure_production_overseer = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
@@ -48,6 +51,7 @@ megastructure_production_overseer = {
 	resources = {
 		upkeep = {
 			energy = 200
+			megastructure_parts = 1
 		}
 	}
 
