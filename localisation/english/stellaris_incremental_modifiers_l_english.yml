@@ -1,0 +1,16 @@
+﻿l_english:
+ #JOBS
+ mod_job_station_data_feed_scientist_add: "Station Data Scientists Jobs"
+ mod_job_station_production_overseer_add: "Station Overseer Jobs"
+ mod_job_starbase_integrity_overseer_add: "Starbase Integrity Overseer Jobs"
+ mod_job_starbase_schematics_engineer_add: "Starbase Schematics Engineer Jobs"
+ mod_job_starbase_upgrade_overseer_add: "Starbase Upgrade Overseer Jobs"
+ mod_job_starbase_prototype_parts_fabricator_add: "Starbase Experimental Artisan Jobs"
+ mod_job_starbase_schematics_scientist_add: "Starbase Schematics Scientist Jobs"
+
+ #STARBASE HULL
+ mod_shipsize_starbase_outpost_hull_add: "Outpost Base Hull Points"
+ mod_shipsize_starbase_starport_hull_add: "Starport Base Hull Points"
+ mod_shipsize_starbase_starhold_hull_add: "Starhold Base Hull Points"
+ mod_shipsize_starbase_starfortress_hull_add: "Star Fortress Base Hull Points"
+ mod_shipsize_starbase_citadel_hull_add: "Citadel Base Hull Points"

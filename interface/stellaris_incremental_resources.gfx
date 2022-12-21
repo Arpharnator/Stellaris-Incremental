@@ -1,7 +1,7 @@
 spriteTypes = {
-	#################
-	### Resources ###
-	#################
+	###############
+	## RESOURCES ##
+	###############
 	spriteType = {
 		name = "GFX_resource_station_data_feed"
 		textureFile = "gfx/interface/icons/resources/station_data_feed.dds"

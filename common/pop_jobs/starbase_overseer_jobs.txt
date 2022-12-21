@@ -24,6 +24,7 @@ starbase_integrity_overseer = {
 
 	
 	resources = {
+		category = planet_jobs
 		upkeep = {
 			starbase_prototype_parts = 1
 		}
@@ -41,7 +42,7 @@ starbase_integrity_overseer = {
 }
 
 #STARBASE UPGRADE SPEED
-starbase_shipyard_upgrade_overseer = {
+starbase_upgrade_overseer = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -59,6 +60,7 @@ starbase_shipyard_upgrade_overseer = {
 	}
 	
 	resources = {
+		category = planet_jobs
 		upkeep = {
 			starbase_prototype_parts = 1
 		}
@@ -135,6 +137,7 @@ starbase_schematics_engineer = {
 	}
 	
 	resources = {
+		category = planet_jobs
 		upkeep = {
 			starbase_prototype_schematics = 1
 		}
@@ -170,6 +173,7 @@ starbase_schematics_scientist = {
 	}
 	
 	resources = {
+		category = planet_jobs
 		produces = {
 			starbase_prototype_schematics = 1
 		}
@@ -207,6 +211,7 @@ starbase_prototype_parts_fabricator = {
 	}
 	
 	resources = {
+		category = planet_jobs
 		produces = {
 			starbase_prototype_parts = 1
 		}

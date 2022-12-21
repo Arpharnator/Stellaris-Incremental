@@ -180,7 +180,7 @@ building_starbase_upgrade_overseer_2 = {
 	}
 
 	planet_modifier = {
-		job_starbase_shipyard_upgrade_overseer_add = 2
+		job_starbase_upgrade_overseer_add = 2
 	}
 
 	resources = {
@@ -282,7 +282,7 @@ building_starbase_prototype_schematics_production_1 = {
 	}
 
 	upgrades = {
-		"building_starbase_prototype_parts_production_2"
+		"building_starbase_prototype_schematics_production_2"
 	}
 
 	prerequisites = {

@@ -1,0 +1,33 @@
+spriteTypes = {
+	#################
+	###   JOBS    ###
+	#################
+	spriteType = {
+		name = "GFX_job_starbase_schematics_scientist"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_prototype_parts_fabricator"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_prototype_parts_fabricator.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_schematics_engineer"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_engineer.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_upgrade_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_upgrade_overseer.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_integrity_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_integrity_overseer.dds"
+	}
+	spriteType = {
+		name = "GFX_job_station_data_feed_scientist"
+		textureFile = "gfx/interface/icons/jobs/job_station_data_feed_scientist.dds"
+	}
+	spriteType = {
+		name = "GFX_job_station_production_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_station_production_overseer.dds"
+	}
+}
