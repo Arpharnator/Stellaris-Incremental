@@ -24,7 +24,7 @@ building_station_production_overseer_1 = {
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_station_oversight"
+		"stellaris_incremental_tech_station_oversight_2"
 	}
 }
 
@@ -57,7 +57,7 @@ building_station_production_overseer_2 = {
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_station_oversight_2"
+		"stellaris_incremental_tech_station_oversight_3"
 	}
 }
 
@@ -87,7 +87,7 @@ building_station_production_overseer_3 = {
 	}
 
 	prerequisites = {
-		"stellaris_incremental_tech_station_oversight_3"
+		"stellaris_incremental_tech_station_oversight_4"
 	}
 }
 

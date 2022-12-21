@@ -115,6 +115,9 @@ station_improvement_hub_1 = {
 
 		upkeep = {
 			energy = 5
+			engineering_research = 3
+			society_research = 3
+			physics_research = 3
 		}
 	}
 
@@ -144,14 +147,14 @@ station_improvement_hub_2 = {
 		}
 
 		produces = {
-			station_data_feed = 1
+			station_data_feed = 2
 		}
 
 		upkeep = {
-			energy = 5
-			engineering_research = 3
-			society_research = 3
-			physics_research = 3
+			energy = 15
+			engineering_research = 9
+			society_research = 9
+			physics_research = 9
 		}
 	}
 
@@ -242,13 +245,13 @@ station_improvement_hub_4 = {
 		}
 
 		produces = {
-			station_data_feed = 16
+			station_data_feed = 12
 		}
 		upkeep = {
-			energy = 80
-			engineering_research = 48
-			society_research = 48
-			physics_research = 48
+			energy = 60
+			engineering_research = 36
+			society_research = 36
+			physics_research = 36
 		}
 	}
 

@@ -1,33 +1,33 @@
-planet_accommodation_overseer = {
-	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_simulation_1
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	
-	resources = {
-		upkeep = {
-			energy = 30
-		}
-	}
-
-	possible_precalc = can_fill_drone_job
-
-	possible = { can_think = yes }
-
-	planet_modifier = {
-		planet_max_districts_add = 1
-	}
-
-	weight = {
-		weight = @synapse_drone_job_weight
-		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-	}
-}
+#planet_accommodation_overseer = {
+#	category = complex_drone
+#	condition_string = DRONE_JOB_TRIGGER
+#	building_icon = building_simulation_1
+#
+#	possible_pre_triggers = {
+#		has_owner = yes
+#		is_enslaved = no
+#		is_being_purged = no
+#		is_being_assimilated = no
+#		is_sapient = yes
+#	}
+#	
+#	resources = {
+#		upkeep = {
+#			energy = 30
+#		}
+#	}
+#
+#	possible_precalc = can_fill_drone_job
+#
+#	possible = { can_think = yes }
+#
+#	planet_modifier = {
+#		planet_max_districts_add = 1
+#	}
+#
+#	weight = {
+#		weight = @synapse_drone_job_weight
+#		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+#		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+#	}
+#}

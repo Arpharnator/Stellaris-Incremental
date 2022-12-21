@@ -1,0 +1,37 @@
+﻿l_english:
+ building_station_production_overseer_1: "Data Subframe"
+ building_station_production_overseer_1_desc: "A remote structure for the monitoring and application of new discoveries in the field of space extraction."
+ building_station_production_overseer_2: "Data Subframe Complex"
+ building_station_production_overseer_2_desc: "A structure featuring a workforce to oversee station operations remotely."
+ building_station_production_overseer_3: "Advanced Data Subframe Complex"
+ building_station_production_overseer_3_desc: "Equipped with latest tech communicators and the capacity for an extremely large workforce, these complexes provide massive improvements to space resource extractions from the comfort of a planet."
+ 
+ building_station_data_feed_production_1: "Raw Data Processor"
+ building_station_data_feed_production_1_desc: "A place where data is processed into usable bits to improve the production of civilian stations."
+ building_station_data_feed_production_2: "Raw Data Processor Complexes"
+ building_station_data_feed_production_2_desc: "Able to host large amounts of workers, this place is used to parse data into useful bits on a larger scale."
+
+ building_starbase_upgrade_overseer_1: "Starbase Prototype Parts Engineering Zone"
+ building_starbase_upgrade_overseer_1_desc: "A place where engineers are tasked with making experimental components find their place on the assembly block."
+ building_starbase_upgrade_overseer_2: "Starbase Prototype Parts Engineering District" 
+ building_starbase_upgrade_overseer_2_desc: "A sprawling structure where a large amount of engineers partake in the ritual of trying to make experimental starbase components as useful as possible. Keyword : trying."
+
+ building_starbase_schematics_engineering_1: "Starbase Schematics Application Zone"
+ building_starbase_schematics_engineering_1_desc: "Using possible and known situations to find the best architecture to be used in our bastions takes place in this facility."
+ building_starbase_schematics_engineering_2: "Starbase Schematics Application District"
+ building_starbase_schematics_engineering_2_desc: "Engineers and scientists mingle day and night in this installation, the former for practicality, and the other for efficiency. All of this (bickering) to make our starbases less vulnerable to critical damage."
+
+ building_starbase_prototype_schematics_production_1: "Starbase Schematics Research Labs"
+ building_starbase_prototype_schematics_production_1_desc: "An installation where, with the help of one or multiple Starbase Engineering Hub, simulations are run on the various possibilities that would cause a starbase to cease responding to enemy fire in a timely manner."
+ building_starbase_prototype_schematics_production_2: "Starbase Schematics Research Complex"
+ building_starbase_prototype_schematics_production_2_desc: "Featuring a large workforce, the Starbase Schematics Research Complex creates valuable data to be later used to revamp starbase architecture."
+
+ building_starbase_prototype_parts_production_1: "Starbase Artisan Prototyping Zone"
+ building_starbase_prototype_parts_production_1_desc: "This place is where the whole \"Prototyping a prototype\" takes place. From various useful innovations to useless junk, there is a lot being created here."
+ building_starbase_prototype_parts_production_1: "Starbase Artisan Prototyping District"
+ building_starbase_prototype_parts_production_2_desc: "Improved with better processes to detect defects to some extent, alongside a larger workforce, the Starbase Artisan Prototyping District provides with extensive work to ensure innovation."
+
+ building_starbase_integrity_overseer_1: "Starbase Integrity Testing Grounds"
+ building_starbase_integrity_overseer_1_desc: "This structure is one where makeshift weapons and armor is made for our starbases. Useful but typically featuring low longevity, these components have to be replaced often and contribute to upkeep."
+ building_starbase_integrity_overseer_2: "Starbase Integrity Testing Complex"
+ building_starbase_integrity_overseer_2_desc: "Bigger testing grounds and a bigger workforce expands the amount of experimental components that can be put into service, resulting in a more versatile, powerful defense against ennemy threats."

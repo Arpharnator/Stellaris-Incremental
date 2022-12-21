@@ -145,11 +145,11 @@ starbase_improvement_hub_2 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 1
+			starbase_prototype_parts = 2
 		}
 
 		upkeep = {
-			alloys = 60
+			alloys = 90
 		}
 	}
 
@@ -164,7 +164,6 @@ starbase_improvement_hub_2 = {
 		shipclass_starbase_damage_mult = 0.02
 	}
 
-	
 
 	#on_build_start = {}
 	#on_build_cancel = {}
@@ -192,12 +191,12 @@ starbase_improvement_hub_3 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 3
+			starbase_prototype_parts = 4
 			starbase_prototype_schematics = 1
 		}
 
 		upkeep = {
-			alloys = 120
+			alloys = 150
 			energy = 40
 			engineering_research = 30
 			society_research = 30
@@ -220,7 +219,6 @@ starbase_improvement_hub_3 = {
 		shipsize_starbase_starfortress_hull_add = 800
 		shipsize_starbase_citadel_hull_add = 1600
 	}
-
 	
 
 	#on_build_start = {}
@@ -263,7 +261,7 @@ starbase_improvement_hub_4 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_2
+		starbase_improvement_hub_3
 	}
 
 	prerequisites = { stellaris_incremental_tech_starbase_oversight_4 }
@@ -279,7 +277,63 @@ starbase_improvement_hub_4 = {
 	}
 
 	
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
 
+}
+
+
+starbase_improvement_hub_5 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 20
+			starbase_prototype_schematics = 12
+		}
+
+		upkeep = {
+			alloys = 630
+			energy = 420
+			engineering_research = 195
+			society_research = 195
+			physics_research = 195
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_4
+	}
+
+	prerequisites = { stellaris_incremental_tech_starbase_oversight_5 }
+
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		shipsize_starbase_outpost_hull_add = 100
+		shipsize_starbase_starport_hull_add = 200
+		shipsize_starbase_starhold_hull_add = 400
+		shipsize_starbase_starfortress_hull_add = 800
+		shipsize_starbase_citadel_hull_add = 1600
+	}
+
+	
 	#on_build_start = {}
 	#on_build_cancel = {}
 	#on_build_complete = {

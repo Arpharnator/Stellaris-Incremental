@@ -1,0 +1,21 @@
+﻿l_english:
+ job_station_production_overseer: "Station Overseer"
+ job_station_production_overseer_desc: "Tasked with overseeing extraction or observation operations on faraway space bodies."
+ 
+ job_station_data_feed_scientist: "Station Data Scientist"
+ job_station_data_feed_scientist_desc: "Receiving data from the feeds sent by civilian stations, they work it into methods to oversee, operate and manage stations."
+
+ job_starbase_upgrade_overseer: "Starbase Upgrade Overseer"
+ job_starbase_upgrade_overseer_desc: "Making sure the most promising components from a batch of experimental prototypes can be used widely is their job."
+
+ job_starbase_integrity_overseer: "Starbase Integrity Overseer"
+ job_starbase_integrity_overseer_desc: "Making makeshift components using experimental parts gets you good armor and weapons, although producing it en masse is costly."
+
+ job_starbase_schematics_engineer: "Starbase Schematics Engineer"
+ job_starbase_schematics_engineer_desc: "Working off of ideas and observations they improve architecture, making our starbases less vulnerable."
+
+ job_starbase_schematics_scientist: "Starbase Schematics Scientist"
+ job_starbase_schematics_scientist_desc: "Using existing starbase models they run simulations of various compromising events, and write down observations, practical or not, to be reprocessed by others."
+
+ job_starbase_prototype_parts_fabricator: "Starbase Experimental Artisan"
+ job_starbase_prototype_parts_fabricator_desc: "Tasked with innovating based on current components or not, the Starbase Experimental Artisan creates what is experimented on, and sometimes used in actual designs after the concept is refined."

@@ -304,7 +304,7 @@ situation_starbase_prototype_schematics_deficit = {
 	on_abort = {
 		owner = {
 			add_resource = {
-				starbase_schematics_parts = @bailout_strategic_base_amount
+				starbase_prototype_schematics_parts = @bailout_strategic_base_amount
 				mult = value:bailout_scaling_factor
 			}
 		}
