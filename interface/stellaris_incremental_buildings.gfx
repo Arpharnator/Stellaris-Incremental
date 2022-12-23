@@ -1,0 +1,68 @@
+spriteTypes = {
+	#################
+	### BUILDINGS ###
+	#################
+	#STATION
+	spriteType = {
+		name = "GFX_building_station_production_overseer_1"
+		textureFile = "gfx/interface/icons/buildings/building_station_production_overseer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_station_production_overseer_2"
+		textureFile = "gfx/interface/icons/buildings/building_station_production_overseer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_building_station_production_overseer_3"
+		textureFile = "gfx/interface/icons/buildings/building_station_production_overseer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_building_station_data_feed_production_1"
+		textureFile = "gfx/interface/icons/buildings/building_station_data_feed_production_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_station_data_feed_production_2"
+		textureFile = "gfx/interface/icons/buildings/building_station_data_feed_production_2.dds"
+	}
+
+	#STARBASE
+	spriteType = {
+		name = "GFX_building_starbase_integrity_overseer_1"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_integrity_overseer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_integrity_overseer_2"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_integrity_overseer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_schematics_engineering_1"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_schematics_engineering_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_schematics_engineering_2"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_schematics_engineering_2.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_upgrade_overseer_1"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_upgrade_overseer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_upgrade_overseer_2"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_upgrade_overseer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_prototype_parts_production_1"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_prototype_parts_production_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_prototype_parts_production_2"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_prototype_parts_production_2.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_prototype_schematics_production_1"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_prototype_schematics_production_1.dds"
+	}
+	spriteType = {
+		name = "GFX_building_starbase_prototype_schematics_production_2"
+		textureFile = "gfx/interface/icons/buildings/building_starbase_prototype_schematics_production_2.dds"
+	}
+}

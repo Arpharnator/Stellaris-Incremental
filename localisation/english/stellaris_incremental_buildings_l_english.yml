@@ -1,4 +1,5 @@
 ﻿l_english:
+ #STATION
  building_station_production_overseer_1: "Station Data Subframe"
  building_station_production_overseer_1_desc: "A remote structure for the monitoring and application of new discoveries in the field of space extraction."
  building_station_production_overseer_2: "Data Subframe Complex"
@@ -11,6 +12,7 @@
  building_station_data_feed_production_2: "Raw Data Processor Complexes"
  building_station_data_feed_production_2_desc: "Able to host large amounts of workers, this place is used to parse data into useful bits on a larger scale."
 
+ #STARBASE
  building_starbase_upgrade_overseer_1: "Starbase Prototype Parts Engineering Zone"
  building_starbase_upgrade_overseer_1_desc: "A place where engineers are tasked with making experimental components find their place on the assembly block."
  building_starbase_upgrade_overseer_2: "Starbase Prototype Parts Engineering District" 

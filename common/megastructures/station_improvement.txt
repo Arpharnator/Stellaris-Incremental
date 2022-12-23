@@ -9,8 +9,8 @@ station_improvement_hub_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			unity = 2500
+			alloys = 2500
+			unity = 1000
 		}
 
 		upkeep = {
@@ -109,7 +109,7 @@ station_improvement_hub_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 5000
 			unity = 2500
 		}
 
@@ -142,7 +142,7 @@ station_improvement_hub_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 10000
 			unity = 2500
 		}
 

@@ -143,12 +143,8 @@ stellaris_incremental_tech_starbase_oversight = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
-	prerequisites = { "tech_construction_templates" "tech_modular_engineering" }
+	prerequisites = { "stellaris_incremental_tech_station_oversight_2" }
 	weight = @tier3weight3
-	modifier = {
-		planet_building_build_speed_mult = 0.15
-		planet_pop_assembly_mult = 0.1
-	}
 
 	weight_modifier = {
 		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
@@ -166,12 +162,8 @@ stellaris_incremental_tech_starbase_oversight_2 = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
-	prerequisites = { "stellaris_incremental_tech_starbase_oversight" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
+	prerequisites = { "stellaris_incremental_tech_starbase_oversight" }
 	weight = @tier3weight3
-	modifier = {
-		planet_building_build_speed_mult = 0.15
-		planet_pop_assembly_mult = 0.1
-	}
 
 	weight_modifier = {
 		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
@@ -191,10 +183,6 @@ stellaris_incremental_tech_starbase_oversight_3 = {
 	category = { voidcraft }
 	prerequisites = { "stellaris_incremental_tech_starbase_oversight_2" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
 	weight = @tier3weight3
-	modifier = {
-		planet_building_build_speed_mult = 0.15
-		planet_pop_assembly_mult = 0.1
-	}
 
 	weight_modifier = {
 		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
@@ -214,10 +202,6 @@ stellaris_incremental_tech_starbase_oversight_4 = {
 	category = { voidcraft }
 	prerequisites = { "stellaris_incremental_tech_starbase_oversight_3" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
 	weight = @tier3weight3
-	modifier = {
-		planet_building_build_speed_mult = 0.15
-		planet_pop_assembly_mult = 0.1
-	}
 
 	weight_modifier = {
 		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
@@ -237,10 +221,6 @@ stellaris_incremental_tech_starbase_oversight_5 = {
 	category = { voidcraft }
 	prerequisites = { "stellaris_incremental_tech_starbase_oversight_4" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
 	weight = @tier3weight3
-	modifier = {
-		planet_building_build_speed_mult = 0.15
-		planet_pop_assembly_mult = 0.1
-	}
 
 	weight_modifier = {
 		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
