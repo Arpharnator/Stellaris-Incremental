@@ -5,7 +5,7 @@ station_improvement_hub_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -27 y = -27 }
-	build_time = 1800
+	build_time = 1200
 	resources = {
 		category = megastructures
 		cost = {
@@ -105,12 +105,12 @@ station_improvement_hub_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 5000
-			unity = 2500
+			unity = 1500
 		}
 
 		upkeep = {
@@ -138,12 +138,12 @@ station_improvement_hub_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 2500
+			alloys = 7500
+			unity = 2000
 		}
 
 		produces = {
@@ -187,11 +187,11 @@ station_improvement_hub_3 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 2200
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 10000
 			unity = 2500
 		}
 
@@ -236,7 +236,7 @@ station_improvement_hub_4 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 2200
 	resources = {
 		category = megastructures
 		cost = {
@@ -284,11 +284,11 @@ station_improvement_hub_5 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 2600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 22500
 			unity = 2500
 		}
 
@@ -333,11 +333,11 @@ station_improvement_hub_6 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 3000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 35000
 			unity = 2500
 		}
 
@@ -382,11 +382,11 @@ station_improvement_hub_survey = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 1800
+	build_time = 600
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 20000
+			energy = 5000
 		}
 	}
 

@@ -105,11 +105,11 @@ starbase_improvement_hub_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 10000
 			unity = 2500
 		}
 
@@ -122,7 +122,7 @@ starbase_improvement_hub_1 = {
 		starbase_improvement_hub_0
 	}
 
-	prerequisites = { stellaris_incremental_tech_starbase_oversight_2 }
+	prerequisites = { stellaris_incremental_tech_starbase_oversight }
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
@@ -136,7 +136,7 @@ starbase_improvement_hub_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
@@ -182,11 +182,11 @@ starbase_improvement_hub_3 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 2000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 20000
 			unity = 2500
 		}
 
@@ -238,11 +238,11 @@ starbase_improvement_hub_4 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 2600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 25000
 			unity = 2500
 		}
 
@@ -295,11 +295,11 @@ starbase_improvement_hub_5 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 3000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 35000
 			unity = 2500
 		}
 
