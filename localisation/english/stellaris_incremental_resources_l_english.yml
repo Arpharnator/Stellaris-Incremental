@@ -1,4 +1,7 @@
 ﻿l_english:
  station_data_feed: "Station Data"
+ station_data_feed_desc: "Created and collected throughout our empire by stations exploiting deposits, then made sense of using specialized facilities, these allow us to improve our processes in the domain of space extraction."
  starbase_prototype_parts: "Starbase Prototype Parts"
+ starbase_prototype_parts_desc: "These prototypes made for starbases can be used to improve their defenses, increasing durability and firepower."
  starbase_prototype_schematics: "Starbase Schematics"
+ starbase_prototype_schematics_desc: "Be it a variation of a corridor from an unnamed starbase or a complete redesign of a command center, these schematics are made to improve redundancy and structural integrity in bold ways."

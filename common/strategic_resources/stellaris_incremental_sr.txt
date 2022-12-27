@@ -46,6 +46,38 @@ starbase_prototype_schematics = {
 	}
 }
 
+ship_shield_harmonizer = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_ship_shield_harmonizer_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+ship_armor_inurer = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_ship_armor_inurer_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
 megastructure_parts = {
 	tradable = no
 	category = rare

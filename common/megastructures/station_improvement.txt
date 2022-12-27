@@ -19,6 +19,7 @@ station_improvement_hub_0 = {
 	}
 
 	prerequisites = { "stellaris_incremental_tech_station_oversight" }
+	#show_prereqs = yes
 
 	possible = {
 		exists = starbase
@@ -126,6 +127,7 @@ station_improvement_hub_1 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -163,6 +165,7 @@ station_improvement_hub_2 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_2 }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -212,6 +215,7 @@ station_improvement_hub_3 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_3 }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -260,6 +264,7 @@ station_improvement_hub_4 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_4 }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -309,6 +314,7 @@ station_improvement_hub_5 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_5 }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -358,6 +364,7 @@ station_improvement_hub_6 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+	show_prereqs = yes
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -395,6 +402,7 @@ station_improvement_hub_survey = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+	#show_prereqs = yes
 
 	on_build_start = {}
 	on_build_cancel = {}

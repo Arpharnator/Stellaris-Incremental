@@ -19,6 +19,7 @@ starbase_improvement_hub_0 = {
 	}
 
 	prerequisites = { "stellaris_incremental_tech_starbase_oversight" }
+	#show_prereqs = yes
 
 	possible = {
 		exists = starbase
@@ -123,6 +124,7 @@ starbase_improvement_hub_1 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_starbase_oversight }
+	show_prereqs = yes
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
@@ -209,6 +211,7 @@ starbase_improvement_hub_3 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_starbase_oversight_3 }
+	show_prereqs = yes
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
@@ -265,6 +268,7 @@ starbase_improvement_hub_4 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_starbase_oversight_4 }
+	show_prereqs = yes
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
@@ -322,6 +326,7 @@ starbase_improvement_hub_5 = {
 	}
 
 	prerequisites = { stellaris_incremental_tech_starbase_oversight_5 }
+	show_prereqs = yes
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03

@@ -1,0 +1,670 @@
+# Ship Improvement Hub
+
+#################
+###   ARMOR   ###
+#################
+ship_improvement_hub_armor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "stellaris_incremental_tech_ship_oversight" }
+	#show_prereqs = yes
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+
+# Mega Art Installation 1
+ship_improvement_hub_armor_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 2500
+		}
+
+		upkeep = {
+			alloys = 30
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+	}
+}
+
+ship_improvement_hub_armor_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 2
+		}
+
+		upkeep = {
+			alloys = 90
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight }
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+	}
+
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+ship_improvement_hub_armor_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 4
+			starbase_prototype_schematics = 1
+		}
+
+		upkeep = {
+			alloys = 150
+			energy = 40
+			engineering_research = 30
+			society_research = 30
+			physics_research = 30
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_3 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+	}
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+ship_improvement_hub_armor_4 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 2600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 25000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 9
+			starbase_prototype_schematics = 5
+		}
+
+		upkeep = {
+			alloys = 270
+			energy = 120
+			engineering_research = 90
+			society_research = 90
+			physics_research = 90
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_3
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_4 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+	}
+
+	
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+
+ship_improvement_hub_armor_5 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 35000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 20
+			starbase_prototype_schematics = 12
+		}
+
+		upkeep = {
+			alloys = 630
+			energy = 420
+			engineering_research = 195
+			society_research = 195
+			physics_research = 195
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_4
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_5 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+	}
+
+	
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+################
+###  SHIELD  ###
+################
+
+ship_improvement_hub_shield_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "stellaris_incremental_tech_ship_oversight" }
+	#show_prereqs = yes
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+
+# Mega Art Installation 1
+ship_improvement_hub_shield_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 2500
+		}
+
+		upkeep = {
+			alloys = 30
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+	}
+}
+
+ship_improvement_hub_shield_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 2
+		}
+
+		upkeep = {
+			alloys = 90
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight }
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+	}
+
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+ship_improvement_hub_shield_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 4
+			starbase_prototype_schematics = 1
+		}
+
+		upkeep = {
+			alloys = 150
+			energy = 40
+			engineering_research = 30
+			society_research = 30
+			physics_research = 30
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_3 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+	}
+	
+
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+ship_improvement_hub_shield_4 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 2600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 25000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 9
+			starbase_prototype_schematics = 5
+		}
+
+		upkeep = {
+			alloys = 270
+			energy = 120
+			engineering_research = 90
+			society_research = 90
+			physics_research = 90
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_3
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_4 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+	}
+
+	
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
+
+
+ship_improvement_hub_shield_5 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 35000
+			unity = 2500
+		}
+
+		produces = {
+			starbase_prototype_parts = 20
+			starbase_prototype_schematics = 12
+		}
+
+		upkeep = {
+			alloys = 630
+			energy = 420
+			engineering_research = 195
+			society_research = 195
+			physics_research = 195
+		}
+	}
+
+	upgrade_from = {
+		starbase_improvement_hub_4
+	}
+
+	prerequisites = { stellaris_incremental_tech_ship_oversight_5 }
+	show_prereqs = yes
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+	}
+
+	
+	#on_build_start = {}
+	#on_build_cancel = {}
+	#on_build_complete = {
+	#	change_variable = {
+	#		which = megastructure_station_improvement_number 
+	#		value = 1
+	#	}
+	#}
+
+}
