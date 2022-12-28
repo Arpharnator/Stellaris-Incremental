@@ -1,0 +1,248 @@
+####################
+### SHIP BONUSES ###
+####################
+
+#SHIP SHIELD + ENERGY SHIP UPKEEP
+building_ship_shield_attuner_1 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.005
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			ship_shield_harmonizer = 1
+		}
+	}
+
+	upgrades = {
+		"building_ship_shield_attuner_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_2"
+	}
+}
+
+building_ship_shield_attuner_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = army
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.005
+	}
+
+	planet_modifier = {
+		job_ship_shield_attuner_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+			ship_shield_harmonizer = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_3"
+	}
+}
+
+#SHIP ARMOR + MINERAL UPKEEP ALLOYS
+building_ship_armor_compressor_1 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+		
+		planet_metallurgists_minerals_upkeep_mult = 0.005
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			ship_armor_compressor_tool = 1
+		}
+	}
+
+	upgrades = {
+		"building_ship_shield_attuner_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_2"
+	}
+}
+
+building_ship_armor_compressor_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = army
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+		planet_metallurgists_minerals_upkeep_mult = 0.005
+	}
+
+	planet_modifier = {
+		job_ship_armor_compressor_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+			ship_armor_compressor_tool = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_3"
+	}
+}
+
+###############
+# PRODUCTION
+###############
+
+#SHIP ARMOR COMPRESSORS
+building_ship_armor_compressor_production_1 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			ship_armor_compressor_tool = 1
+			alloys = 30
+		}
+		upkeep = {
+			minerals = 90
+		}
+	}
+
+	upgrades = {
+		"building_ship_armor_compressor_production_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_3"
+	}
+}
+
+building_ship_armor_compressor_production_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = resources
+
+	planet_modifier = {
+		job_ship_armor_compressor_assembler_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			ship_armor_compressor_tool = 1
+			alloys = 30
+		}
+		upkeep = {
+			minerals = 90
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_4"
+	}
+}
+
+#SHIP SHIELD HARMONIZERS
+building_ship_shield_harmonizer_production_1 = {
+	base_buildtime = @b1_time
+
+	category = resources
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			ship_shield_harmonizer = 1
+			physics_research = 45
+		}
+		upkeep = {
+			energy = 120
+		}
+	}
+
+	upgrades = {
+		"building_ship_shield_harmonizer_production_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_3"
+	}
+}
+
+building_ship_shield_harmonizer_production_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+
+	category = resources
+
+	planet_modifier = {
+		job_ship_shield_harmonizer_assembler_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			ship_shield_harmonizer = 1
+			physics_research = 45
+		}
+		upkeep = {
+			energy = 120
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_ship_oversight_4"
+	}
+}

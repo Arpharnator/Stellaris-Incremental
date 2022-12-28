@@ -62,7 +62,7 @@ ship_shield_harmonizer = {
 	}
 }
 
-ship_armor_inurer = {
+ship_armor_compressor_tool = {
 	tradable = no
 	category = rare
 	max = 1000000

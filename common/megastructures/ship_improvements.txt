@@ -119,7 +119,7 @@ ship_improvement_hub_armor_1 = {
 		}
 
 		upkeep = {
-			alloys = 30
+			minerals = 60
 		}
 	}
 
@@ -150,11 +150,12 @@ ship_improvement_hub_armor_2 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 2
+			alloys = 30
+			ship_armor_compressor_tool = 2
 		}
 
 		upkeep = {
-			alloys = 90
+			minerals = 240
 		}
 	}
 
@@ -162,22 +163,11 @@ ship_improvement_hub_armor_2 = {
 		starbase_improvement_hub_1
 	}
 
-	prerequisites = { stellaris_incremental_tech_ship_oversight }
+	prerequisites = { stellaris_incremental_tech_ship_oversight_2 }
 
 	country_modifier = {
 		ship_armor_mult = 0.025
 	}
-
-
-	#on_build_start = {}
-	#on_build_cancel = {}
-	#on_build_complete = {
-	#	change_variable = {
-	#		which = megastructure_station_improvement_number 
-	#		value = 1
-	#	}
-	#}
-
 }
 
 ship_improvement_hub_armor_3 = {
@@ -195,16 +185,12 @@ ship_improvement_hub_armor_3 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 4
-			starbase_prototype_schematics = 1
+			alloys = 90
+			ship_armor_compressor_tool = 6
 		}
 
 		upkeep = {
-			alloys = 150
-			energy = 40
-			engineering_research = 30
-			society_research = 30
-			physics_research = 30
+			minerals = 720
 		}
 	}
 
@@ -218,17 +204,6 @@ ship_improvement_hub_armor_3 = {
 	country_modifier = {
 		ship_armor_mult = 0.025
 	}
-	
-
-	#on_build_start = {}
-	#on_build_cancel = {}
-	#on_build_complete = {
-	#	change_variable = {
-	#		which = megastructure_station_improvement_number 
-	#		value = 1
-	#	}
-	#}
-
 }
 
 ship_improvement_hub_armor_4 = {
@@ -246,16 +221,12 @@ ship_improvement_hub_armor_4 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 9
-			starbase_prototype_schematics = 5
+			alloys = 270
+			ship_armor_compressor_tool = 15
 		}
 
 		upkeep = {
-			alloys = 270
-			energy = 120
-			engineering_research = 90
-			society_research = 90
-			physics_research = 90
+			minerals = 1800
 		}
 	}
 
@@ -269,17 +240,6 @@ ship_improvement_hub_armor_4 = {
 	country_modifier = {
 		ship_armor_mult = 0.025
 	}
-
-	
-	#on_build_start = {}
-	#on_build_cancel = {}
-	#on_build_complete = {
-	#	change_variable = {
-	#		which = megastructure_station_improvement_number 
-	#		value = 1
-	#	}
-	#}
-
 }
 
 
@@ -298,16 +258,12 @@ ship_improvement_hub_armor_5 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 20
-			starbase_prototype_schematics = 12
+			alloys = 450
+			ship_armor_compressor_tool = 25
 		}
 
 		upkeep = {
-			alloys = 630
-			energy = 420
-			engineering_research = 195
-			society_research = 195
-			physics_research = 195
+			minerals = 3000
 		}
 	}
 
@@ -321,17 +277,6 @@ ship_improvement_hub_armor_5 = {
 	country_modifier = {
 		ship_armor_mult = 0.025
 	}
-
-	
-	#on_build_start = {}
-	#on_build_cancel = {}
-	#on_build_complete = {
-	#	change_variable = {
-	#		which = megastructure_station_improvement_number 
-	#		value = 1
-	#	}
-	#}
-
 }
 
 ################
@@ -454,7 +399,7 @@ ship_improvement_hub_shield_1 = {
 		}
 
 		upkeep = {
-			alloys = 30
+			energy = 80
 		}
 	}
 
@@ -485,11 +430,12 @@ ship_improvement_hub_shield_2 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 2
+			physics_research = 45
+			ship_shield_harmonizer = 2
 		}
 
 		upkeep = {
-			alloys = 90
+			energy = 300
 		}
 	}
 
@@ -497,7 +443,7 @@ ship_improvement_hub_shield_2 = {
 		starbase_improvement_hub_1
 	}
 
-	prerequisites = { stellaris_incremental_tech_ship_oversight }
+	prerequisites = { stellaris_incremental_tech_ship_oversight_2 }
 
 	country_modifier = {
 		ship_shield_mult = 0.025
@@ -530,16 +476,12 @@ ship_improvement_hub_shield_3 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 4
-			starbase_prototype_schematics = 1
+			physics_research = 135
+			ship_shield_harmonizer = 6
 		}
 
 		upkeep = {
-			alloys = 150
-			energy = 40
-			engineering_research = 30
-			society_research = 30
-			physics_research = 30
+			energy = 900
 		}
 	}
 
@@ -581,16 +523,12 @@ ship_improvement_hub_shield_4 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 9
-			starbase_prototype_schematics = 5
+			physics_research = 337
+			ship_shield_harmonizer = 16
 		}
 
 		upkeep = {
-			alloys = 270
-			energy = 120
-			engineering_research = 90
-			society_research = 90
-			physics_research = 90
+			energy = 2250
 		}
 	}
 
@@ -633,16 +571,12 @@ ship_improvement_hub_shield_5 = {
 		}
 
 		produces = {
-			starbase_prototype_parts = 20
-			starbase_prototype_schematics = 12
+			physics_research = 560
+			ship_shield_harmonizer = 25
 		}
 
 		upkeep = {
-			alloys = 630
-			energy = 420
-			engineering_research = 195
-			society_research = 195
-			physics_research = 195
+			energy = 3750
 		}
 	}
 
