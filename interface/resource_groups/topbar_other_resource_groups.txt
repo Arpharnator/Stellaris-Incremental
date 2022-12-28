@@ -11,6 +11,8 @@ tb_others_group = {
 		station_data_feed
 		starbase_prototype_parts
 		starbase_prototype_schematics
+		ship_shield_harmonizing_equipment
+		ship_armor_inuring_equipment
 	}
 	localization = {
 		"RESOURCE_GROUP_DEFAULT" = default

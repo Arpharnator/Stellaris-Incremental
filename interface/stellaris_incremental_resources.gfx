@@ -20,4 +20,14 @@ spriteTypes = {
 		name = "GFX_resource_starbase_prototype_parts"
 		textureFile = "gfx/interface/icons/resources/starbase_prototype_parts.dds"
 	}
+
+	spriteType = {
+		name = "GFX_resource_ship_armor_inurer"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_armor_inurer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_ship_shield_harmonizer"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_harmonizer.dds"
+	}
 }
