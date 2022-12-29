@@ -20,7 +20,7 @@ building_ship_shield_attuner_1 = {
 		}
 		upkeep = {
 			energy = 1
-			ship_shield_harmonizer = 1
+			ship_shield_capacitor = 1
 		}
 	}
 
@@ -55,7 +55,7 @@ building_ship_shield_attuner_2 = {
 		}
 		upkeep = {
 			energy = 2
-			ship_shield_harmonizer = 1
+			ship_shield_capacitor = 1
 		}
 	}
 
@@ -64,7 +64,7 @@ building_ship_shield_attuner_2 = {
 	}
 }
 
-#SHIP ARMOR + MINERAL UPKEEP ALLOYS
+#SHIP ARMOR + SHIP UPKEEP ALLOYS
 building_ship_armor_compressor_1 = {
 	base_buildtime = @b1_time
 
@@ -72,8 +72,7 @@ building_ship_armor_compressor_1 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
-		
-		planet_metallurgists_minerals_upkeep_mult = 0.005
+		ships_alloys_upkeep_mult = 0.005
 	}
 
 	resources = {
@@ -104,7 +103,7 @@ building_ship_armor_compressor_2 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
-		planet_metallurgists_minerals_upkeep_mult = 0.005
+		ships_alloys_upkeep_mult = 0.005
 	}
 
 	planet_modifier = {
@@ -189,8 +188,8 @@ building_ship_armor_compressor_production_2 = {
 	}
 }
 
-#SHIP SHIELD HARMONIZERS
-building_ship_shield_harmonizer_production_1 = {
+#SHIP SHIELD CAPACITORS
+building_ship_shield_capacitor_production_1 = {
 	base_buildtime = @b1_time
 
 	category = resources
@@ -201,7 +200,7 @@ building_ship_shield_harmonizer_production_1 = {
 			minerals = 200
 		}
 		produces = {
-			ship_shield_harmonizer = 1
+			ship_shield_capacitor = 1
 			physics_research = 45
 		}
 		upkeep = {
@@ -210,7 +209,7 @@ building_ship_shield_harmonizer_production_1 = {
 	}
 
 	upgrades = {
-		"building_ship_shield_harmonizer_production_2"
+		"building_ship_shield_capacitor_production_2"
 	}
 
 	prerequisites = {
@@ -218,14 +217,14 @@ building_ship_shield_harmonizer_production_1 = {
 	}
 }
 
-building_ship_shield_harmonizer_production_2 = {
+building_ship_shield_capacitor_production_2 = {
 	base_buildtime = @b1_time
 	can_build = no
 
 	category = resources
 
 	planet_modifier = {
-		job_ship_shield_harmonizer_assembler_add = 2
+		job_ship_shield_capacitor_assembler_add = 2
 	}
 
 	resources = {
@@ -234,7 +233,7 @@ building_ship_shield_harmonizer_production_2 = {
 			minerals = 200
 		}
 		produces = {
-			ship_shield_harmonizer = 1
+			ship_shield_capacitor = 1
 			physics_research = 45
 		}
 		upkeep = {

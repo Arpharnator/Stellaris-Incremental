@@ -46,12 +46,12 @@ starbase_prototype_schematics = {
 	}
 }
 
-ship_shield_harmonizer = {
+ship_shield_capacitor = {
 	tradable = no
 	category = rare
 	max = 1000000
 
-	deficit_situation = situation_ship_shield_harmonizer_deficit
+	deficit_situation = situation_ship_shield_capacitor_deficit
 
 	ai_weight = {
 		weight = 20
@@ -67,7 +67,7 @@ ship_armor_compressor_tool = {
 	category = rare
 	max = 1000000
 
-	deficit_situation = situation_ship_armor_inurer_deficit
+	deficit_situation = situation_ship_compressor_tool_deficit
 
 	ai_weight = {
 		weight = 20

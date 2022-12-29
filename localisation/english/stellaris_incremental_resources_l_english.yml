@@ -5,3 +5,7 @@
  starbase_prototype_parts_desc: "These prototypes made for starbases can be used to improve their defenses, increasing durability and firepower."
  starbase_prototype_schematics: "Starbase Schematics"
  starbase_prototype_schematics_desc: "Be it a variation of a corridor from an unnamed starbase or a complete redesign of a command center, these schematics are made to improve redundancy and structural integrity in bold ways."
+ ship_armor_compressor_tool: "Armor Compressors"
+ ship_armor_compressor_tool_desc: "Tools made to compress armor in a reliable, safe, and efficient manner."
+ ship_shield_capacitor: "Shield Capacitors"
+ ship_shield_capacitor_desc: "State of the art equipment used to increase shield capacity."

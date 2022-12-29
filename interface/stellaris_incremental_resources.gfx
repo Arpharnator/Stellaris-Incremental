@@ -22,12 +22,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_resource_ship_armor_inurer"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_armor_inurer.dds"
+		name = "GFX_resource_ship_compressor_tool"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_compressor_tool.dds"
 	}
 
 	spriteType = {
-		name = "GFX_resource_ship_shield_harmonizer"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_harmonizer.dds"
+		name = "GFX_resource_ship_shield_capacitor"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
 	}
 }

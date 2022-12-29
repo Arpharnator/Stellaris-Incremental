@@ -431,7 +431,7 @@ ship_improvement_hub_shield_2 = {
 
 		produces = {
 			physics_research = 45
-			ship_shield_harmonizer = 2
+			ship_shield_capacitor = 2
 		}
 
 		upkeep = {
@@ -477,7 +477,7 @@ ship_improvement_hub_shield_3 = {
 
 		produces = {
 			physics_research = 135
-			ship_shield_harmonizer = 6
+			ship_shield_capacitor = 6
 		}
 
 		upkeep = {
@@ -524,7 +524,7 @@ ship_improvement_hub_shield_4 = {
 
 		produces = {
 			physics_research = 337
-			ship_shield_harmonizer = 16
+			ship_shield_capacitor = 16
 		}
 
 		upkeep = {
@@ -572,7 +572,7 @@ ship_improvement_hub_shield_5 = {
 
 		produces = {
 			physics_research = 560
-			ship_shield_harmonizer = 25
+			ship_shield_capacitor = 25
 		}
 
 		upkeep = {
