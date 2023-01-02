@@ -60,6 +60,10 @@ station_data_feed_scientist = {
 			physics_research = 6
 		}
 	}
+	
+	country_modifier = {
+		empire_size_systems_mult = 0.025
+	}
 
 	possible_precalc = can_fill_drone_job
 

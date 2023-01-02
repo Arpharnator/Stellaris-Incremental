@@ -10,7 +10,6 @@ building_ship_shield_attuner_1 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
-		ships_energy_upkeep_mult = 0.005
 	}
 
 	resources = {
@@ -41,7 +40,6 @@ building_ship_shield_attuner_2 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
-		ships_energy_upkeep_mult = 0.005
 	}
 
 	planet_modifier = {
@@ -72,7 +70,6 @@ building_ship_armor_compressor_1 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
-		ships_alloys_upkeep_mult = 0.005
 	}
 
 	resources = {
@@ -103,7 +100,6 @@ building_ship_armor_compressor_2 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
-		ships_alloys_upkeep_mult = 0.005
 	}
 
 	planet_modifier = {
@@ -150,6 +146,10 @@ building_ship_armor_compressor_production_1 = {
 		}
 	}
 
+	country_modifier = {
+		ships_alloys_upkeep_mult = 0.005
+	}
+
 	upgrades = {
 		"building_ship_armor_compressor_production_2"
 	}
@@ -182,6 +182,10 @@ building_ship_armor_compressor_production_2 = {
 			minerals = 90
 		}
 	}
+	
+	country_modifier = {
+		ships_alloys_upkeep_mult = 0.005
+	}
 
 	prerequisites = {
 		"stellaris_incremental_tech_ship_oversight_4"
@@ -206,6 +210,10 @@ building_ship_shield_capacitor_production_1 = {
 		upkeep = {
 			energy = 120
 		}
+	}
+
+	country_modifier = {
+		ships_energy_upkeep_mult = 0.005
 	}
 
 	upgrades = {
@@ -239,6 +247,10 @@ building_ship_shield_capacitor_production_2 = {
 		upkeep = {
 			energy = 120
 		}
+	}
+
+	country_modifier = {
+		ships_energy_upkeep_mult = 0.005
 	}
 
 	prerequisites = {
