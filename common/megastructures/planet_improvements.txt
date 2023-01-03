@@ -1,8 +1,9 @@
 # Planet improvement Hub
 
-#################
-###  DISTRICT ###
-#################
+######################
+### LOCAL DISTRICT ###
+######################
+
 planet_improvement_hub_district_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
@@ -118,9 +119,13 @@ planet_improvement_hub_district_1 = {
 			unity = 20000
 		}
 
+		produces = {
+			planet_district_expansion_cores = 4
+		}
+
 		upkeep = {
-			minerals = 500
-			energy = 500
+			minerals = 200
+			energy = 200
 		}
 	}
 
@@ -130,13 +135,240 @@ planet_improvement_hub_district_1 = {
 
 	prerequisites = { stellaris_incremental_tech_planet_oversight }
 	show_prereqs = yes
+}
+
+planet_improvement_hub_district_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 7200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 150000
+			unity = 25000
+		}
+
+		produces = {
+			planet_district_expansion_cores = 10
+		}
+
+		upkeep = {
+			minerals = 500
+			energy = 500
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_district_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+}
+
+planet_improvement_hub_district_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 7200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 200000
+			unity = 30000
+		}
+
+		produces = {
+			planet_district_expansion_cores = 22
+		}
+
+		upkeep = {
+			minerals = 1100
+			energy = 1100
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_district_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+}
+
+###################
+### JOB DISTRICT ##
+###################
+planet_improvement_hub_district_job_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "stellaris_incremental_tech_planet_oversight" }
+	#show_prereqs = yes
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+
+# Mega Art Installation 1
+planet_improvement_hub_district_job_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 7200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 100000
+			unity = 20000
+		}
+
+		upkeep = {
+			alloys = 350
+			volatile_motes = 10
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_district_job_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
 
 	country_modifier = {
-		planet_non_artificial_max_districts_add = 1
-		planet_districts_cost_mult = 0.1
-		planet_districts_build_speed_mult = -0.05
+		job_planet_accommodation_overseer_add = 1
 	}
 }
+
+planet_improvement_hub_district_job_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 7200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 150000
+			unity = 20000
+		}
+
+		upkeep = {
+			alloys = 700
+			volatile_motes = 20
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_district_job_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		job_planet_accommodation_overseer_add = 2
+	}
+}
+
 
 ###################
 ### BUILD SPEED ###
@@ -257,7 +489,7 @@ planet_improvement_hub_build_speed_1 = {
 		}
 
 		upkeep = {
-			minerals = 180
+			minerals = 240
 		}
 	}
 
@@ -269,7 +501,77 @@ planet_improvement_hub_build_speed_1 = {
 	show_prereqs = yes
 
 	country_modifier = {
-		planet_districts_build_speed_mult = 0.1
+		planet_building_build_speed_mult = 0.1
+	}
+}
+
+planet_improvement_hub_build_speed_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys =  45000
+			unity = 6500
+		}
+
+		produces = {
+			planet_district_build_cores = 6
+		}
+
+		upkeep = {
+			minerals = 360
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_build_speed_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		planet_building_build_speed_mult = 0.1
+	}
+}
+
+planet_improvement_hub_build_speed_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys =  55000
+			unity = 7500
+		}
+
+		produces = {
+			planet_district_build_cores = 14
+		}
+
+		upkeep = {
+			minerals = 840
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_build_speed_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		planet_building_build_speed_mult = 0.1
 	}
 }
 
@@ -392,8 +694,8 @@ planet_improvement_hub_research_1 = {
 		}
 
 		upkeep = {
-			energy = 250
-			exotic_gases = 25
+			energy = 187
+			exotic_gases = 15
 		}
 	}
 
@@ -408,7 +710,44 @@ planet_improvement_hub_research_1 = {
 		planet_researchers_engineering_research_produces_mult = 0.05
 		planet_researchers_physics_research_produces_mult = 0.05
 		planet_researchers_society_research_produces_mult = 0.05
-		all_technology_research_speed = -0.02
+	}
+}
+
+planet_improvement_hub_research_2 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys =  35000
+			unity = 6500
+		}
+
+		produces = {
+			planet_research_methods = 5
+		}
+
+		upkeep = {
+			energy = 375
+			exotic_gases = 30
+		}
+	}
+
+	upgrade_from = {
+		planet_improvement_hub_research_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight }
+	show_prereqs = yes
+
+	country_modifier = {
+		planet_researchers_engineering_research_produces_mult = 0.05
+		planet_researchers_physics_research_produces_mult = 0.05
+		planet_researchers_society_research_produces_mult = 0.05
 	}
 }
 
@@ -531,8 +870,8 @@ planet_improvement_hub_alloys_1 = {
 		}
 
 		upkeep = {
-			energy = 250
-			exotic_gases = 25
+			energy = 125
+			volatile_motes = 10
 		}
 	}
 

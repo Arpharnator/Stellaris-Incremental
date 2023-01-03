@@ -1,0 +1,183 @@
+####################
+## PLANET BONUSES ##
+####################
+
+#PLANET DISTRICT EXPANSION + INCREASED BUILD TIME AND COST (local)
+building_planet_district_expansion_1 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	planet_modifier = {
+		planet_non_artificial_max_districts_add = 2
+		planet_districts_cost_mult = 0.1
+		planet_building_build_speed_mult = -0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_district_expansion_cores = 1
+		}
+	}
+
+	upgrades = {
+		"building_planet_district_expansion_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}
+
+building_planet_district_expansion_2 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	planet_modifier = {
+		planet_non_artificial_max_districts_add = 2
+		job_planet_accommodation_overseer_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_district_expansion_cores = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}
+
+#PLANET RESEARCH
+building_planet_research_1 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		planet_researchers_engineering_research_produces_mult = 0.01
+		planet_researchers_physics_research_produces_mult = 0.01
+		planet_researchers_society_research_produces_mult = 0.01
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_research_methods = 1
+		}
+	}
+
+	upgrades = {
+		"building_planet_research_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}
+
+building_planet_research_2 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		planet_researchers_engineering_research_produces_mult = 0.01
+		planet_researchers_physics_research_produces_mult = 0.01
+		planet_researchers_society_research_produces_mult = 0.01
+	}
+
+	planet_modifier = {
+		job_planet_research_overseer_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_research_methods = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}
+
+#PLANET BUILD SPEED
+building_planet_build_speed_1 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		planet_building_build_speed_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_district_build_cores = 1
+		}
+	}
+
+	upgrades = {
+		"building_planet_build_speed_2"
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}
+
+building_planet_build_speed_2 = {
+	base_buildtime = @b1_time
+
+	category = army
+
+	country_modifier = {
+		planet_building_build_speed_mult = 0.05
+	}
+
+	planet_modifier = {
+		job_planet_build_speed_overseer_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+			planet_district_build_cores = 1
+		}
+	}
+
+	prerequisites = {
+		"stellaris_incremental_tech_planet_oversight"
+	}
+}

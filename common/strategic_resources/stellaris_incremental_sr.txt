@@ -78,6 +78,54 @@ ship_armor_compressor_tool = {
 	}
 }
 
+planet_district_expansion_cores = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_planet_district_expansion_cores_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+planet_district_build_cores = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_planet_district_build_cores_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+planet_research_methods = {
+	tradable = no
+	category = rare
+	max = 1000000
+
+	deficit_situation = situation_planet_district_build_cores_deficit
+
+	ai_weight = {
+		weight = 20
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
 megastructure_parts = {
 	tradable = no
 	category = rare
