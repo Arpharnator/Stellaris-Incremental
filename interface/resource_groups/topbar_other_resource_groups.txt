@@ -13,6 +13,9 @@ tb_others_group = {
 		starbase_prototype_schematics
 		ship_shield_harmonizing_equipment
 		ship_armor_inuring_equipment
+		planet_district_expansion_cores
+		planet_district_build_cores
+		planet_research_methods
 	}
 	localization = {
 		"RESOURCE_GROUP_DEFAULT" = default

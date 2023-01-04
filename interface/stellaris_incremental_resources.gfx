@@ -30,4 +30,19 @@ spriteTypes = {
 		name = "GFX_resource_ship_shield_capacitor"
 		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
 	}
+
+	spriteType = {
+		name = "GFX_resource_planet_district_expansion_cores"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_planet_district_build_cores"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_planet_research_methods"
+		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+	}
 }
