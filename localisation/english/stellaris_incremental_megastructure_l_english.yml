@@ -29,8 +29,12 @@
  starbase_improvement_hub_5: "Starbase Engineering Hub : Advanced Simulator"
  starbase_improvement_hub_5_DESC: "Expanding the scope of a supercomputer to run advanced simulations all within a limited space is costly, but profitable, as accuracy of simulations improve, allowing the Starbase Engineering Hub to provide more ideas to sort the feasibility of on onworld facilities."
 
- station_improvement_hub_survey: "Dispatch Prospecting Team"
- station_improvement_hub_survey_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ station_improvement_hub_survey_one: "Dispatch Prospecting Team"
+ station_improvement_hub_survey_one_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ station_improvement_hub_survey_five: "Dispatch 5 Prospecting Teams"
+ station_improvement_hub_survey_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ station_improvement_hub_survey_twenty_five: "Dispatch 25 Prospecting Teams"
+ station_improvement_hub_survey_twenty_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
  stellaris_incremental.1.name:0 "Prospecting Team Dispatched"
  stellaris_incremental.1.desc:0 "The Prospection Teams we dispatched have discovered a new resource deposit located on §H[chosen_planet.GetName]§!!"
  

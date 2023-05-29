@@ -384,7 +384,9 @@ station_improvement_hub_6 = {
 }
 
 #SURVEYING AT STAGE 6
-station_improvement_hub_survey = {
+
+#ONE TIME
+station_improvement_hub_survey_one = {
 	entity = ""
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
@@ -418,6 +420,124 @@ station_improvement_hub_survey = {
 			}
 		}
 		owner = {
+			country_event = { id = stellaris_incremental.1 }
+		}
+		
+		remove_megastructure = fromfrom
+
+		
+	}
+
+}
+
+#FIVE TIMES
+station_improvement_hub_survey_five = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 3000
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 25000
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_6
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+	#show_prereqs = yes
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			save_global_event_target_as = stellaris_incremental_mega_survey_planet
+			solar_system = {
+				spawn_megastructure = {
+					type = station_improvement_hub_6
+					planet = event_target:stellaris_incremental_mega_survey_planet
+					owner = space_owner
+				}
+			}
+		}
+		owner = {
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+		}
+		
+		remove_megastructure = fromfrom
+
+		
+	}
+
+}
+
+#TWENTY FIVE TIMES
+station_improvement_hub_survey_twenty_five = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 15000
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 125000
+		}
+	}
+
+	upgrade_from = {
+		station_improvement_hub_6
+	}
+
+	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
+	#show_prereqs = yes
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			save_global_event_target_as = stellaris_incremental_mega_survey_planet
+			solar_system = {
+				spawn_megastructure = {
+					type = station_improvement_hub_6
+					planet = event_target:stellaris_incremental_mega_survey_planet
+					owner = space_owner
+				}
+			}
+		}
+		owner = {
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.1 }
 			country_event = { id = stellaris_incremental.1 }
 		}
 		
