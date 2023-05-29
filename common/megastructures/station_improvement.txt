@@ -418,7 +418,7 @@ station_improvement_hub_survey = {
 			}
 		}
 		owner = {
-			country_event = { id = story.335 }
+			country_event = { id = stellaris_incremental.1 }
 		}
 		
 		remove_megastructure = fromfrom

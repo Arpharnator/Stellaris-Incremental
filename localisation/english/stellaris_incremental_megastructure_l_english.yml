@@ -31,3 +31,6 @@
 
  station_improvement_hub_survey: "Dispatch Prospecting Team"
  station_improvement_hub_survey_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ stellaris_incremental.1.name:0 "Prospecting Team Dispatched"
+ stellaris_incremental.1.desc:0 "The Prospection Teams we dispatched have discovered a new resource deposit located on §H[chosen_planet.GetName]§!!"
+ 

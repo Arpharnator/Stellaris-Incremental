@@ -1,0 +1,6 @@
+@stellaris_incremental_b1_time = 620
+@stellaris_incremental_b1_advanced_time = 780
+@stellaris_incremental_b2_time = 930
+@stellaris_incremental_b2_advanced_time = 1250
+@stellaris_incremental_b3_time = 1240
+@stellaris_incremental_b3_advanced_time = 1780

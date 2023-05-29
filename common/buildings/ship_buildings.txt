@@ -4,7 +4,7 @@
 
 #SHIP SHIELD + ENERGY SHIP UPKEEP
 building_ship_shield_attuner_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_time
 
 	category = army
 
@@ -33,7 +33,7 @@ building_ship_shield_attuner_1 = {
 }
 
 building_ship_shield_attuner_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_time
 	can_build = no
 
 	category = army
@@ -64,7 +64,7 @@ building_ship_shield_attuner_2 = {
 
 #SHIP ARMOR + SHIP UPKEEP ALLOYS
 building_ship_armor_compressor_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_time
 
 	category = army
 
@@ -93,7 +93,7 @@ building_ship_armor_compressor_1 = {
 }
 
 building_ship_armor_compressor_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_time
 	can_build = no
 
 	category = army
@@ -128,7 +128,7 @@ building_ship_armor_compressor_2 = {
 
 #SHIP ARMOR COMPRESSORS
 building_ship_armor_compressor_production_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_advanced_time
 
 	category = resources
 
@@ -160,7 +160,7 @@ building_ship_armor_compressor_production_1 = {
 }
 
 building_ship_armor_compressor_production_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_advanced_time
 	can_build = no
 
 	category = resources
@@ -194,7 +194,7 @@ building_ship_armor_compressor_production_2 = {
 
 #SHIP SHIELD CAPACITORS
 building_ship_shield_capacitor_production_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_advanced_time
 
 	category = resources
 
@@ -226,7 +226,7 @@ building_ship_shield_capacitor_production_1 = {
 }
 
 building_ship_shield_capacitor_production_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_advanced_time
 	can_build = no
 
 	category = resources

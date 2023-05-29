@@ -1,4 +1,4 @@
-#DISTRICT (local)
+#DISTRICT (local to planet)
 planet_accommodation_overseer = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
@@ -25,7 +25,7 @@ planet_accommodation_overseer = {
 	planet_modifier = {
 		planet_max_districts_add = 2
 		planet_districts_cost_mult = 0.1
-		planet_building_build_speed_mult = -0.05
+		planet_building_build_speed_mult = -0.15
 	}
 
 	weight = {
@@ -72,7 +72,7 @@ planet_research_overseer = {
 	}
 }
 
-#BUILD SPEED
+#BUILD SPEED (country)
 planet_build_speed_overseer = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER

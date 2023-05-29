@@ -4,7 +4,7 @@
 
 #STARBASE DAMAGE AND HULL PERCENTAGE + UPKEEP
 building_starbase_integrity_overseer_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_time
 
 	category = army
 
@@ -34,7 +34,7 @@ building_starbase_integrity_overseer_1 = {
 }
 
 building_starbase_integrity_overseer_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_time
 	can_build = no
 
 	category = army
@@ -66,7 +66,7 @@ building_starbase_integrity_overseer_2 = {
 
 #STARBASE HULL FLAT + UPGRADE COST AND UPGRADE SPEED
 building_starbase_schematics_engineering_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_time
 
 	category = army
 
@@ -99,7 +99,7 @@ building_starbase_schematics_engineering_1 = {
 }
 
 building_starbase_schematics_engineering_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b3_time
 	can_build = no
 
 	category = army
@@ -135,7 +135,7 @@ building_starbase_schematics_engineering_2 = {
 
 #STARBASE UPGRADE SPEED
 building_starbase_upgrade_overseer_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b1_time
 
 	category = army	
 
@@ -164,7 +164,7 @@ building_starbase_upgrade_overseer_1 = {
 }
 
 building_starbase_upgrade_overseer_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_time
 	can_build = no
 
 	category = army	
@@ -199,7 +199,7 @@ building_starbase_upgrade_overseer_2 = {
 
 #STARBASE PROTOTYPE PARTS
 building_starbase_prototype_parts_production_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b1_advanced_time
 
 	category = resources
 
@@ -230,7 +230,7 @@ building_starbase_prototype_parts_production_1 = {
 }
 
 building_starbase_prototype_parts_production_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_advanced_time
 	can_build = no
 
 	category = resources
@@ -263,7 +263,7 @@ building_starbase_prototype_parts_production_2 = {
 
 #STARBASE PROTOTYPE SCHEMATICS
 building_starbase_prototype_schematics_production_1 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b1_advanced_time
 
 	category = resources
 
@@ -298,7 +298,7 @@ building_starbase_prototype_schematics_production_1 = {
 }
 
 building_starbase_prototype_schematics_production_2 = {
-	base_buildtime = @b1_time
+	base_buildtime = @stellaris_incremental_b2_advanced_time
 	can_build = no
 
 	category = resources
