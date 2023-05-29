@@ -61,6 +61,20 @@ station_improvement_hub_0 = {
 					is_moon = yes
 				}
 			}
+			NOR = {
+				has_planet_flag = megastructure
+				has_planet_flag = has_megastructure
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam
+				is_planet_class = pc_ringworld_seam_damaged
+				is_planet_class = pc_habitat
+			}
 			custom_tooltip = {
 				fail_text = "requires_not_star"
 				is_star = no
@@ -95,7 +109,18 @@ station_improvement_hub_0 = {
 
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
 }
 
 
@@ -384,6 +409,7 @@ station_improvement_hub_6 = {
 }
 
 #SURVEYING AT STAGE 6
+#The propsecting isn't supposed to take up mega cap, as such there are modifiers to mega cap added when doing it.
 
 #ONE TIME
 station_improvement_hub_survey_one = {
@@ -395,7 +421,7 @@ station_improvement_hub_survey_one = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 5000
+			energy = 10000
 		}
 	}
 
@@ -403,11 +429,20 @@ station_improvement_hub_survey_one = {
 		station_improvement_hub_6
 	}
 
+	construction_blocks_and_blocked_by = none
 	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
 	#show_prereqs = yes
 
-	on_build_start = {}
-	on_build_cancel = {}
+	on_build_start = {
+		owner = {
+			country_event = { id = stellaris_incremental.2 }
+		}
+	}
+	on_build_cancel = {
+		owner = {
+			country_event = { id = stellaris_incremental.3 }
+		}
+	}
 	on_build_complete = {
 		fromfrom.planet = {
 			save_global_event_target_as = stellaris_incremental_mega_survey_planet
@@ -421,6 +456,7 @@ station_improvement_hub_survey_one = {
 		}
 		owner = {
 			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.3 }
 		}
 		
 		remove_megastructure = fromfrom
@@ -440,7 +476,7 @@ station_improvement_hub_survey_five = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 25000
+			energy = 50000
 		}
 	}
 
@@ -448,11 +484,20 @@ station_improvement_hub_survey_five = {
 		station_improvement_hub_6
 	}
 
+	construction_blocks_and_blocked_by = none 
 	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
 	#show_prereqs = yes
 
-	on_build_start = {}
-	on_build_cancel = {}
+	on_build_start = {
+		owner = {
+			country_event = { id = stellaris_incremental.2 }
+		}
+	}
+	on_build_cancel = {
+		owner = {
+			country_event = { id = stellaris_incremental.3 }
+		}
+	}
 	on_build_complete = {
 		fromfrom.planet = {
 			save_global_event_target_as = stellaris_incremental_mega_survey_planet
@@ -470,6 +515,7 @@ station_improvement_hub_survey_five = {
 			country_event = { id = stellaris_incremental.1 }
 			country_event = { id = stellaris_incremental.1 }
 			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.3 }
 		}
 		
 		remove_megastructure = fromfrom
@@ -489,7 +535,7 @@ station_improvement_hub_survey_twenty_five = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 125000
+			energy = 250000
 		}
 	}
 
@@ -497,11 +543,20 @@ station_improvement_hub_survey_twenty_five = {
 		station_improvement_hub_6
 	}
 
+	construction_blocks_and_blocked_by = none 
 	prerequisites = { stellaris_incremental_tech_station_oversight_6 }
 	#show_prereqs = yes
 
-	on_build_start = {}
-	on_build_cancel = {}
+	on_build_start = {
+		owner = {
+			country_event = { id = stellaris_incremental.2 }
+		}
+	}
+	on_build_cancel = {
+		owner = {
+			country_event = { id = stellaris_incremental.3 }
+		}
+	}
 	on_build_complete = {
 		fromfrom.planet = {
 			save_global_event_target_as = stellaris_incremental_mega_survey_planet
@@ -539,6 +594,7 @@ station_improvement_hub_survey_twenty_five = {
 			country_event = { id = stellaris_incremental.1 }
 			country_event = { id = stellaris_incremental.1 }
 			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.3 }
 		}
 		
 		remove_megastructure = fromfrom

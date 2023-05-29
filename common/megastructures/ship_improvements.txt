@@ -65,6 +65,20 @@ ship_improvement_hub_armor_0 = {
 					is_moon = yes
 				}
 			}
+			NOR = {
+				has_planet_flag = megastructure
+				has_planet_flag = has_megastructure
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam
+				is_planet_class = pc_ringworld_seam_damaged
+				is_planet_class = pc_habitat
+			}
 			custom_tooltip = {
 				fail_text = "requires_not_star"
 				is_star = no
@@ -99,7 +113,18 @@ ship_improvement_hub_armor_0 = {
 
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
 }
 
 
@@ -124,7 +149,7 @@ ship_improvement_hub_armor_1 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_0
+		ship_improvement_hub_armor_0
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight }
@@ -160,7 +185,7 @@ ship_improvement_hub_armor_2 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_1
+		ship_improvement_hub_armor_1
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_2 }
@@ -195,7 +220,7 @@ ship_improvement_hub_armor_3 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_2
+		ship_improvement_hub_armor_2
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_3 }
@@ -222,7 +247,7 @@ ship_improvement_hub_armor_4 = {
 
 		produces = {
 			alloys = 270
-			ship_armor_compressor_tool = 15
+			ship_armor_compressor_tool = 16
 		}
 
 		upkeep = {
@@ -231,7 +256,7 @@ ship_improvement_hub_armor_4 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_3
+		ship_improvement_hub_armor_3
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_4 }
@@ -268,7 +293,7 @@ ship_improvement_hub_armor_5 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_4
+		ship_improvement_hub_armor_4
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_5 }
@@ -345,6 +370,20 @@ ship_improvement_hub_shield_0 = {
 					is_moon = yes
 				}
 			}
+			NOR = {
+				has_planet_flag = megastructure
+				has_planet_flag = has_megastructure
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam
+				is_planet_class = pc_ringworld_seam_damaged
+				is_planet_class = pc_habitat
+			}
 			custom_tooltip = {
 				fail_text = "requires_not_star"
 				is_star = no
@@ -379,7 +418,18 @@ ship_improvement_hub_shield_0 = {
 
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
 }
 
 
@@ -404,7 +454,7 @@ ship_improvement_hub_shield_1 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_0
+		ship_improvement_hub_shield_0
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight }
@@ -440,7 +490,7 @@ ship_improvement_hub_shield_2 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_1
+		ship_improvement_hub_shield_1
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_2 }
@@ -486,7 +536,7 @@ ship_improvement_hub_shield_3 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_2
+		ship_improvement_hub_shield_2
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_3 }
@@ -533,7 +583,7 @@ ship_improvement_hub_shield_4 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_3
+		ship_improvement_hub_shield_3
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_4 }
@@ -581,7 +631,7 @@ ship_improvement_hub_shield_5 = {
 	}
 
 	upgrade_from = {
-		starbase_improvement_hub_4
+		ship_improvement_hub_shield_4
 	}
 
 	prerequisites = { stellaris_incremental_tech_ship_oversight_5 }

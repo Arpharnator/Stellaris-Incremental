@@ -64,6 +64,20 @@
 #					is_moon = yes
 #				}
 #			}
+#NOR = {
+#	has_planet_flag = megastructure
+#	has_planet_flag = has_megastructure
+#	solar_system = {
+#		has_star_flag = ring_world_built
+#	}
+#	is_planet_class = pc_ringworld_habitable
+#	is_planet_class = pc_ringworld_habitable_damaged
+#	is_planet_class = pc_ringworld_tech
+#	is_planet_class = pc_ringworld_tech_damaged
+#	is_planet_class = pc_ringworld_seam
+#	is_planet_class = pc_ringworld_seam_damaged
+#	is_planet_class = pc_habitat
+#}
 #			custom_tooltip = {
 #				fail_text = "requires_not_star"
 #				is_star = no
@@ -98,7 +112,18 @@
 #
 #	on_build_start = {}
 #	on_build_cancel = {}
-#	on_build_complete = {}
+#	on_build_complete = {
+#	fromfrom.planet = {
+#		set_planet_flag = has_megastructure
+#
+#		if = {
+#			limit = { has_orbital_station = yes }
+#			orbital_station = {
+#				dismantle = yes
+#			}
+#		}
+#	}
+#}
 #}
 
 # Mega Art Installation 1

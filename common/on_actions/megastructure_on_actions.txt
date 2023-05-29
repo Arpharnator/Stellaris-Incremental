@@ -3,3 +3,10 @@
 #		stellaris_incremental.100 #Update variables for max buildings and job numbers
 #	} 
 #} 
+
+
+on_game_start_country = {
+    events = {
+        stellaris_incremental.4
+    }
+}

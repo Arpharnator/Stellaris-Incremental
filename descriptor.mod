@@ -1,11 +1,10 @@
-version="3.6"
+version="3.8"
 tags={
 	"Gameplay"
-	"Species"
 	"Technologies"
 	"Economy"
 	"Buildings"
 	"Balance"
 }
 name="Stellaris Incremental"
-supported_version="3.6.1"
+supported_version="3.8.*"

@@ -1,0 +1,4 @@
+prospecting_mega_cap_adjustment = {
+	country_megastructure_build_cap_add = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+}
