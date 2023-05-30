@@ -14,3 +14,6 @@
  mod_shipsize_starbase_starhold_hull_add: "Starhold Base Hull Points"
  mod_shipsize_starbase_starfortress_hull_add: "Star Fortress Base Hull Points"
  mod_shipsize_starbase_citadel_hull_add: "Citadel Base Hull Points"
+
+#PROSPECTING MEGA CAP
+ prospecting_mega_cap_adjustment: "Prospection Megastructure Build Capacity Adjustment"

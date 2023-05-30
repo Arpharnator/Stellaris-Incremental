@@ -290,6 +290,23 @@ country_event = {
 	}
 }
 
+#Adding mega cap when prospecting
+country_event = {
+	id = stellaris_incremental.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_modifier = prospecting_mega_cap_adjustment
+		change_variable = { which = prospecting_ongoing_amount value = 1 }
+		add_modifier = {
+			modifier = prospecting_mega_cap_adjustment
+			days = -1
+			multiplier = prospecting_ongoing_amount
+		}
+	}
+}
+
 #Reduce mega cap once done
 country_event = {
 	id = stellaris_incremental.3
@@ -297,9 +314,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_modifier = {
-			modifier = prospecting_mega_cap_adjustment
-		}
+		remove_modifier = prospecting_mega_cap_adjustment
 		subtract_variable = { which = prospecting_ongoing_amount value = 1 }
 		add_modifier = {
 			modifier = prospecting_mega_cap_adjustment
@@ -309,22 +324,5 @@ country_event = {
 	}
 }
 
-#Adding mega cap when prospecting
-country_event = {
-	id = stellaris_incremental.2
-	hide_window = yes
-	is_triggered_only = yes
 
-	immediate = {
-		remove_modifier = {
-			modifier = prospecting_mega_cap_adjustment
-		}
-		change_variable = { which = prospecting_ongoing_amount value = 1 }
-		add_modifier = {
-			modifier = prospecting_mega_cap_adjustment
-			days = -1
-			multiplier = prospecting_ongoing_amount
-		}
-	}
-}
 

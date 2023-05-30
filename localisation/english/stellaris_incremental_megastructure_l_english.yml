@@ -1,4 +1,5 @@
 ﻿l_english:
+ #STATION MEGASTRUCTURE
  station_improvement_hub_0: "Offworld Data Mainframe Site"
  station_improvement_hub_0_DESC: "The construction site serves as the base for the future construction of an Offworld Data Mainframe."
  station_improvement_hub_0_MEGASTRUCTURE_DETAILS: "A facility dedicated to enhancing civilian stations, increasing station ouput."
@@ -15,6 +16,17 @@
  station_improvement_hub_6: "Offworld Data Mainframe : Prospection"
  station_improvement_hub_6_DESC: "A new, more novel way of increasing production through the Offworld Data Mainframe is through training and using teams of prospectors, working alongside scientists to uncover valuable deposits."
 
+ #PROSPECTING
+ station_improvement_hub_survey_one: "Dispatch Prospecting Team"
+ station_improvement_hub_survey_one_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ station_improvement_hub_survey_five: "Dispatch 5 Prospecting Teams"
+ station_improvement_hub_survey_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ station_improvement_hub_survey_twenty_five: "Dispatch 25 Prospecting Teams"
+ station_improvement_hub_survey_twenty_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
+ stellaris_incremental.1.name:0 "Prospecting Team Dispatched"
+ stellaris_incremental.1.desc:0 "The Prospection Teams we dispatched have discovered a new resource deposit located on §H[chosen_planet.GetName]§!!"
+
+ #STARBASE MEGASTRUCTURE
  starbase_improvement_hub_0: "Starbase Engineering Hub Site"
  starbase_improvement_hub_0_DESC: "The construction site serves as the base for the future construction of a Starbase Engineering Hub."
  starbase_improvement_hub_0_MEGASTRUCTURE_DETAILS: "A facility dedicated to enhancing starbase defenses, with a preference for increasing survivability."
@@ -29,12 +41,30 @@
  starbase_improvement_hub_5: "Starbase Engineering Hub : Advanced Simulator"
  starbase_improvement_hub_5_DESC: "Expanding the scope of a supercomputer to run advanced simulations all within a limited space is costly, but profitable, as accuracy of simulations improve, allowing the Starbase Engineering Hub to provide more ideas to sort the feasibility of on onworld facilities."
 
- station_improvement_hub_survey_one: "Dispatch Prospecting Team"
- station_improvement_hub_survey_one_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
- station_improvement_hub_survey_five: "Dispatch 5 Prospecting Teams"
- station_improvement_hub_survey_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
- station_improvement_hub_survey_twenty_five: "Dispatch 25 Prospecting Teams"
- station_improvement_hub_survey_twenty_five_DESC: "Dispatching prospecting teams will allow us to uncover new deposits or have existing ones provide more."
- stellaris_incremental.1.name:0 "Prospecting Team Dispatched"
- stellaris_incremental.1.desc:0 "The Prospection Teams we dispatched have discovered a new resource deposit located on §H[chosen_planet.GetName]§!!"
- 
+ #SHIP ARMOR MEGASTRUCTURE
+ ship_improvement_hub_armor_0: "Armor Compressor Factory Site"
+ ship_improvement_hub_armor_0_DESC: "The construction site serves as the base for the future construction of an Armor Compressor Factory."
+ ship_improvement_hub_armor_1: "Armor Compressor Factory"
+ ship_improvement_hub_armor_1_DESC: "This spaceborne facility produces tools to compress armor on a massive scale, alongside some alloys."
+ ship_improvement_hub_armor_2: "Armor Compressor Factory : Foundries"
+ ship_improvement_hub_armor_2_DESC: "Adding foundries inside of the facility allows it to refine raw materials into alloys alongside help test more of the armor compressors produced, thus increasing how many are viable to use."
+ ship_improvement_hub_armor_3: "Armor Compressor Factory : Database"
+ ship_improvement_hub_armor_3_DESC: "We are able to create and test large amounts of our tools, however we keep making the same mistakes over and over again. Adding a centralized data storage solution to this facility will allow us to avoid making the same mistakes again."
+ ship_improvement_hub_armor_4: "Armor Compressor Factory : Pressurization"
+ ship_improvement_hub_armor_4_DESC: "Changing the environment in which our tools and alloys are made allow for far greater efficiency."
+ ship_improvement_hub_armor_5: "Armor Compressor Factory : Megafoundries"
+ ship_improvement_hub_armor_5_DESC: "Achieving the perfect environment and processes mean that what we need now are more foundries to fully take advantage of the potential of this facility."
+
+ #SHIP SHIELD MEGASTRUCTURE
+ ship_improvement_hub_shield_0: "Shield Capacitor Factory Site"
+ ship_improvement_hub_shield_0_DESC: "The construction site serves as the base for the future construction of a Shield Capacitor Factory."
+ ship_improvement_hub_armor_1: "Shield Capacitor Factory"
+ ship_improvement_hub_armor_1_DESC: "This spaceborne facility produces tools to upgrade our shield's capacity, and increases our understanding of physics as a byproduct."
+ ship_improvement_hub_armor_2: "Shield Capacitor Factory : Capacitors"
+ ship_improvement_hub_armor_2_DESC: "In order to provide the energy needed for our experiments within this facility, we need a way to receive and store large amounts of energy. The capacitors we are building will be central to solving this problem."
+ ship_improvement_hub_armor_3: "Shield Capacitor Factory : Database"
+ ship_improvement_hub_armor_3_DESC: "The best research can only be conducted when its results can be written down and reused later on. A massive database will be a great boon to this facility."
+ ship_improvement_hub_armor_4: "Shield Capacitor Factory : Pressurization"
+ ship_improvement_hub_armor_4_DESC: "Being able to change the environment in which our experiments take place is an integral component in the making of things exposed to the void of space and fluctuating conditions."
+ ship_improvement_hub_armor_5: "Shield Capacitor Factory : Megacapacitors"
+ ship_improvement_hub_armor_5_DESC: "Achieving the perfect environment and processes mean that what we need now are more capacitors to fully take advantage of the potential of this facility."
