@@ -510,11 +510,7 @@ station_improvement_hub_survey_five = {
 			}
 		}
 		owner = {
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.5 }
 			country_event = { id = stellaris_incremental.3 }
 		}
 		
@@ -569,31 +565,7 @@ station_improvement_hub_survey_twenty_five = {
 			}
 		}
 		owner = {
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
-			country_event = { id = stellaris_incremental.1 }
+			country_event = { id = stellaris_incremental.6 }
 			country_event = { id = stellaris_incremental.3 }
 		}
 		

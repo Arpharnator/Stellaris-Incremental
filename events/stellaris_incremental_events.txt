@@ -3,279 +3,33 @@ namespace = stellaris_incremental
 #Prospecting new resources through the station megastructure
 country_event = {
 	id = stellaris_incremental.1
-	title = stellaris_incremental.1.name
-	desc = stellaris_incremental.1.desc
-	picture = GFX_evt_mining_operations
-	location = event_target:chosen_planet
-
+	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-		random_planet_within_border = {
-			limit = {
-				habitable_planet = no
-				is_artificial = no
-				NOR = {
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-				}
-				# check that the random list won't come up empty
-				OR = {
-					energy_candidate = yes
-					mineral_candidate = yes
-					research_candidate = yes
-					alloy_candidate = yes
-					exotic_gas_candidate = yes
-					rare_crystal_candidate = yes
-					volatile_motes_candidate = yes
-					ROOT = { is_gestalt = no }
-				}
-			}
-			save_event_target_as = chosen_planet
-		}
-	}
-
-	option = {
-		name = EXCELLENT
-
-		locked_random_list = {
-
-			# Energy
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { energy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_energy_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { energy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_energy_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { energy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_energy_9 }
-			}
-
-			# Minerals
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { mineral_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_minerals_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { mineral_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_minerals_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { mineral_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_minerals_9 }
-			}
-
-			# Physics
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_physics_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_physics_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_physics_9 }
-			}
-
-			# Society
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_society_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_society_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_society_9 }
-			}
-
-			# Engineering
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_engineering_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_engineering_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { research_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_engineering_9 }
-			}
-
-			# Trade
-			10 = {
-				modifier = {
-					factor = 0
-					is_gestalt = yes
-				}
-				event_target:chosen_planet = { add_deposit = d_trade_value_5 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					is_gestalt = yes
-				}
-				event_target:chosen_planet = { add_deposit = d_trade_value_7 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					is_gestalt = yes
-				}
-				event_target:chosen_planet = { add_deposit = d_trade_value_9 }
-			}
-
-			# Alloys
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { alloy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_alloys_3 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { alloy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_alloys_4 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { alloy_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_alloys_5 }
-			}
-
-			# Exotic Gas
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { exotic_gas_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_exotic_gases_1 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { exotic_gas_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_exotic_gases_2 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { exotic_gas_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_exotic_gases_3 }
-			}
-
-			# Rare Crystals
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { rare_crystal_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_rare_crystals_1 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { rare_crystal_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_rare_crystals_2 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { rare_crystal_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_rare_crystals_3}
-			}
-
-			# Volatile Motes
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { volatile_motes_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_volatile_motes_1 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { volatile_motes_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_volatile_motes_2 }
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					event_target:chosen_planet = { volatile_motes_candidate = no }
-				}
-				event_target:chosen_planet = { add_deposit = d_volatile_motes_3 }
-			}
-		}
+		add_resource_to_planetoid = { COUNT = 1 }
 	}
 }
 
+country_event = {
+	id = stellaris_incremental.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_resource_to_planetoid = { COUNT = 5 }
+	}
+}
+
+country_event = {
+	id = stellaris_incremental.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_resource_to_planetoid = { COUNT = 25 }
+	}
+}
 #gamestart event
 country_event = {
 	id = stellaris_incremental.4
