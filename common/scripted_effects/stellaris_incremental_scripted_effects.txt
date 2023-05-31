@@ -47,12 +47,10 @@ add_resource_to_planetoid = {
 				OR = {
 					energy_candidate = yes
 					mineral_candidate = yes
-					research_candidate = yes
 					alloy_candidate = yes
 					exotic_gas_candidate = yes
 					rare_crystal_candidate = yes
 					volatile_motes_candidate = yes
-					ROOT = { is_gestalt = no }
 				}
 			}
 			save_event_target_as = chosen_planet
@@ -102,99 +100,7 @@ add_resource_to_planetoid = {
 						event_target:chosen_planet = { mineral_candidate = no }
 					}
 					event_target:chosen_planet = { add_deposit = d_minerals_9 }
-				}
-	
-				# Physics
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_physics_5 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_physics_7 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_physics_9 }
-				}
-	
-				# Society
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_society_5 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_society_7 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_society_9 }
-				}
-	
-				# Engineering
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_engineering_5 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_engineering_7 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						event_target:chosen_planet = { research_candidate = no }
-					}
-					event_target:chosen_planet = { add_deposit = d_engineering_9 }
-				}
-	
-				# Trade
-				10 = {
-					modifier = {
-						factor = 0
-						is_gestalt = yes
-					}
-					event_target:chosen_planet = { add_deposit = d_trade_value_5 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						is_gestalt = yes
-					}
-					event_target:chosen_planet = { add_deposit = d_trade_value_7 }
-				}
-				10 = {
-					modifier = {
-						factor = 0
-						is_gestalt = yes
-					}
-					event_target:chosen_planet = { add_deposit = d_trade_value_9 }
-				}
+				}	
 	
 				# Alloys
 				10 = {

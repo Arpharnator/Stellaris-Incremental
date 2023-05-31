@@ -212,7 +212,7 @@ building_starbase_prototype_parts_production_1 = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 45
+			alloys = 30
 		}
 	}
 
@@ -248,7 +248,7 @@ building_starbase_prototype_parts_production_2 = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 45
+			alloys = 30
 		}
 	}
 

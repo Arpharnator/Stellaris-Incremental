@@ -26,3 +26,19 @@
  job_starbase_prototype_parts_fabricator: "Starbase Experimental Artisan"
  job_starbase_prototype_parts_fabricator_plural: "Station Experimental Artisans"
  job_starbase_prototype_parts_fabricator_desc: "Tasked with innovating based on current components or not, the Starbase Experimental Artisan creates what is experimented on, and sometimes used in actual designs after the concept is refined."
+
+ job_ship_shield_attuner: "Shield Capacitor Scientist"
+ job_ship_shield_attuner_plural: "Shield Capacitor Scientists"
+ job_ship_shield_attuner_desc: "Expert scientists in the field of physics, handling shield capacitors, they integrate these tools into our shields to boost their capacity."
+
+ job_ship_armor_compressor: "Armor Compressor Artificer"
+ job_ship_armor_compressor_plural: "Armor Compressor Artificers"
+ job_ship_armor_compressor_desc: "Connoisseurs in the realm of alloys and armor, they know best how to use armor compressors to increase the density of our armor."
+
+ job_ship_shield_capacitor_assembler: "Shield Capacitor Assembler"
+ job_ship_shield_capacitor_assembler_plural: "Shield Capacitor Assemblers"
+ job_ship_shield_capacitor_assembler_desc: "Working in a high tech environment that uses a lot of energy, they are tasked with creating shield capacitors to be used by others."
+ 
+ job_ship_armor_compressor_assembler: "Armor Compressor Assembler"
+ job_ship_armor_compressor_assembler_plural: "Armor Compressor Assemblers"
+ job_ship_armor_compressor_assembler_desc: "Using raw resources alongside some materials that have undergone travel through the void of space, the Armor Compressor Assembler makes armor compressors, which are to be used by someone else."

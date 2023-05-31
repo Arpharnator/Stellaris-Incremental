@@ -218,7 +218,7 @@ starbase_prototype_parts_fabricator = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 60
+			alloys = 45
 		}
 	}
 

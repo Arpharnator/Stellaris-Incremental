@@ -194,9 +194,9 @@ planet_improvement_hub_district_2 = {
 	show_prereqs = yes
 }
 
-planet_improvement_hub_district_2 = {
-	entity = "mega_art_institution_stage_2_entity"
-	construction_entity = "mega_art_institution_stage_2_entity"
+planet_improvement_hub_district_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
@@ -794,8 +794,8 @@ planet_improvement_hub_research_1 = {
 		}
 
 		upkeep = {
-			energy = 187
-			exotic_gases = 15
+			energy = 200
+			exotic_gases = 20
 		}
 	}
 
@@ -807,9 +807,9 @@ planet_improvement_hub_research_1 = {
 	show_prereqs = yes
 
 	country_modifier = {
-		planet_researchers_engineering_research_produces_mult = 0.05
-		planet_researchers_physics_research_produces_mult = 0.05
-		planet_researchers_society_research_produces_mult = 0.05
+		planet_researchers_engineering_research_produces_mult = 0.02
+		planet_researchers_physics_research_produces_mult = 0.02
+		planet_researchers_society_research_produces_mult = 0.02
 	}
 }
 
@@ -832,22 +832,22 @@ planet_improvement_hub_research_2 = {
 		}
 
 		upkeep = {
-			energy = 375
-			exotic_gases = 30
+			energy = 700
+			exotic_gases = 70
 		}
 	}
 
 	upgrade_from = {
-		planet_improvement_hub_research_0
+		planet_improvement_hub_research_1
 	}
 
 	prerequisites = { stellaris_incremental_tech_planet_research_oversight_2 }
 	show_prereqs = yes
 
 	country_modifier = {
-		planet_researchers_engineering_research_produces_mult = 0.05
-		planet_researchers_physics_research_produces_mult = 0.05
-		planet_researchers_society_research_produces_mult = 0.05
+		planet_researchers_engineering_research_produces_mult = 0.02
+		planet_researchers_physics_research_produces_mult = 0.02
+		planet_researchers_society_research_produces_mult = 0.02
 	}
 }
 

@@ -140,7 +140,7 @@ starbase_improvement_hub_1 = {
 		}
 
 		upkeep = {
-			alloys = 30
+			alloys = 20
 		}
 	}
 
@@ -176,7 +176,7 @@ starbase_improvement_hub_2 = {
 		}
 
 		upkeep = {
-			alloys = 90
+			alloys = 60
 		}
 	}
 
@@ -184,7 +184,7 @@ starbase_improvement_hub_2 = {
 		starbase_improvement_hub_1
 	}
 
-	prerequisites = { stellaris_incremental_tech_starbase_oversight }
+	prerequisites = { stellaris_incremental_tech_starbase_oversight_2 }
 
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
@@ -223,7 +223,7 @@ starbase_improvement_hub_3 = {
 		}
 
 		upkeep = {
-			alloys = 150
+			alloys = 100
 			energy = 40
 			engineering_research = 30
 			society_research = 30
@@ -280,7 +280,7 @@ starbase_improvement_hub_4 = {
 		}
 
 		upkeep = {
-			alloys = 270
+			alloys = 180
 			energy = 120
 			engineering_research = 90
 			society_research = 90
@@ -338,7 +338,7 @@ starbase_improvement_hub_5 = {
 		}
 
 		upkeep = {
-			alloys = 630
+			alloys = 420
 			energy = 420
 			engineering_research = 195
 			society_research = 195

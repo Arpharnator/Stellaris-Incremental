@@ -1,12 +1,12 @@
 station_data_feed = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_station_data_feed_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -17,12 +17,12 @@ station_data_feed = {
 starbase_prototype_parts = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_starbase_prototype_parts_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -33,12 +33,12 @@ starbase_prototype_parts = {
 starbase_prototype_schematics = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_starbase_prototype_schematics_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -49,12 +49,12 @@ starbase_prototype_schematics = {
 ship_shield_capacitor = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_ship_shield_capacitor_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -65,12 +65,12 @@ ship_shield_capacitor = {
 ship_armor_compressor_tool = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_ship_compressor_tool_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -81,12 +81,12 @@ ship_armor_compressor_tool = {
 planet_district_expansion_cores = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_planet_district_expansion_cores_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -97,12 +97,12 @@ planet_district_expansion_cores = {
 planet_district_build_cores = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_planet_district_build_cores_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -113,12 +113,12 @@ planet_district_build_cores = {
 planet_research_methods = {
 	tradable = no
 	category = rare
-	max = 1000000
+	max = 10000000
 
 	deficit_situation = situation_planet_district_build_cores_deficit
 
 	ai_weight = {
-		weight = 20
+		weight = 10
 	}
 
 	ai_wants = {
@@ -129,7 +129,7 @@ planet_research_methods = {
 #megastructure_parts = {
 #	tradable = no
 #	category = rare
-#	max = 1000000
+#	max = 10000000
 #
 #	deficit_situation = situation_megastructure_parts_deficit
 #

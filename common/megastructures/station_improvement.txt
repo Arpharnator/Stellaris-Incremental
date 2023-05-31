@@ -421,7 +421,8 @@ station_improvement_hub_survey_one = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 10000
+			energy = 5000
+			station_data_feed = 500
 		}
 	}
 
@@ -476,7 +477,8 @@ station_improvement_hub_survey_five = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 50000
+			energy = 25000
+			station_data_feed = 2500
 		}
 	}
 
@@ -531,7 +533,8 @@ station_improvement_hub_survey_twenty_five = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 250000
+			energy = 125000
+			station_data_feed = 12500
 		}
 	}
 

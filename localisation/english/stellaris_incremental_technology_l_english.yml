@@ -1,5 +1,7 @@
 ﻿l_english:
 #ENGINEERING
+
+#STATION
  stellaris_incremental_tech_station_oversight: "Offworld Data Mainframes"
  stellaris_incremental_tech_station_oversight_desc: "Advances in communication technologies allow for centralizing processes, giving birth to megaprocessing stations."
  stellaris_incremental_tech_station_oversight_2: "Auxiliary Data Repartition"
@@ -13,6 +15,7 @@
  stellaris_incremental_tech_station_oversight_6: "Mega Prospecting Corps"
  stellaris_incremental_tech_station_oversight_6_desc: "New prospecting methods and large means given to prospecting efforts render previously out of reach or unworthwhile resources to exploit available to our empire."
 
+#STARBASE
  stellaris_incremental_tech_starbase_oversight: "Starbase Engineering Hub"
  stellaris_incremental_tech_starbase_oversight_desc: "Prototyping and theorizing about new schematics or applications of engineering in starbases is better in dedicated Zero-G environment."
  stellaris_incremental_tech_starbase_oversight_2: "Zero-G Planetary Installations"
@@ -22,4 +25,33 @@
  stellaris_incremental_tech_starbase_oversight_4: "Bastion Simulations"
  stellaris_incremental_tech_starbase_oversight_4_desc: "The ability to simulate what would happen to a starbase would it be attacked by various weapons allows to greatly improve results and efficiency when revising starbase design."
  stellaris_incremental_tech_starbase_oversight_5: "Advanced Bastion Simulations"
- stellaris_incremental_tech_starbase_oversight_5_desc: "Better hardware and algorithms create optimal conditions for gethering data, testing proposals, implementing them, all this while never stepping foot into a starbase."
+ stellaris_incremental_tech_starbase_oversight_5_desc: "Better hardware and algorithms create optimal conditions for gathering data, testing proposals, implementing them, all this while never stepping inside a starbase."
+
+#SHIPS
+ stellaris_incremental_tech_ship_oversight: "Defensive Components Spaceborne Production Chain"
+ stellaris_incremental_tech_ship_oversight_desc: "Devising ways of producing our defensive components in space will greatly bolster our defensive capabilities through the use of massive space facilities."
+ stellaris_incremental_tech_ship_oversight_2: "Zero-G Planetside Defensive Industries"
+ stellaris_incremental_tech_ship_oversight_2_desc: "Recent innovations in the realm of our production of defensive components allows us to manufacture tools to help increase our defensive capabilities. These however must be used planetside."
+ stellaris_incremental_tech_ship_oversight_3: "Defensive Industries Miniaturization"
+ stellaris_incremental_tech_ship_oversight_3_desc: "Minimizing the amount of space taken by our factories in charge of producing armor compressors and shield capacitors allows us to recreate them planetside, but without the advantages of spaceborne transportation."
+ stellaris_incremental_tech_ship_oversight_4: "Defensive Factories Hyper-Pressurization"
+ stellaris_incremental_tech_ship_oversight_4_desc: "Larger planetside facilities are made possible due to advances in pressurization."
+ stellaris_incremental_tech_ship_oversight_5: "Defensive Industries Mega-Production"
+ stellaris_incremental_tech_ship_oversight_5_desc: "Better storage methods, compression methods, insulation methods can be used to overhaul our treatment mechanisms used in our spaceborne mega-industry."
+ 
+ #PLANET
+ stellaris_incremental_tech_planet_oversight: "Megascale Planetary Assembly"
+ stellaris_incremental_tech_planet_oversight_desc: "Preparing our materials and fabricating the components needed inside massive spaceborne factories greatly increases the speed at which we build things."
+ stellaris_incremental_tech_planet_oversight_2: "Power Cores"
+ stellaris_incremental_tech_planet_oversight_2_desc: "The invention of cores able to store and send energy within a limited range can be of great help in building planetside."
+ stellaris_incremental_tech_planet_oversight_3: "Gravity Cores"
+ stellaris_incremental_tech_planet_oversight_3_desc: "Spheres of high density, able to attract objects have been a dream of scientists in the past. Now manufacturable, the most basic form can be used to increase the district density on our planets."
+ stellaris_incremental_tech_planet_oversight_4: "Gravitic Insulation"
+ stellaris_incremental_tech_planet_oversight_4_desc: "More work on the previously developped spheres makes us able to use more within less space, whereas before the same sphere density would produce a catastrophic accident."
+ stellaris_incremental_tech_planet_oversight_5: "Advanced Sphere Manufacturing"
+ stellaris_incremental_tech_planet_oversight_5_desc: "Our sphere production through megastructures can be increased after intensive restructuring in which we ensure our sphere storage is foolproof and insulated."
+
+ stellaris_incremental_tech_planet_research_oversight: "Self Reflection Methods"
+ stellaris_incremental_tech_planet_research_oversight_desc: "Setting up methods through which scientists are expected to self reflect and conduct research grants us great results."
+ stellaris_incremental_tech_planet_research_oversight_2: "Insight Database"
+ stellaris_incremental_tech_planet_research_oversight_2_desc: "Centralisation of data pertaining to past experiences of our scientists, and ways in which they improved themselves, sorted thanks to advanced social algorithms greatly bolsters the level of our scientists."

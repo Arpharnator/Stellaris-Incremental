@@ -7,6 +7,10 @@
  mod_job_starbase_upgrade_overseer_add: "Starbase Upgrade Overseer Jobs"
  mod_job_starbase_prototype_parts_fabricator_add: "Starbase Experimental Artisan Jobs"
  mod_job_starbase_schematics_scientist_add: "Starbase Schematics Scientist Jobs"
+ mod_job_ship_shield_attuner_add: "Shield Capacitor Scientist"
+ mod_job_ship_armor_compressor_add: "Armor Compressor Artificer"
+ mod_job_ship_shield_capacitor_assembler_add: "Shield Capacitor Assembler"
+ mod_job_ship_armor_compressor_assembler_add: "Armor Compressor Assembler"
 
  #STARBASE HULL
  mod_shipsize_starbase_outpost_hull_add: "Outpost Base Hull Points"

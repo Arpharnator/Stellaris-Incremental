@@ -22,27 +22,27 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_resource_ship_compressor_tool"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_compressor_tool.dds"
+		name = "GFX_resource_ship_armor_compressor_tool"
+		textureFile = "gfx/interface/icons/resources/ship_armor_compressor_tool.dds"
 	}
 
 	spriteType = {
 		name = "GFX_resource_ship_shield_capacitor"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+		textureFile = "gfx/interface/icons/resources/ship_shield_capacitor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_resource_planet_district_expansion_cores"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+		textureFile = "gfx/interface/icons/resources/planet_district_expansion_cores.dds"
 	}
 
 	spriteType = {
 		name = "GFX_resource_planet_district_build_cores"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+		textureFile = "gfx/interface/icons/resources/planet_district_build_cores.dds"
 	}
 
 	spriteType = {
 		name = "GFX_resource_planet_research_methods"
-		textureFile = "gfx/interface/icons/resources/placeholder_ship_shield_capacitor.dds"
+		textureFile = "gfx/interface/icons/resources/planet_research_methods.dds"
 	}
 }

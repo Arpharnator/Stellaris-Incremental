@@ -283,12 +283,12 @@ ship_improvement_hub_armor_5 = {
 		}
 
 		produces = {
-			alloys = 450
-			ship_armor_compressor_tool = 25
+			alloys = 540
+			ship_armor_compressor_tool = 32
 		}
 
 		upkeep = {
-			minerals = 3000
+			minerals = 3600
 		}
 	}
 
@@ -621,12 +621,12 @@ ship_improvement_hub_shield_5 = {
 		}
 
 		produces = {
-			physics_research = 560
-			ship_shield_capacitor = 25
+			physics_research = 675
+			ship_shield_capacitor = 32
 		}
 
 		upkeep = {
-			energy = 3750
+			energy = 4500
 		}
 	}
 
