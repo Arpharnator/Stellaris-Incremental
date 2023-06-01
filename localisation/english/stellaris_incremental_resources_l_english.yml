@@ -1,17 +1,25 @@
 ﻿l_english:
+
  station_data_feed: "Station Data"
  station_data_feed_desc: "Created and collected throughout our empire by stations exploiting deposits, then made sense of using specialized facilities, these allow us to improve our processes in the domain of space extraction."
+
  starbase_prototype_parts: "Starbase Prototype Parts"
  starbase_prototype_parts_desc: "These prototypes made for starbases can be used to improve their defenses, increasing durability and firepower."
+
  starbase_prototype_schematics: "Starbase Schematics"
  starbase_prototype_schematics_desc: "Be it a variation of a corridor from an unnamed starbase or a complete redesign of a command center, these schematics are made to improve redundancy and structural integrity in bold ways."
+
  ship_armor_compressor_tool: "Armor Compressors"
  ship_armor_compressor_tool_desc: "Tools made to compress armor in a reliable, safe, and efficient manner."
+
  ship_shield_capacitor: "Shield Capacitors"
  ship_shield_capacitor_desc: "State of the art equipment used to increase shield capacity."
+
  planet_district_expansion_cores: "Planetary Expansion Cores"
  planet_district_expansion_cores_desc: "These spheres make other objects gravitate towards them due to their immense mass. Useful in creating more habitable space, but only where other gravitational pulls exist in order to avoid having the sphere start aggregating with other objects."
+
  planet_district_build_cores: "Planetary Build Cores"
  planet_district_build_cores_desc: "Large spheres that power their retinue made out of various mobile factories."
+
  planet_research_methods: "Research Methods"
  planet_research_methods_desc: "Simply paper. But what's written on it appears to be incredibly useful when thinking about thinking."

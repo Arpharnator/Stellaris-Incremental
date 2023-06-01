@@ -17,12 +17,10 @@ stellaris_incremental_tech_station_oversight = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -39,12 +37,10 @@ stellaris_incremental_tech_station_oversight_2 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -61,12 +57,10 @@ stellaris_incremental_tech_station_oversight_3 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -83,12 +77,10 @@ stellaris_incremental_tech_station_oversight_4 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -105,12 +97,10 @@ stellaris_incremental_tech_station_oversight_5 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -127,12 +117,10 @@ stellaris_incremental_tech_station_oversight_6 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -147,12 +135,10 @@ stellaris_incremental_tech_starbase_oversight = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -166,12 +152,10 @@ stellaris_incremental_tech_starbase_oversight_2 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -185,12 +169,10 @@ stellaris_incremental_tech_starbase_oversight_3 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -204,12 +186,10 @@ stellaris_incremental_tech_starbase_oversight_4 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -223,12 +203,10 @@ stellaris_incremental_tech_starbase_oversight_5 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -243,12 +221,10 @@ stellaris_incremental_tech_ship_oversight = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -262,12 +238,10 @@ stellaris_incremental_tech_ship_oversight_2 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -281,12 +255,10 @@ stellaris_incremental_tech_ship_oversight_3 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -300,12 +272,10 @@ stellaris_incremental_tech_ship_oversight_4 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -319,12 +289,10 @@ stellaris_incremental_tech_ship_oversight_5 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -339,12 +307,10 @@ stellaris_incremental_tech_planet_oversight = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -358,12 +324,10 @@ stellaris_incremental_tech_planet_oversight_2 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -377,12 +341,10 @@ stellaris_incremental_tech_planet_oversight_3 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -396,12 +358,10 @@ stellaris_incremental_tech_planet_oversight_4 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -415,12 +375,10 @@ stellaris_incremental_tech_planet_oversight_5 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -435,12 +393,10 @@ stellaris_incremental_tech_planet_research_oversight = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -454,12 +410,10 @@ stellaris_incremental_tech_planet_research_oversight_2 = {
 	weight = @tier3weight3
 
 	weight_modifier = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 
 	ai_weight = {
-		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
@@ -474,12 +428,10 @@ stellaris_incremental_tech_planet_research_oversight_2 = {
 #	weight = @tier3weight3
 #
 #	weight_modifier = {
-#		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 #		modifier = { factor = 0 has_utopia = no }
 #	}
 #
 #	ai_weight = {
-#		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 #		modifier = { factor = 0 has_utopia = no }
 #	}
 #}
@@ -498,12 +450,10 @@ stellaris_incremental_tech_planet_research_oversight_2 = {
 #	}
 #
 #	weight_modifier = {
-#		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 #		modifier = { factor = 0 has_utopia = no }
 #	}
 #
 #	ai_weight = {
-#		modifier = { factor = value:tech_weight_likelihood research_leader = { area = engineering has_trait = "leader_trait_expertise_voidcraft" } }
 #		modifier = { factor = 0 has_utopia = no }
 #	}
 #}

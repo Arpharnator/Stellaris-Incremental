@@ -42,3 +42,15 @@
  job_ship_armor_compressor_assembler: "Armor Compressor Assembler"
  job_ship_armor_compressor_assembler_plural: "Armor Compressor Assemblers"
  job_ship_armor_compressor_assembler_desc: "Using raw resources alongside some materials that have undergone travel through the void of space, the Armor Compressor Assembler makes armor compressors, which are to be used by someone else."
+
+ job_planet_accommodation_overseer: "Planet Gravitic Sphere Handler"
+ job_planet_accommodation_overseer_plural: "Planet Gravitic Sphere Handlers"
+ job_planet_accommodation_overseer_desc: "Oversees the use of gravitic spheres in this environment, providing more space to build on."
+ 
+ job_planet_research_overseer: "Planet Research Theorist"
+ job_planet_research_overseer_plural: "Planet Research Theorists"
+ job_planet_research_overseer_desc: "Developps better research methods through the use of others insights."
+
+ job_planet_build_speed_overseer: "Planet Factory Operator"
+ job_planet_build_speed_overseer_plural: "Planet Factory Operators"
+ job_planet_build_speed_overseer_desc: "Creates the factories used bu our power spheres and oversees their remote deployment, both in space and on the planetside, without moving themselves."

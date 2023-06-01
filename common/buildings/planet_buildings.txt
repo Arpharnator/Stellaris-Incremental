@@ -38,6 +38,7 @@ building_planet_district_expansion_2 = {
 	base_buildtime = @stellaris_incremental_b3_time
 
 	category = army
+	can_build = no
 
 	planet_modifier = {
 		planet_non_artificial_max_districts_add = 2
@@ -98,6 +99,7 @@ building_planet_research_2 = {
 	base_buildtime = @stellaris_incremental_b3_time
 
 	category = army
+	can_build = no
 
 	country_modifier = {
 		planet_researchers_engineering_research_produces_mult = 0.01
@@ -159,6 +161,7 @@ building_planet_build_speed_2 = {
 	base_buildtime = @stellaris_incremental_b3_time
 
 	category = army
+	can_build = no
 
 	country_modifier = {
 		planet_building_build_speed_mult = 0.05

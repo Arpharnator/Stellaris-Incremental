@@ -1,0 +1,34 @@
+spriteTypes = {
+	#################
+	###   MEGAS   ###
+	#################
+
+	spriteType = {
+		name = "GFX_station_improvement_hub_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_6_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+}

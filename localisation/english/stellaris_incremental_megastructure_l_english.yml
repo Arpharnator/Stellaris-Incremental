@@ -70,3 +70,36 @@
  ship_improvement_hub_shield_4_DESC: "Being able to change the environment in which our experiments take place is an integral component in the making of things exposed to the void of space and fluctuating conditions."
  ship_improvement_hub_shield_5: "Shield Capacitor Factory : Megacapacitors"
  ship_improvement_hub_shield_5_DESC: "Achieving the perfect environment and processes mean that what we need now are more capacitors to fully take advantage of the potential of this facility."
+
+ #PLANET
+
+ #DISTRICTS
+ planet_improvement_hub_district_0: "Planetary Expansion Cores Factory Site"
+ planet_improvement_hub_district_0_DESC: "The construction site serves as the base for the future construction of a Planetary Expansion Cores Factory."
+ planet_improvement_hub_district_0_MEGASTRUCTURE_DETAILS: "A facility dedicated to producing spheres with a large gravitic pull, allowing denser construction on our worlds."
+ planet_improvement_hub_district_1: "Planetary Expansion Cores Factory"
+ planet_improvement_hub_district_1_DESC: "An experimental factory producing spheres we can use planetside to enhance our production capabilities, at the cost of speed and a more intricate architecture prescribing additional costs."
+ planet_improvement_hub_district_2: "Planetary Expansion Cores Factory : Storage"
+ planet_improvement_hub_district_2_DESC: "Input and ouput within the factory could be greatly increased if we had sufficient safe storage in which to store our cores. Which we have now."
+ planet_improvement_hub_district_3: "Planetary Expansion Cores Factory : Advanced Storage"
+ planet_improvement_hub_district_3_DESC: "Despite our recents advances in the field of antigravity insulation, there was still room for improvement. Now with these requirements fulfilled, our throughput can be greatly increased."
+
+ #BUILD SPEED
+ planet_improvement_hub_build_speed_0: "Planetary Build Cores Factory Site"
+ planet_improvement_hub_build_speed_0_DESC: "The construction site serves as the base for the future construction of a Planetary Build Cores Factory."
+ planet_improvement_hub_build_speed_0_MEGASTRUCTURE_DETAILS: "A facility dedicated to producing spheres able to store and redistribute large amounts of power, typically used to power factories in assisting construction on our worlds."
+ planet_improvement_hub_build_speed_1: "Planetary Build Cores Factory"
+ planet_improvement_hub_build_speed_1_DESC: "An experimental factory where spheres able to store and redistribute electrical current are created."
+ planet_improvement_hub_build_speed_2: "Planetary Build Cores Factory : Storage"
+ planet_improvement_hub_build_speed_2_DESC: "Foolproof storage, with greater capacity and fully insulated allows us to produce more spheres while we avoid catastrophic incidents."
+ planet_improvement_hub_build_speed_3: "Planetary Build Cores Factory : Gravitic Production"
+ planet_improvement_hub_build_speed_3_DESC: "Some of our recent insights can be used to bolster the production of power spheres, as our new ways of using gravity allows us to revist the design of this facility."
+
+ #RESEARCH
+ planet_improvement_hub_research_0: "Insight Congregator Site"
+ planet_improvement_hub_research_0_DESC: "The construction site serves as the base for the future construction of a Insight Congregator."
+ planet_improvement_hub_research_0_MEGASTRUCTURE_DETAILS: "Part database part processor, this facility which could only ever exist in the void of space registers and processes experiences and insight from our scientists to provide the best methods to follow."
+ planet_improvement_hub_research_1: "Insight Congregator"
+ planet_improvement_hub_research_1_DESC: "In this place lies exabytes upon exabytes of data regarding our scientists, not our research. Transformed into new patterns to follow for more efficient research, they are transmitted and the result of such methods come back. The cycle repeats."
+ planet_improvement_hub_research_2: "Insight Congregator : Transmitters"
+ planet_improvement_hub_research_2_DESC: "If the previous version of this facility could barely parse all the data sent to it, this one cannot without turning as hot as a star. Instead, planetside facilities are used to parse this data and then send it back, making this facility act more as a giant communications hub."

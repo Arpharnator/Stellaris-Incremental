@@ -67,7 +67,7 @@ ship_armor_compressor_tool = {
 	category = rare
 	max = 10000000
 
-	deficit_situation = situation_ship_compressor_tool_deficit
+	deficit_situation = situation_ship_armor_compressor_tool_deficit
 
 	ai_weight = {
 		weight = 10
@@ -115,7 +115,7 @@ planet_research_methods = {
 	category = rare
 	max = 10000000
 
-	deficit_situation = situation_planet_district_build_cores_deficit
+	deficit_situation = situation_planet_research_methods_deficit
 
 	ai_weight = {
 		weight = 10

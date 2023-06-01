@@ -57,3 +57,23 @@
  building_ship_shield_capacitor_production_1_desc: "Earthbound facility in which shield capacitors are made, but with a substantial drawback due to not benefitting from the ideal conditions of space."
  building_ship_shield_capacitor_production_2: "Shield Capacitor Factory District"
  building_ship_shield_capacitor_production_2_desc: "Miniaturizing the tools needed to reproduce the conditions that can be found in the void of space greatly expands the scope in which this facility can operate, but at a substantial cost."
+
+ #PLANET 
+ 
+ #DISTRICT
+ building_planet_district_expansion_1: "Planet Gravitic Expansion Perimeter"
+ building_planet_district_expansion_1_desc: "More of a dedicated perimeter rather than a building, this place showcases unusual sights to its inhabitants, using gravity spheres and gravity based architecture to allow more districts to be crammed in the same spot."
+ building_planet_district_expansion_2: "Planet Gravitic Expansion Spires"
+ building_planet_district_expansion_2_desc: "Building vertically used to be impossible due to concerns regarding possible reactions spheres could showcase in low gravity environments. However new advances grant us the ability to build large spires in which we use gravity spheres to build vertically."
+
+ #RESEARCH
+ building_planet_research_1: "Planet Insight Processor"
+ building_planet_research_1_desc: "A place where insights are processed and turned into new research methods."
+ building_planet_research_2: "Planet Insight Processor Complex"
+ building_planet_research_2_desc: "Qualified experts in various fields ranging from behavioral science, to physicians studying the laws of the universe assemble here to put forth some sort of unified research theory."
+ 
+ #BUILD SPEED
+ building_planet_build_speed_1: "Planet Factory Manufacture"
+ building_planet_build_speed_1_desc: "Power spheres are able to waltz through the void of space and provide energy to those around them with ease. Building factories to assort their retinue greatly increases build speed."
+ building_planet_build_speed_2: "Planet Factory Manufacture Complex"
+ building_planet_build_speed_2_desc: "Engineers tasked with building spaceborne factories now occupy this building, greatly increasing build speed."

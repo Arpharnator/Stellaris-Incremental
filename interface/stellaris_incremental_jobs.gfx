@@ -30,4 +30,32 @@ spriteTypes = {
 		name = "GFX_job_station_production_overseer"
 		textureFile = "gfx/interface/icons/jobs/job_station_production_overseer.dds"
 	}
+	spriteType = {
+		name = "GFX_job_planet_accommodation_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_planet_accommodation_overseer.dds"
+	}
+	spriteType = {
+		name = "GFX_job_planet_build_speed_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_planet_build_speed_overseer.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_shield_attuner"
+		textureFile = "gfx/interface/icons/jobs/job_ship_shield_attuner.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_armor_compressor"
+		textureFile = "gfx/interface/icons/jobs/job_ship_armor_compressor.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_shield_capacitor_assembler"
+		textureFile = "gfx/interface/icons/jobs/job_ship_shield_capacitor_assembler.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_armor_compressor_assembler"
+		textureFile = "gfx/interface/icons/jobs/job_ship_armor_compressor_assembler.dds"
+	}
+	spriteType = {
+		name = "GFX_job_planet_research_overseer"
+		textureFile = "gfx/interface/icons/jobs/job_planet_research_overseer.dds"
+	}
 }

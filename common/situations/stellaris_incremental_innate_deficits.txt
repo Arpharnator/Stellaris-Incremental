@@ -127,8 +127,8 @@ situation_station_data_feed_deficit = {
 			}
 		}
 		modifier = {
-country_station_data_feed_produces_mult = 0.15
-all_technology_research_speed = -0.6
+			country_station_data_feed_produces_mult = 0.15
+			all_technology_research_speed = -0.6
 		}
 		ai_weight = {
 			base = 0
@@ -304,7 +304,7 @@ situation_starbase_prototype_schematics_deficit = {
 	on_abort = {
 		owner = {
 			add_resource = {
-				starbase_prototype_schematics_parts = @bailout_strategic_base_amount
+				starbase_prototype_parts = @bailout_strategic_base_amount
 				mult = value:bailout_scaling_factor
 			}
 		}
@@ -419,8 +419,8 @@ situation_starbase_prototype_schematics_deficit = {
 			}
 		}
 		modifier = {
-country_starbase_prototype_schematics_produces_mult = 0.15
-all_technology_research_speed = -0.6
+			country_starbase_prototype_schematics_produces_mult = 0.15
+			all_technology_research_speed = -0.6
 		}
 		ai_weight = {
 			base = 0
@@ -436,8 +436,8 @@ all_technology_research_speed = -0.6
 	}
 }
 
-#MEGASTRUCTURE PART DEFICIT
-situation_megastructure_parts_deficit = {
+#SHIP SHIELD CAPACITOR DEFICIT
+situation_ship_shield_capacitor_deficit = {
 	picture = GFX_evt_deficit
 	category = negative
 	fail_icon = GFX_situation_outcome_meh
@@ -450,7 +450,7 @@ situation_megastructure_parts_deficit = {
 	on_abort = {
 		owner = {
 			add_resource = {
-				megastructure_parts = @bailout_strategic_base_amount
+				ship_shield_capacitor = @bailout_strategic_base_amount
 				mult = value:bailout_scaling_factor
 			}
 		}
@@ -463,7 +463,7 @@ situation_megastructure_parts_deficit = {
 			end = 25
 			modifier = {
 				country_energy_produces_mult = -0.15
-				ship_weapon_damage = -0.1
+				ship_shield_mult = -0.5
 
 			}
 			
@@ -474,7 +474,7 @@ situation_megastructure_parts_deficit = {
 			end = 50
 			modifier = {
 				country_energy_produces_mult = -0.2
-				ship_weapon_damage = -0.25
+				ship_shield_mult = -1
 			}
 		}
 		deficit_third = {
@@ -483,7 +483,7 @@ situation_megastructure_parts_deficit = {
 			end = 75
 			modifier = {
 				country_energy_produces_mult = -0.25
-				ship_weapon_damage = -0.4
+				ship_shield_mult = -2
 			}
 		}
 		deficit_fourth = {
@@ -492,7 +492,7 @@ situation_megastructure_parts_deficit = {
 			end = 100
 			modifier = {
 				country_energy_produces_mult = -0.3
-				ship_weapon_damage = -0.55
+				ship_shield_mult = -5
 			}
 		}
 	}
@@ -513,30 +513,30 @@ situation_megastructure_parts_deficit = {
 	monthly_progress = {
 		base = 0
 		modifier = {
-			add = value:deficit_situation_progress_value|RESOURCE|megastructure_parts|
-			desc = string_expenditures_greater_than_income_megastructure_parts
+			add = value:deficit_situation_progress_value|RESOURCE|ship_shield_capacitor|
+			desc = string_expenditures_greater_than_income_ship_shield_capacitor
 			owner = {
 				has_actual_deficit = {
-					RESOURCE = megastructure_parts
+					RESOURCE = ship_shield_capacitor
 				}
 			}
 		}
 		modifier = {
 			subtract = 4
-			desc = string_not_in_deficit_megastructure_parts
+			desc = string_not_in_deficit_ship_shield_capacitor
 			owner = {
 				resource_income_compare = {
-					resource = megastructure_parts
+					resource = ship_shield_capacitor
 					value >= 0
 				}
 			}
 		}
 		modifier = {
 			subtract = 1
-			desc = string_resource_reserves_megastructure_parts
+			desc = string_resource_reserves_ship_shield_capacitor
 			owner = {
 				has_negative_income_with_stockpile = {
-					RESOURCE = megastructure_parts
+					RESOURCE = ship_shield_capacitor
 				}
 			}
 		}
@@ -554,7 +554,7 @@ situation_megastructure_parts_deficit = {
 		}
 	}
 	approach = {
-		name = deficit_approach_invest_in_megastructure_parts
+		name = deficit_approach_invest_in_ship_shield_capacitor
 		icon = GFX_situation_approach_research
 		icon_background = GFX_situation_approach_bg_red
 		resources = {
@@ -565,8 +565,8 @@ situation_megastructure_parts_deficit = {
 			}
 		}
 		modifier = {
-country_megastructure_parts_produces_mult = 0.15
-all_technology_research_speed = -0.6
+			country_ship_shield_capacitor_produces_mult = 0.15
+			all_technology_research_speed = -0.6
 		}
 		ai_weight = {
 			base = 0
@@ -581,3 +581,739 @@ all_technology_research_speed = -0.6
 		}
 	}
 }
+
+#SHIP ARMOR COMPRESSOR TOOL DEFICIT
+situation_ship_armor_compressor_tool_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	on_start = {
+		set_situation_flag = deficit_situation
+	}
+	on_abort = {
+		owner = {
+			add_resource = {
+				ship_armor_compressor_tool = @bailout_strategic_base_amount
+				mult = value:bailout_scaling_factor
+			}
+		}
+	}
+	start_value = 15
+	stages = {
+		deficit_first = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 25
+			modifier = {
+				country_energy_produces_mult = -0.15
+				ship_armor_mult = -0.5
+
+			}
+			
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+			modifier = {
+				country_energy_produces_mult = -0.2
+				ship_armor_mult = -1
+			}
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 75
+			modifier = {
+				country_energy_produces_mult = -0.25
+				ship_armor_mult = -2
+			}
+		}
+		deficit_fourth = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			modifier = {
+				country_energy_produces_mult = -0.3
+				ship_armor_mult = -5
+			}
+		}
+	}
+	on_progress_complete = {
+		country_defaulted_in_situation_tooltip = yes
+		#hidden_effect = {
+		#	situation_event = {
+		#		id = gigadeficit.230
+		#	}
+		#}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = {
+			destroy_situation = this
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = value:deficit_situation_progress_value|RESOURCE|ship_armor_compressor_tool|
+			desc = string_expenditures_greater_than_income_ship_armor_compressor_tool
+			owner = {
+				has_actual_deficit = {
+					RESOURCE = ship_armor_compressor_tool
+				}
+			}
+		}
+		modifier = {
+			subtract = 4
+			desc = string_not_in_deficit_ship_armor_compressor_tool
+			owner = {
+				resource_income_compare = {
+					resource = ship_armor_compressor_tool
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 1
+			desc = string_resource_reserves_ship_armor_compressor_tool
+			owner = {
+				has_negative_income_with_stockpile = {
+					RESOURCE = ship_armor_compressor_tool
+				}
+			}
+		}
+	}
+	approach = {
+		name = deficit_approach_do_nothing
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+		}
+		ai_weight = {
+			base = 1
+		}
+	}
+	approach = {
+		name = deficit_approach_invest_in_ship_armor_compressor_tool
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_red
+		resources = {
+			category = situations
+
+			upkeep = {
+				influence = 2
+			}
+		}
+		modifier = {
+			country_ship_armor_compressor_tool_produces_mult = 0.15
+			all_technology_research_speed = -0.6
+		}
+		ai_weight = {
+			base = 0
+			modifier = {
+				add = 2
+				current_stage = deficit_third
+			}
+			modifier = {
+				add = 2
+				current_stage = deficit_fourth
+			}
+		}
+	}
+}
+
+#PLANET DISTRICT EXPANSION CORES DEFICIT
+situation_planet_district_expansion_cores_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	on_start = {
+		set_situation_flag = deficit_situation
+	}
+	on_abort = {
+		owner = {
+			add_resource = {
+				planet_district_expansion_cores = @bailout_strategic_base_amount
+				mult = value:bailout_scaling_factor
+			}
+		}
+	}
+	start_value = 15
+	stages = {
+		deficit_first = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 25
+			modifier = {
+				country_energy_produces_mult = -0.15
+				planet_jobs_produces_mult = -0.05
+
+			}
+			
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+			modifier = {
+				country_energy_produces_mult = -0.2
+				planet_jobs_produces_mult = -0.1
+			}
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 75
+			modifier = {
+				country_energy_produces_mult = -0.25
+				planet_jobs_produces_mult = -0.2
+			}
+		}
+		deficit_fourth = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			modifier = {
+				country_energy_produces_mult = -0.3
+				planet_jobs_produces_mult = -0.4
+			}
+		}
+	}
+	on_progress_complete = {
+		country_defaulted_in_situation_tooltip = yes
+		#hidden_effect = {
+		#	situation_event = {
+		#		id = gigadeficit.230
+		#	}
+		#}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = {
+			destroy_situation = this
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = value:deficit_situation_progress_value|RESOURCE|planet_district_expansion_cores|
+			desc = string_expenditures_greater_than_income_planet_district_expansion_cores
+			owner = {
+				has_actual_deficit = {
+					RESOURCE = planet_district_expansion_cores
+				}
+			}
+		}
+		modifier = {
+			subtract = 4
+			desc = string_not_in_deficit_planet_district_expansion_cores
+			owner = {
+				resource_income_compare = {
+					resource = planet_district_expansion_cores
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 1
+			desc = string_resource_reserves_planet_district_expansion_cores
+			owner = {
+				has_negative_income_with_stockpile = {
+					RESOURCE = planet_district_expansion_cores
+				}
+			}
+		}
+	}
+	approach = {
+		name = deficit_approach_do_nothing
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+		}
+		ai_weight = {
+			base = 1
+		}
+	}
+	approach = {
+		name = deficit_approach_invest_in_planet_district_expansion_cores
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_red
+		resources = {
+			category = situations
+
+			upkeep = {
+				influence = 2
+			}
+		}
+		modifier = {
+			country_planet_district_expansion_cores_produces_mult = 0.15
+			all_technology_research_speed = -0.6
+		}
+		ai_weight = {
+			base = 0
+			modifier = {
+				add = 2
+				current_stage = deficit_third
+			}
+			modifier = {
+				add = 2
+				current_stage = deficit_fourth
+			}
+		}
+	}
+}
+
+#PLANET DISTRICT BUILD CORES DEFICIT
+situation_planet_district_build_cores_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	on_start = {
+		set_situation_flag = deficit_situation
+	}
+	on_abort = {
+		owner = {
+			add_resource = {
+				planet_district_build_cores = @bailout_strategic_base_amount
+				mult = value:bailout_scaling_factor
+			}
+		}
+	}
+	start_value = 15
+	stages = {
+		deficit_first = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 25
+			modifier = {
+				country_energy_produces_mult = -0.15
+				building_time_mult = 0.2
+			}
+			
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+			modifier = {
+				country_energy_produces_mult = -0.2
+				building_time_mult = 0.4
+			}
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 75
+			modifier = {
+				country_energy_produces_mult = -0.25
+				building_time_mult = 0.8
+			}
+		}
+		deficit_fourth = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			modifier = {
+				country_energy_produces_mult = -0.3
+				building_time_mult = 1.5
+			}
+		}
+	}
+	on_progress_complete = {
+		country_defaulted_in_situation_tooltip = yes
+		#hidden_effect = {
+		#	situation_event = {
+		#		id = gigadeficit.230
+		#	}
+		#}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = {
+			destroy_situation = this
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = value:deficit_situation_progress_value|RESOURCE|planet_district_build_cores|
+			desc = string_expenditures_greater_than_income_planet_district_build_cores
+			owner = {
+				has_actual_deficit = {
+					RESOURCE = planet_district_build_cores
+				}
+			}
+		}
+		modifier = {
+			subtract = 4
+			desc = string_not_in_deficit_planet_district_build_cores
+			owner = {
+				resource_income_compare = {
+					resource = planet_district_build_cores
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 1
+			desc = string_resource_reserves_planet_district_build_cores
+			owner = {
+				has_negative_income_with_stockpile = {
+					RESOURCE = planet_district_build_cores
+				}
+			}
+		}
+	}
+	approach = {
+		name = deficit_approach_do_nothing
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+		}
+		ai_weight = {
+			base = 1
+		}
+	}
+	approach = {
+		name = deficit_approach_invest_in_planet_district_build_cores
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_red
+		resources = {
+			category = situations
+
+			upkeep = {
+				influence = 2
+			}
+		}
+		modifier = {
+			country_planet_district_build_cores_produces_mult = 0.15
+			all_technology_research_speed = -0.6
+		}
+		ai_weight = {
+			base = 0
+			modifier = {
+				add = 2
+				current_stage = deficit_third
+			}
+			modifier = {
+				add = 2
+				current_stage = deficit_fourth
+			}
+		}
+	}
+}
+
+#PLANET RESEARCH METHODS DEFICIT
+situation_planet_research_methods_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	on_start = {
+		set_situation_flag = deficit_situation
+	}
+	on_abort = {
+		owner = {
+			add_resource = {
+				planet_research_methods = @bailout_strategic_base_amount
+				mult = value:bailout_scaling_factor
+			}
+		}
+	}
+	start_value = 15
+	stages = {
+		deficit_first = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 25
+			modifier = {
+				country_energy_produces_mult = -0.15
+				country_engineering_research_produces_mult = -0.15
+				country_society_research_produces_mult = -0.15
+				country_physics_research_produces_mult = -0.15
+			}
+			
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+			modifier = {
+				country_energy_produces_mult = -0.2
+				country_engineering_research_produces_mult = -0.4
+				country_society_research_produces_mult = -0.4
+				country_physics_research_produces_mult = -0.4
+			}
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 75
+			modifier = {
+				country_energy_produces_mult = -0.25
+				country_engineering_research_produces_mult = -1
+				country_society_research_produces_mult = -1
+				country_physics_research_produces_mult = -1
+			}
+		}
+		deficit_fourth = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			modifier = {
+				country_energy_produces_mult = -0.3
+				country_engineering_research_produces_mult = -2
+				country_society_research_produces_mult = -2
+				country_physics_research_produces_mult = -2
+			}
+		}
+	}
+	on_progress_complete = {
+		country_defaulted_in_situation_tooltip = yes
+		#hidden_effect = {
+		#	situation_event = {
+		#		id = gigadeficit.230
+		#	}
+		#}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = {
+			destroy_situation = this
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = value:deficit_situation_progress_value|RESOURCE|planet_research_methods|
+			desc = string_expenditures_greater_than_income_planet_research_methods
+			owner = {
+				has_actual_deficit = {
+					RESOURCE = planet_research_methods
+				}
+			}
+		}
+		modifier = {
+			subtract = 4
+			desc = string_not_in_deficit_planet_research_methods
+			owner = {
+				resource_income_compare = {
+					resource = planet_research_methods
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 1
+			desc = string_resource_reserves_planet_research_methods
+			owner = {
+				has_negative_income_with_stockpile = {
+					RESOURCE = planet_research_methods
+				}
+			}
+		}
+	}
+	approach = {
+		name = deficit_approach_do_nothing
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+		}
+		ai_weight = {
+			base = 1
+		}
+	}
+	approach = {
+		name = deficit_approach_invest_in_planet_research_methods
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_red
+		resources = {
+			category = situations
+
+			upkeep = {
+				influence = 2
+			}
+		}
+		modifier = {
+			country_planet_research_methods_produces_mult = 0.15
+			all_technology_research_speed = -0.6
+		}
+		ai_weight = {
+			base = 0
+			modifier = {
+				add = 2
+				current_stage = deficit_third
+			}
+			modifier = {
+				add = 2
+				current_stage = deficit_fourth
+			}
+		}
+	}
+}
+
+#MEGASTRUCTURE PART DEFICIT
+#situation_megastructure_parts_deficit = {
+#	picture = GFX_evt_deficit
+#	category = negative
+#	fail_icon = GFX_situation_outcome_meh
+#	fail_icon_frame = GFX_situation_outcome_frame_green
+#	complete_icon = GFX_situation_outcome_bankrupcy
+#	complete_icon_frame = GFX_situation_outcome_frame_red
+#	on_start = {
+#		set_situation_flag = deficit_situation
+#	}
+#	on_abort = {
+#		owner = {
+#			add_resource = {
+#				megastructure_parts = @bailout_strategic_base_amount
+#				mult = value:bailout_scaling_factor
+#			}
+#		}
+#	}
+#	start_value = 15
+#	stages = {
+#		deficit_first = {
+#			icon = GFX_situation_stage_1
+#			icon_background = GFX_situation_stage_frame_red
+#			end = 25
+#			modifier = {
+#				country_energy_produces_mult = -0.15
+#				ship_weapon_damage = -0.1
+#
+#			}
+#			
+#		}
+#		deficit_second = {
+##			icon = GFX_situation_stage_2
+#			icon_background = GFX_situation_stage_frame_red
+#			end = 50
+#			modifier = {
+#				country_energy_produces_mult = -0.2
+#				ship_weapon_damage = -0.25
+#			}
+#		}
+#		deficit_third = {
+#			icon = GFX_situation_stage_3
+#			icon_background = GFX_situation_stage_frame_red
+#			end = 75
+#			modifier = {
+#				country_energy_produces_mult = -0.25
+#				ship_weapon_damage = -0.4
+#			}
+#		}
+#		deficit_fourth = {
+#			icon = GFX_situation_stage_4
+##			icon_background = GFX_situation_stage_frame_red
+#			end = 100
+#			modifier = {
+#				country_energy_produces_mult = -0.3
+#				ship_weapon_damage = -0.55
+#			}
+#		}
+#	}
+#	on_progress_complete = {
+#		country_defaulted_in_situation_tooltip = yes
+#		#hidden_effect = {
+#		#	situation_event = {
+#		#		id = gigadeficit.230
+		#	}
+#		#}
+#	}
+#	on_fail = {
+#		custom_tooltip = deficit_situation_finish_tooltip
+#		hidden_effect = {
+#			destroy_situation = this
+#		}
+#	}
+#	monthly_progress = {
+#		base = 0
+#		modifier = {
+#			add = value:deficit_situation_progress_value|RESOURCE|megastructure_parts|
+#			desc = string_expenditures_greater_than_income_megastructure_parts
+#			owner = {
+#				has_actual_deficit = {
+##					RESOURCE = megastructure_parts
+#				}
+#			}
+#		}
+##		modifier = {
+#			subtract = 4
+#			desc = string_not_in_deficit_megastructure_parts
+#			owner = {
+#				resource_income_compare = {
+##					resource = megastructure_parts
+#					value >= 0
+#				}
+#			}
+#		}
+#		modifier = {
+#			subtract = 1
+#			desc = string_resource_reserves_megastructure_parts
+#			owner = {
+#				has_negative_income_with_stockpile = {
+#					RESOURCE = megastructure_parts
+#				}
+#			}
+#		}
+#	}
+#	approach = {
+#		name = deficit_approach_do_nothing
+#		icon = GFX_situation_approach_this_is_fine
+#		icon_background = GFX_situation_approach_bg_yellow
+#		default = yes
+#		on_select = {
+#			custom_tooltip = deficit_approach_do_nothing_tooltip
+#		}
+#		ai_weight = {
+#			base = 1
+#		}
+#	}
+#	approach = {
+#		name = deficit_approach_invest_in_megastructure_parts
+#		icon = GFX_situation_approach_research
+#		icon_background = GFX_situation_approach_bg_red
+#		resources = {
+#			category = situations
+##
+#			upkeep = {
+#				influence = 2
+##			}
+#		}
+#		modifier = {
+#			country_megastructure_parts_produces_mult = 0.15
+#			all_technology_research_speed = -0.6
+#		}
+#		ai_weight = {
+#			base = 0
+#			modifier = {
+#				add = 2
+#				current_stage = deficit_third
+#			}
+#			modifier = {
+#				add = 2
+#				current_stage = deficit_fourth
+#			}
+#		}
+#	}
+#}

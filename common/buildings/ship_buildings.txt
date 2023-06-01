@@ -84,7 +84,7 @@ building_ship_armor_compressor_1 = {
 	}
 
 	upgrades = {
-		"building_ship_shield_attuner_2"
+		"building_ship_armor_compressor_2"
 	}
 
 	prerequisites = {
