@@ -11,6 +11,9 @@
  mod_job_ship_armor_compressor_add: "Armor Compressor Artificer"
  mod_job_ship_shield_capacitor_assembler_add: "Shield Capacitor Assembler"
  mod_job_ship_armor_compressor_assembler_add: "Armor Compressor Assembler"
+ mod_job_planet_accommodation_overseer_add: "Planet Gravitic Sphere Handler"
+ mod_job_planet_research_overseer_add: "Planet Research Theorist"
+ mod_job_planet_build_speed_overseer_add: "Planet Factory Operator"
 
  #STARBASE HULL
  mod_shipsize_starbase_outpost_hull_add: "Outpost Base Hull Points"
@@ -21,3 +24,16 @@
 
 #PROSPECTING MEGA CAP
  prospecting_mega_cap_adjustment: "Prospection Megastructure Build Capacity Adjustment"
+
+ #MULTS TO NEW RESOURCES
+ mod_country_station_data_feed_produces_mult: "Monthly Station Data"
+ mod_country_starbase_prototype_parts_produces_mult: "Monthly Starbase Prototype Parts"
+ mod_country_starbase_prototype_schematics_produces_mult: "Monthly Starbase Schematics"
+ mod_country_ship_shield_capacitor_produces_mult: "Monthly Shield Capacitors"
+ mod_country_ship_armor_compressor_tool_produces_mult: "Monthly Armor Compressors"
+ mod_country_planet_district_expansion_cores_produces_mult: "Monthly Planetary Expansion Cores"
+ mod_country_planet_district_build_cores_produces_mult: "Monthly Planetary Build Cores"
+ mod_country_planet_research_methods_produces_mult: "Monthly Research Methods"
+
+ #ALLOYS UPKEEP MULT
+ mod_ships_alloys_upkeep_mult: "Alloys Ship Upkeep"

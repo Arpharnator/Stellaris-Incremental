@@ -3,6 +3,7 @@ spriteTypes = {
 	###   MEGAS   ###
 	#################
 
+	#STATION
 	spriteType = {
 		name = "GFX_station_improvement_hub_0_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
@@ -31,4 +32,146 @@ spriteTypes = {
 		name = "GFX_station_improvement_hub_6_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_survey_one_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_survey_five_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_station_improvement_hub_survey_twenty_five_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/station_improvement_hub_outliner_icon.dds"
+	}
+
+	#STARBASE
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_starbase_improvement_hub_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/starbase_improvement_hub_outliner_icon.dds"
+	}
+
+	#SHIP SHIELD
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_shield_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_shield_outliner_icon.dds"
+	}
+
+	#SHIP ARMOR
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_improvement_hub_armor_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ship_improvement_hub_armor_outliner_icon.dds"
+	}
+
+	#DISTRICT
+	spriteType = {
+		name = "GFX_planet_improvement_hub_district_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_district_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_district_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_district_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_district_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_district_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_district_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_district_outliner_icon.dds"
+	}
+
+	#BUILD SPEED
+	spriteType = {
+		name = "GFX_planet_improvement_hub_build_speed_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_build_speed_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_build_speed_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_build_speed_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_build_speed_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_build_speed_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_build_speed_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_build_speed_outliner_icon.dds"
+	}
+
+	#BUILD SPEED
+	spriteType = {
+		name = "GFX_planet_improvement_hub_research_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_research_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_research_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_research_outliner_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_improvement_hub_research_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_research_outliner_icon.dds"
+	}
+
+
 }
