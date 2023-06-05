@@ -140,7 +140,7 @@ starbase_improvement_hub_1 = {
 		}
 
 		upkeep = {
-			alloys = 20
+			alloys = 10
 		}
 	}
 
@@ -176,7 +176,7 @@ starbase_improvement_hub_2 = {
 		}
 
 		upkeep = {
-			alloys = 60
+			alloys = 30
 		}
 	}
 
@@ -223,11 +223,11 @@ starbase_improvement_hub_3 = {
 		}
 
 		upkeep = {
-			alloys = 100
-			energy = 40
-			engineering_research = 30
-			society_research = 30
-			physics_research = 30
+			alloys = 50
+			energy = 20
+			engineering_research = 15
+			society_research = 15
+			physics_research = 15
 		}
 	}
 
@@ -280,11 +280,11 @@ starbase_improvement_hub_4 = {
 		}
 
 		upkeep = {
-			alloys = 180
-			energy = 120
-			engineering_research = 90
-			society_research = 90
-			physics_research = 90
+			alloys = 90
+			energy = 60
+			engineering_research = 45
+			society_research = 45
+			physics_research = 45
 		}
 	}
 
@@ -338,11 +338,11 @@ starbase_improvement_hub_5 = {
 		}
 
 		upkeep = {
-			alloys = 420
-			energy = 420
-			engineering_research = 195
-			society_research = 195
-			physics_research = 195
+			alloys = 210
+			energy = 210
+			engineering_research = 97
+			society_research = 97
+			physics_research = 97
 		}
 	}
 

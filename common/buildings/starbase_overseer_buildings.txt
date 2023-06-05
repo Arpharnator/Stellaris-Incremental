@@ -212,12 +212,12 @@ building_starbase_prototype_parts_production_1 = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 30
+			alloys = 15
 		}
 	}
 
 	country_modifier = {
-		starbases_upkeep_mult = 0.05
+		starbases_upkeep_mult = 0.025
 	}
 
 	upgrades = {
@@ -248,12 +248,12 @@ building_starbase_prototype_parts_production_2 = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 30
+			alloys = 15
 		}
 	}
 
 	country_modifier = {
-		starbases_upkeep_mult = 0.05
+		starbases_upkeep_mult = 0.025
 	}
 
 	prerequisites = {
@@ -276,10 +276,10 @@ building_starbase_prototype_schematics_production_1 = {
 			starbase_prototype_schematics = 1
 		}
 		upkeep = {
-			energy = 30
-			engineering_research = 22
-			society_research = 22
-			physics_research = 22
+			energy = 15
+			engineering_research = 11
+			society_research = 11
+			physics_research = 11
 		}
 	}
 
@@ -316,10 +316,10 @@ building_starbase_prototype_schematics_production_2 = {
 			starbase_prototype_schematics = 1
 		}
 		upkeep = {
-			energy = 30
-			engineering_research = 22
-			society_research = 22
-			physics_research = 22
+			energy = 15
+			engineering_research = 11
+			society_research = 11
+			physics_research = 11
 		}
 	}
 

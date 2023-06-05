@@ -175,10 +175,10 @@ starbase_schematics_scientist = {
 			starbase_prototype_schematics = 1
 		}
 		upkeep = {
-			energy = 40
-			engineering_research = 30
-			society_research = 30
-			physics_research = 30
+			energy = 20
+			engineering_research = 15
+			society_research = 15
+			physics_research = 15
 		}
 	}
 
@@ -218,12 +218,12 @@ starbase_prototype_parts_fabricator = {
 			starbase_prototype_parts = 1
 		}
 		upkeep = {
-			alloys = 45
+			alloys = 22
 		}
 	}
 
 	country_modifier = {
-		starbases_upkeep_mult = 0.15
+		starbases_upkeep_mult = 0.05
 	}
 	
 	possible_precalc = can_fill_drone_job
