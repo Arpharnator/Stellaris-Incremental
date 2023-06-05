@@ -11,7 +11,7 @@ building_station_production_overseer_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b1_cost
 		}
 		upkeep = {
 			energy = 1
@@ -44,7 +44,7 @@ building_station_production_overseer_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 2
@@ -78,7 +78,7 @@ building_station_production_overseer_3 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 3
@@ -104,7 +104,7 @@ building_station_data_feed_production_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b1_advanced_cost
 		}
 		produces = {
 			station_data_feed = 1
@@ -143,7 +143,7 @@ building_station_data_feed_production_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_advanced_cost
 		}
 		produces = {
 			station_data_feed = 1

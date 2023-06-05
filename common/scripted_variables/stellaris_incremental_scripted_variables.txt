@@ -4,3 +4,10 @@
 @stellaris_incremental_b2_advanced_time = 1250
 @stellaris_incremental_b3_time = 1240
 @stellaris_incremental_b3_advanced_time = 1780
+
+@stellaris_incremental_b1_cost = 700
+@stellaris_incremental_b1_advanced_cost = 900
+@stellaris_incremental_b2_cost = 1250
+@stellaris_incremental_b2_advanced_cost = 1600
+@stellaris_incremental_b3_cost = 1900
+@stellaris_incremental_b3_advanced_cost = 2400

@@ -16,7 +16,7 @@ building_starbase_integrity_overseer_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 1
@@ -51,7 +51,7 @@ building_starbase_integrity_overseer_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 2
@@ -81,7 +81,7 @@ building_starbase_schematics_engineering_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 1
@@ -120,7 +120,7 @@ building_starbase_schematics_engineering_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 2
@@ -146,7 +146,7 @@ building_starbase_upgrade_overseer_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b1_cost
 		}
 		upkeep = {
 			energy = 1
@@ -180,7 +180,7 @@ building_starbase_upgrade_overseer_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 2
@@ -206,7 +206,7 @@ building_starbase_prototype_parts_production_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b1_advanced_cost
 		}
 		produces = {
 			starbase_prototype_parts = 1
@@ -242,7 +242,7 @@ building_starbase_prototype_parts_production_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_advanced_cost
 		}
 		produces = {
 			starbase_prototype_parts = 1
@@ -270,7 +270,7 @@ building_starbase_prototype_schematics_production_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b1_advanced_cost
 		}
 		produces = {
 			starbase_prototype_schematics = 1
@@ -310,7 +310,7 @@ building_starbase_prototype_schematics_production_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_advanced_cost
 		}
 		produces = {
 			starbase_prototype_schematics = 1

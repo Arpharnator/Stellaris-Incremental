@@ -17,7 +17,7 @@ building_planet_district_expansion_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 1
@@ -50,7 +50,7 @@ building_planet_district_expansion_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 1
@@ -78,7 +78,7 @@ building_planet_research_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 1
@@ -114,7 +114,7 @@ building_planet_research_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 1
@@ -140,7 +140,7 @@ building_planet_build_speed_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b2_cost
 		}
 		upkeep = {
 			energy = 1
@@ -174,7 +174,7 @@ building_planet_build_speed_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @stellaris_incremental_b3_cost
 		}
 		upkeep = {
 			energy = 1
