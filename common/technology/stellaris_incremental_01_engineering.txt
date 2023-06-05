@@ -383,40 +383,6 @@ stellaris_incremental_tech_planet_oversight_5 = {
 	}
 }
 
-#RESEARCH
-stellaris_incremental_tech_planet_research_oversight = {
-	cost = 200000
-	area = engineering
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "stellaris_incremental_tech_planet_oversight_2" }
-	weight = @tier3weight3
-
-	weight_modifier = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-
-	ai_weight = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-}
-
-stellaris_incremental_tech_planet_research_oversight_2 = {
-	cost = 275000
-	area = engineering
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "stellaris_incremental_tech_planet_research_oversight" }
-	weight = @tier3weight3
-
-	weight_modifier = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-
-	ai_weight = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-}
 
 #TECHNOLOGY OVERSEERS
 #stellaris_incremental_tech_technology_oversight = {
