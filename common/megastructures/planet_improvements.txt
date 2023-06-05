@@ -564,7 +564,7 @@ planet_improvement_hub_build_speed_1 = {
 		}
 
 		upkeep = {
-			minerals = 240
+			minerals = 120
 		}
 	}
 
@@ -599,7 +599,7 @@ planet_improvement_hub_build_speed_2 = {
 		}
 
 		upkeep = {
-			minerals = 360
+			minerals = 480
 		}
 	}
 
@@ -634,7 +634,7 @@ planet_improvement_hub_build_speed_3 = {
 		}
 
 		upkeep = {
-			minerals = 840
+			minerals = 960
 		}
 	}
 
