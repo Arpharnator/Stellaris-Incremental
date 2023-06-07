@@ -1,0 +1,562 @@
+#PRODUCTION DISTRICTS
+
+#STATION
+district_stellaris_incremental_streamliner_station_produce = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_station_data_feed_scientist_lossless_add = 4 
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+#STARBASE PROTOTYPE PARTS
+district_stellaris_incremental_streamliner_starbase_prototype_parts_production = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_starbase_prototype_parts_fabricator_lossless_add = 4
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+#STARBASE SCHEMATICS
+district_stellaris_incremental_streamliner_starbase_schematics_production = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_starbase_schematics_scientist_lossless_add = 4
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+#UTILIZATION DISTRICTS
+
+#STATION
+district_stellaris_incremental_streamliner_station_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_station_production_overseer_add = 8
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+
+#STARBASE
+district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_starbase_integrity_overseer_add = 8
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_starbase_upgrade_overseer_add = 8
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}
+
+district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1200
+			alloys = 200
+		}
+		upkeep = {
+			energy = 15
+			alloys = 5
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	# jobs : regular empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	
+	#}
+	# jobs : hive empire
+	#triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	job_brain_drone_add = 5
+	#}
+
+	# jobs : machine empire
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		job_starbase_schematics_engineer_add = 8
+	}
+
+	# job descriptions
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = "job_researcher_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_hive_empire = yes }
+	#	}
+	#	text = "job_brain_drone_effect_desc"
+	#}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_machine_empire = yes }
+	#	}
+	#	text = "job_calculator_effect_desc"
+	#}
+}

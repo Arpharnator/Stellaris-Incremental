@@ -11,3 +11,5 @@
 @stellaris_incremental_b2_advanced_cost = 1600
 @stellaris_incremental_b3_cost = 1900
 @stellaris_incremental_b3_advanced_cost = 2400
+
+@stellaris_incremental_district_time = 720
