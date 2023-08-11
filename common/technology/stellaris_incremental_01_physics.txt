@@ -1,0 +1,19 @@
+stellaris_incremental_tech_station_oversight_6 = {
+	cost = 120000
+	area = physics
+	tier = 5
+	category = { computing }
+	prerequisites = { "stellaris_incremental_tech_station_oversight_5" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
+	weight = @tier5weight3
+	modifier = {
+		stations_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+
+	ai_weight = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+}

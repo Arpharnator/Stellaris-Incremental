@@ -3,9 +3,9 @@
  job_station_production_overseer_plural: "Station Overseers"
  job_station_production_overseer_desc: "Tasked with overseeing extraction or observation operations on faraway space bodies."
  
- station_data_feed_scientist_lossless: "Lossless Station Data Scientist"
- station_data_feed_scientist_lossless_plural: "Lossless Station Data Scientists"
- station_data_feed_scientist_lossless_desc: "Receiving data from the feeds sent by civilian stations, they work it into methods to oversee, operate and manage stations. This worker is working using adapted structures, reducing upkeep and removing the negative associated modifier."
+ job_station_data_feed_scientist_lossless: "Lossless Station Data Scientist"
+ job_station_data_feed_scientist_lossless_plural: "Lossless Station Data Scientists"
+ job_station_data_feed_scientist_lossless_desc: "Receiving data from the feeds sent by civilian stations, they work it into methods to oversee, operate and manage stations. This worker is working using adapted structures, reducing upkeep and removing the negative associated modifier."
 
  job_station_data_feed_scientist: "Station Data Scientist"
  job_station_data_feed_scientist_plural: "Station Data Scientists"

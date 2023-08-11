@@ -1,8 +1,8 @@
 pc_stellaris_incremental_streamliner = {
 	is_artificial_planet = yes
-	entity = "stellaris_incremental_streamliner"
+	entity = "desert_planet"
 	entity_scale = @planet_standard_scale
-	picture = pc_stellaris_incremental_streamliner
+	picture = pc_desert
 	icon = GFX_planet_type_desert
 
 	atmosphere_color		= hsv { 0.50 0.2 0.8 }		

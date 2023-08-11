@@ -105,26 +105,6 @@ stellaris_incremental_tech_station_oversight_5 = {
 	}
 }
 
-stellaris_incremental_tech_station_oversight_6 = {
-	cost = 120000
-	area = engineering
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "stellaris_incremental_tech_station_oversight_5" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
-	weight = @tier5weight3
-	modifier = {
-		stations_produces_mult = 0.05
-	}
-
-	weight_modifier = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-
-	ai_weight = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-}
-
 #STARBASE OVERSEERS
 stellaris_incremental_tech_starbase_oversight = {
 	cost = 35000

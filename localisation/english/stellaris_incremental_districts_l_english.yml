@@ -1,0 +1,30 @@
+﻿l_english:
+
+ district_stellaris_incremental_streamliner_station_produce: "Station Data Handler District"
+ district_stellaris_incremental_streamliner_station_produce_plural: "Station Data Handler Districts"
+ district_stellaris_incremental_streamliner_station_produce_desc: "These Districts host numerous antennae and servers in order to parse the data coming from the stations in our empire."
+
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_production: "Artisan Starbase Prototype District"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_production_plural: "Artisan Starbase Prototype Districts"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_production_desc: "In these Districts lie a great many high tech blacksmiths and their necessary crew."
+
+ district_stellaris_incremental_streamliner_starbase_schematics_production: "Starbase Schematic Scientist District"
+ district_stellaris_incremental_streamliner_starbase_schematics_production_plural: "Starbase Schematic Scientist Districts"
+ district_stellaris_incremental_streamliner_starbase_schematics_production_desc: "These Districts serve as a hub for many scientists working on improving our starbases, providing them with habitation and many research labs."
+
+ district_stellaris_incremental_streamliner_station_usage: "Station Data Applicative District"
+ district_stellaris_incremental_streamliner_station_usage_plural: "Station Data Applicative Districts"
+ district_stellaris_incremental_streamliner_station_usage_desc: "Similar to its dissecting counterpart, these Districts also host numerous antennae, but this time in order to send back the improved gathering methods to their recipient stations."
+
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_usage: "Starbase Prototype Integration District"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_usage_plural: "Starbase Prototype Integration Districts"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_usage_desc: "These Districts are made to be new checkpoints for starbase components, where experimental parts will instead replace some of the more outdated components."
+
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage: "Starbase Prototype Assembly District"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage_plural: "Starbase Prototype Assembly Districts"
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage_desc: "Similar to its brother District where experimental parts are integrated in starbase components, with the difference that they are manufactured en masse in order to ease demand."
+
+ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage: "Starbase Schematic Server District"
+ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage_plural: "Starbase Schematic Server Districts"
+ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage_desc: "This District is more like a giant server rather than an actually populated area, barring its outskirts. Indeed, this place is extremely hot, and scientists work in furthest possible place from the central server in order to feed it."
+

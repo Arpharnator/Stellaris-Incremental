@@ -4,7 +4,7 @@
 #RESEARCH
 stellaris_incremental_tech_planet_research_oversight = {
 	cost = 200000
-	area = engineering
+	area = society
 	tier = 5
 	category = { statecraft }
 	prerequisites = { "stellaris_incremental_tech_planet_oversight_2" }
@@ -21,7 +21,7 @@ stellaris_incremental_tech_planet_research_oversight = {
 
 stellaris_incremental_tech_planet_research_oversight_2 = {
 	cost = 275000
-	area = engineering
+	area = society
 	tier = 5
 	category = { statecraft }
 	prerequisites = { "stellaris_incremental_tech_planet_research_oversight" }

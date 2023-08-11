@@ -8,7 +8,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_job_starbase_schematics_scientist_lossless"
-		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist.dds"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist_lossless.dds"
 	}
 	spriteType = {
 		name = "GFX_job_starbase_prototype_parts_fabricator"
@@ -16,7 +16,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_job_starbase_prototype_parts_fabricator_lossless"
-		textureFile = "gfx/interface/icons/jobs/job_starbase_prototype_parts_fabricator.dds"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_prototype_parts_fabricator_lossless.dds"
 	}
 	spriteType = {
 		name = "GFX_job_starbase_schematics_engineer"
@@ -36,7 +36,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_job_station_data_feed_scientist_lossless"
-		textureFile = "gfx/interface/icons/jobs/job_station_data_feed_scientist.dds"
+		textureFile = "gfx/interface/icons/jobs/job_station_data_feed_scientist_lossless.dds"
 	}
 	spriteType = {
 		name = "GFX_job_station_production_overseer"
