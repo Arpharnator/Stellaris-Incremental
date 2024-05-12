@@ -1,20 +1,21 @@
 pc_stellaris_incremental_streamliner = {
 	is_artificial_planet = yes
-	entity = "desert_planet"
+	entity = "stellaris_incremental_streamliner_planet"
 	entity_scale = @planet_standard_scale
-	picture = pc_desert
-	icon = GFX_planet_type_desert
+	picture = pc_city
+	icon = GFX_planet_type_city
 
-	atmosphere_color		= hsv { 0.50 0.2 0.8 }		
-	atmosphere_intensity	= 0.2
-	atmosphere_width		= 0.1
+	climate = "dry"
+	
+	atmosphere_color		= hsv { 0.75 0.10 0.60 }
+	atmosphere_intensity	= 0.3
+	atmosphere_width		= 0.4
 
 	min_distance_from_sun = @habitable_min_distance
 	max_distance_from_sun = @habitable_max_distance
 	spawn_odds = 0
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
-	show_city = no
 	chance_of_ring = 0.2
 	planet_size = { min = 16 max = 25 }
 	moon_size = { min = 12 max = 16 }
@@ -23,7 +24,7 @@ pc_stellaris_incremental_streamliner = {
 	orbit_lines = yes
 	district_set = stellaris_incremental_streamliner
 
-	
+	fixed_city_level = 6
 
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
