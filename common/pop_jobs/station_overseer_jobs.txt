@@ -13,7 +13,7 @@ station_production_overseer = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			station_data_feed = 1
 		}

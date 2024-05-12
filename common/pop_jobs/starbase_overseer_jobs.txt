@@ -23,7 +23,7 @@ starbase_integrity_overseer = {
 
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			starbase_prototype_parts = 1
 		}

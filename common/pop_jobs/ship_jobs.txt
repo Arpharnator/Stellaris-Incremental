@@ -18,7 +18,7 @@ ship_shield_attuner = {
 
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			ship_shield_capacitor = 1
 		}
@@ -56,7 +56,7 @@ ship_armor_compressor = {
 
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			ship_armor_compressor_tool = 1
 		}
