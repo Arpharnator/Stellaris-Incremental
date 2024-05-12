@@ -1,3 +1,37 @@
+#HABITATION DISTRICT
+district_stellaris_incremental_streamliner_city = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+	
+	potential = {
+		uses_district_set = stellaris_incremental_streamliner
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 800
+			alloys = 50
+		}
+		upkeep = {
+			energy = 5
+			alloys = 1
+		}
+	}
+	
+	# Modifiers
+		planet_modifier = {
+			planet_housing_add = 8
+			planet_max_buildings_add = 1
+			planet_amenities_add = 15
+		}
+}
+
 #PRODUCTION DISTRICTS
 
 #STATION

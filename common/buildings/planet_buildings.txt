@@ -64,68 +64,68 @@ building_planet_district_expansion_2 = {
 }
 
 #PLANET RESEARCH
-building_planet_research_1 = {
-	base_buildtime = @stellaris_incremental_b2_time
+#building_planet_research_1 = {
+#	base_buildtime = @stellaris_incremental_b2_time
+#
+#	category = army
+#
+#	country_modifier = {
+#		planet_researchers_engineering_research_produces_mult = 0.01
+#		planet_researchers_physics_research_produces_mult = 0.01
+#		planet_researchers_society_research_produces_mult = 0.01
+#	}
+#
+#	resources = {
+#		category = planet_buildings
+#		cost = {
+#			minerals = @stellaris_incremental_b2_cost
+#		}
+#		upkeep = {
+#			energy = 1
+#			planet_research_methods = 1
+#		}
+#	}
+#
+#	upgrades = {
+#		"building_planet_research_2"
+#	}
+#
+#	prerequisites = {
+#		"stellaris_incremental_tech_planet_research_oversight_2"
+#	}
+#}
 
-	category = army
-
-	country_modifier = {
-		planet_researchers_engineering_research_produces_mult = 0.01
-		planet_researchers_physics_research_produces_mult = 0.01
-		planet_researchers_society_research_produces_mult = 0.01
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @stellaris_incremental_b2_cost
-		}
-		upkeep = {
-			energy = 1
-			planet_research_methods = 1
-		}
-	}
-
-	upgrades = {
-		"building_planet_research_2"
-	}
-
-	prerequisites = {
-		"stellaris_incremental_tech_planet_research_oversight_2"
-	}
-}
-
-building_planet_research_2 = {
-	base_buildtime = @stellaris_incremental_b3_time
-
-	category = army
-	can_build = no
-
-	country_modifier = {
-		planet_researchers_engineering_research_produces_mult = 0.01
-		planet_researchers_physics_research_produces_mult = 0.01
-		planet_researchers_society_research_produces_mult = 0.01
-	}
-
-	planet_modifier = {
-		job_planet_research_overseer_add = 2
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @stellaris_incremental_b3_cost
-		}
-		upkeep = {
-			energy = 1
-			planet_research_methods = 1
-		}
-	}
-
-	prerequisites = {
-		"stellaris_incremental_tech_planet_research_oversight_2"
-	}
-}
+#building_planet_research_2 = {
+#	base_buildtime = @stellaris_incremental_b3_time
+#
+#	category = army
+#	can_build = no
+#
+#	country_modifier = {
+#		planet_researchers_engineering_research_produces_mult = 0.01
+#		planet_researchers_physics_research_produces_mult = 0.01
+#		planet_researchers_society_research_produces_mult = 0.01
+#	}
+#
+#	planet_modifier = {
+#		job_planet_research_overseer_add = 2
+#	}
+#
+#	resources = {
+#		category = planet_buildings
+#		cost = {
+#			minerals = @stellaris_incremental_b3_cost
+#		}
+#		upkeep = {
+#			energy = 1
+#			planet_research_methods = 1
+#		}
+#	}
+#
+#	prerequisites = {
+#		"stellaris_incremental_tech_planet_research_oversight_2"
+#	}
+#}
 
 #PLANET BUILD SPEED
 building_planet_build_speed_1 = {

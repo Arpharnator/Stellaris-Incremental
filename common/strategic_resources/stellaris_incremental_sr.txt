@@ -110,21 +110,21 @@ planet_district_build_cores = {
 	}
 }
 
-planet_research_methods = {
-	tradable = no
-	category = rare
-	max = 10000000
-
-	deficit_situation = situation_planet_research_methods_deficit
-
-	ai_weight = {
-		weight = 10
-	}
-
-	ai_wants = {
-		base = 5
-	}
-}
+#planet_research_methods = {
+#	tradable = no
+#	category = rare
+#	max = 10000000
+#
+#	deficit_situation = situation_planet_research_methods_deficit
+#
+#	ai_weight = {
+#		weight = 10
+#	}
+#
+#	ai_wants = {
+#		base = 5
+#	}
+#}
 
 #megastructure_parts = {
 #	tradable = no

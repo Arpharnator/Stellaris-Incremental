@@ -2,36 +2,36 @@
 
 
 #RESEARCH
-stellaris_incremental_tech_planet_research_oversight = {
-	cost = 200000
-	area = society
-	tier = 5
-	category = { statecraft }
-	prerequisites = { "stellaris_incremental_tech_planet_oversight_2" }
-	weight = @tier3weight3
+#stellaris_incremental_tech_planet_research_oversight = {
+#	cost = 200000
+#	area = society
+#	tier = 5
+#	category = { statecraft }
+#	prerequisites = { "stellaris_incremental_tech_planet_oversight_2" }
+#	weight = @tier3weight3
+#
+#	weight_modifier = {
+#		modifier = { factor = 0 has_utopia = no }
+#	}
+#
+#	ai_weight = {
+#		modifier = { factor = 0 has_utopia = no }
+#	}
+#}
 
-	weight_modifier = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-
-	ai_weight = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-}
-
-stellaris_incremental_tech_planet_research_oversight_2 = {
-	cost = 275000
-	area = society
-	tier = 5
-	category = { statecraft }
-	prerequisites = { "stellaris_incremental_tech_planet_research_oversight" }
-	weight = @tier3weight3
-
-	weight_modifier = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-
-	ai_weight = {
-		modifier = { factor = 0 has_utopia = no }
-	}
-}
+#stellaris_incremental_tech_planet_research_oversight_2 = {
+#	cost = 275000
+#	area = society
+#	tier = 5
+#	category = { statecraft }
+#	prerequisites = { "stellaris_incremental_tech_planet_research_oversight" }
+#	weight = @tier3weight3
+#
+#	weight_modifier = {
+#		modifier = { factor = 0 has_utopia = no }
+#	}
+#
+#	ai_weight = {
+#		modifier = { factor = 0 has_utopia = no }
+#	}
+#}

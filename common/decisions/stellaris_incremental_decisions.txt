@@ -1,0 +1,65 @@
+decision_stellaris_incremental_stage_advanced_expansion_zone = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	enactment_time = 180
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 10000
+			planet_district_expansion_cores = 1000
+			multiplier = value:stellaris_incremental_basic_cost_mult_by_var_min_one|variable_used|stellaris_incremental_expansion_amount|
+		}
+	}
+
+	potential = {
+		owner = {
+			has_technology = stellaris_incremental_tech_planet_oversight_5
+		}
+	}
+
+	allow = {
+	}
+
+	effect = {
+		change_variable = { which = stellaris_incremental_expansion_amount value = 1 }
+		add_deposit = d_stellaris_incremental_expansion_zone
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_stellaris_incremental_delete_advanced_expansion_zone = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	enactment_time = 30
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 100
+		}
+	}
+
+	potential = {
+		has_deposit = d_stellaris_incremental_expansion_zone
+	}
+
+	allow = {
+	}
+
+	effect = {
+		subtract_variable = { which = stellaris_incremental_expansion_amount value = 1 }
+		remove_deposit = d_stellaris_incremental_expansion_zone
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

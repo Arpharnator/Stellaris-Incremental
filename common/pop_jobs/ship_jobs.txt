@@ -95,7 +95,7 @@ ship_shield_capacitor_assembler = {
 		category = planet_jobs
 		produces = {
 			ship_shield_capacitor = 1
-			physics_research = 45
+			physics_research = 30
 		}
 		upkeep = {
 			energy = 160

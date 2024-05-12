@@ -1,0 +1,7 @@
+stellaris_incremental_basic_cost_mult_by_var_min_one = {
+	base = 1
+	
+	add = planet.$variable_used$
+
+	min = 1
+}
