@@ -6,6 +6,7 @@ starbase_improvement_hub_0 = {
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -27 y = -27 }
 	build_time = 1800
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {
@@ -132,6 +133,7 @@ starbase_improvement_hub_1 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	build_time = 1800
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {
@@ -164,6 +166,7 @@ starbase_improvement_hub_2 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	build_time = 1800
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {
@@ -210,6 +213,7 @@ starbase_improvement_hub_3 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	build_time = 2000
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {
@@ -267,6 +271,7 @@ starbase_improvement_hub_4 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	build_time = 2600
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {
@@ -325,6 +330,7 @@ starbase_improvement_hub_5 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	build_time = 3000
+	use_planet_resource = no
 	resources = {
 		category = megastructures
 		cost = {

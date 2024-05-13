@@ -1,0 +1,6 @@
+﻿l_english:
+ decision_stellaris_incremental_stage_advanced_expansion_zone: "Construct Advanced Expansion Zone"
+ decision_stellaris_incremental_stage_advanced_expansion_zone_desc: "Using a large amount of Planetary Expansion Cores, and a lot of this planet's inhabitants faith in our technology, we can construct a new area of habitable land on any kind of habitable planet or structure."
+
+ decision_stellaris_incremental_delete_advanced_expansion_zone: "Remove Advanced Expansion Zone"
+ decision_stellaris_incremental_delete_advanced_expansion_zone_desc: "Maybe it looks a little too ugly for the inhabitants of this planet, or maybe your economic advisor is trembling at the idea of having to pay the maintenance cost of the structure. Either way, it needs to go."

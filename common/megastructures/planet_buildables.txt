@@ -117,7 +117,7 @@ streamliner_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
+			alloys = 25000
 			energy = 5000
 			unity = 2500
 		}
@@ -139,9 +139,9 @@ streamliner_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
-			energy = 20000
-			unity = 2500
+			alloys = 80000
+			energy = 40000
+			unity = 5000
 		}
 	}
 
