@@ -6,6 +6,7 @@ building_station_production_overseer_1 = {
 
 	country_modifier = {
 		stations_produces_mult = 0.05
+		empire_size_systems_mult = 0.025
 	}
 
 	resources = {
@@ -35,6 +36,7 @@ building_station_production_overseer_2 = {
 
 	country_modifier = {
 		stations_produces_mult = 0.05
+		empire_size_systems_mult = 0.025
 	}
 
 	planet_modifier = {
@@ -69,6 +71,7 @@ building_station_production_overseer_3 = {
 
 	country_modifier = {
 		stations_produces_mult = 0.05
+		empire_size_systems_mult = 0.025
 	}
 
 	planet_modifier = {

@@ -25,6 +25,7 @@ station_production_overseer = {
 
 	country_modifier = {
 		stations_produces_mult = 0.05
+		empire_size_systems_mult = 0.025
 	}
 
 	weight = {
@@ -59,10 +60,6 @@ station_data_feed_scientist = {
 			society_research = 6
 			physics_research = 6
 		}
-	}
-	
-	country_modifier = {
-		empire_size_systems_mult = 0.025
 	}
 
 	possible_precalc = can_fill_drone_job

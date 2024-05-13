@@ -14,6 +14,7 @@ ship_shield_attuner = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 
 	
@@ -52,6 +53,7 @@ ship_armor_compressor = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 
 	
@@ -102,10 +104,6 @@ ship_shield_capacitor_assembler = {
 		}
 	}
 
-	country_modifier = {
-		ships_energy_upkeep_mult = 0.01
-	}
-
 	possible_precalc = can_fill_drone_job
 
 	possible = { can_think = yes }
@@ -140,10 +138,6 @@ ship_armor_compressor_assembler = {
 		upkeep = {
 			minerals = 120
 		}
-	}
-
-	country_modifier = {
-		ships_alloys_upkeep_mult = 0.01
 	}
 
 	possible_precalc = can_fill_drone_job

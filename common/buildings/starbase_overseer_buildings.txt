@@ -11,6 +11,7 @@ building_starbase_integrity_overseer_1 = {
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
 		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
 	}
 
 	resources = {
@@ -42,6 +43,7 @@ building_starbase_integrity_overseer_2 = {
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
 		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
 	}
 
 	planet_modifier = {
@@ -71,11 +73,9 @@ building_starbase_schematics_engineering_1 = {
 	category = army
 
 	country_modifier = {
-		shipsize_starbase_outpost_hull_add = 100
-		shipsize_starbase_starport_hull_add = 200
-		shipsize_starbase_starhold_hull_add = 400
-		shipsize_starbase_starfortress_hull_add = 800
-		shipsize_starbase_citadel_hull_add = 1600
+		starbase_defense_platform_capacity_add = 1
+		starbase_upgrade_cost_mult = 0.03
+		shipclass_military_station_build_cost_mult = 0.03
 	}
 
 	resources = {
@@ -105,11 +105,9 @@ building_starbase_schematics_engineering_2 = {
 	category = army
 
 	country_modifier = {
-		shipsize_starbase_outpost_hull_add = 100
-		shipsize_starbase_starport_hull_add = 200
-		shipsize_starbase_starhold_hull_add = 400
-		shipsize_starbase_starfortress_hull_add = 800
-		shipsize_starbase_citadel_hull_add = 1600
+		starbase_defense_platform_capacity_add = 1
+		starbase_upgrade_cost_mult = 0.03
+		shipclass_military_station_build_cost_mult = 0.03
 	}
 
 
@@ -216,10 +214,6 @@ building_starbase_prototype_parts_production_1 = {
 		}
 	}
 
-	country_modifier = {
-		starbases_upkeep_mult = 0.025
-	}
-
 	upgrades = {
 		"building_starbase_prototype_parts_production_2"
 	}
@@ -252,10 +246,6 @@ building_starbase_prototype_parts_production_2 = {
 		}
 	}
 
-	country_modifier = {
-		starbases_upkeep_mult = 0.025
-	}
-
 	prerequisites = {
 		"stellaris_incremental_tech_starbase_oversight_4"
 	}
@@ -281,11 +271,6 @@ building_starbase_prototype_schematics_production_1 = {
 			society_research = 11
 			physics_research = 11
 		}
-	}
-
-	country_modifier = {
-		starbase_upgrade_speed_mult = -0.03
-		starbase_upgrade_cost_mult = 0.03
 	}
 	
 	upgrades = {
@@ -321,11 +306,6 @@ building_starbase_prototype_schematics_production_2 = {
 			society_research = 11
 			physics_research = 11
 		}
-	}
-
-	country_modifier = {
-		starbase_upgrade_speed_mult = -0.03
-		starbase_upgrade_cost_mult = 0.03
 	}
 
 	prerequisites = {

@@ -16,12 +16,12 @@
  building_starbase_upgrade_overseer_1: "Starbase Prototype Parts Engineering Zone"
  building_starbase_upgrade_overseer_1_desc: "A place where engineers are tasked with making experimental components find their place on the assembly block."
  building_starbase_upgrade_overseer_2: "Starbase Prototype Parts Engineering District" 
- building_starbase_upgrade_overseer_2_desc: "A sprawling structure where a large amount of engineers partake in the ritual of trying to make experimental starbase components as useful as possible. Keyword : trying."
+ building_starbase_upgrade_overseer_2_desc: "A sprawling structure where a large amount of engineers partake in the ritual of trying to make experimental starbase components as useful as possible. Keyword : 'trying'."
 
  building_starbase_schematics_engineering_1: "Starbase Schematics Application Zone"
  building_starbase_schematics_engineering_1_desc: "Using possible and known situations to find the best architecture to be used in our bastions takes place in this facility."
  building_starbase_schematics_engineering_2: "Starbase Schematics Application District"
- building_starbase_schematics_engineering_2_desc: "Engineers and scientists mingle day and night in this installation, the former for practicality, and the other for efficiency. All of this (bickering) to make our starbases less vulnerable to critical damage."
+ building_starbase_schematics_engineering_2_desc: "Engineers and scientists mingle day and night in this installation, the former for practicality, and the latter for efficiency. All of this (bickering) to make our starbases able to field more defensive platforms."
 
  building_starbase_prototype_schematics_production_1: "Starbase Schematics Research Labs"
  building_starbase_prototype_schematics_production_1_desc: "An installation where, with the help of one or multiple Starbase Engineering Hub, simulations are run on the various possibilities that would cause a starbase to cease responding to enemy fire in a timely manner."

@@ -105,10 +105,10 @@
  planet_improvement_hub_research_2_DESC: "If the previous version of this facility could barely parse all the data sent to it, this one cannot without turning as hot as a star. Instead, planetside facilities are used to parse this data and then send it back, making this facility act more as a giant communications hub."
 
  #BUILDABLE PLANET
- streamliner_0: "Planetary Streamlining Site"
+ streamliner_0: "Station Planetary Streamlining Site"
  streamliner_0_DESC: "The construction site server as the base for the future industrialization of the planet below it."
  streamliner_0_MEGASTRUCTURE_DETAILS: "Digging out a portion of the crust, covering the surface with highly efficient electronics, all so the processes to upgrade our starbases and stations may be streamlined."
  streamliner_1: "Planetary Covering"
- streamliner_1_DESC: "Covering the Planet in electronics is a necessary step in order to advance towards making this planet able to support advanced processes."
- streamliner_2: "Stationary Improvement Planet"
+ streamliner_1_DESC: "Covering the Planet in electronics is a necessary step in order to advance towards making this it able to support advanced processes."
+ streamliner_2: "Station Improvement Planet"
  streamliner_2_DESC: "A Planet made to produce a lot of advanced products, meant for starbases and stations."

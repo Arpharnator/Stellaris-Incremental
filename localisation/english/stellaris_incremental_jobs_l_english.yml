@@ -12,7 +12,7 @@
  job_station_data_feed_scientist_desc: "Receiving data from the feeds sent by civilian stations, they work it into methods to oversee, operate and manage stations."
 
  job_starbase_upgrade_overseer: "Starbase Upgrade Overseer"
- job_starbase_upgrade_overseer_plural: "Station Upgrade Overseers"
+ job_starbase_upgrade_overseer_plural: "Starbase Upgrade Overseers"
  job_starbase_upgrade_overseer_desc: "Making sure the most promising components from a batch of experimental prototypes can be used widely is their job."
 
  job_starbase_integrity_overseer: "Starbase Integrity Overseer"
@@ -21,7 +21,7 @@
 
  job_starbase_schematics_engineer: "Starbase Schematics Engineer"
  job_starbase_schematics_engineer_plural: "Station Schematics Engineers"
- job_starbase_schematics_engineer_desc: "Working off of ideas and observations they improve architecture, making our starbases less vulnerable."
+ job_starbase_schematics_engineer_desc: "Working off of ideas and observations they improve architecture, increasing defensive platform capacity accross our starbases."
 
  job_starbase_schematics_scientist: "Starbase Schematics Scientist"
  job_starbase_schematics_scientist_plural: "Station Schematics Scientists"

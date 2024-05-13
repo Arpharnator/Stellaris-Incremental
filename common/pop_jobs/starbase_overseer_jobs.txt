@@ -19,6 +19,7 @@ starbase_integrity_overseer = {
 	country_modifier = {
 		shipclass_starbase_hull_mult = 0.03
 		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
 	}
 
 	
@@ -55,7 +56,7 @@ starbase_upgrade_overseer = {
 	}
 
 	country_modifier = {
-		starbase_upgrade_speed_mult = 0.05
+		shipclass_military_station_build_speed_mult = 0.05
 	}
 	
 	resources = {
@@ -126,11 +127,9 @@ starbase_schematics_engineer = {
 	}
 
 	country_modifier = {
-		shipsize_starbase_outpost_hull_add = 100
-		shipsize_starbase_starport_hull_add = 200
-		shipsize_starbase_starhold_hull_add = 400
-		shipsize_starbase_starfortress_hull_add = 800
-		shipsize_starbase_citadel_hull_add = 1600
+		starbase_defense_platform_capacity_add = 1
+		starbase_upgrade_cost_mult = 0.03
+		shipclass_military_station_build_cost_mult = 0.03
 	}
 	
 	resources = {
@@ -180,11 +179,6 @@ starbase_schematics_scientist = {
 			society_research = 15
 			physics_research = 15
 		}
-	}
-
-	country_modifier = {
-		starbase_upgrade_speed_mult = -0.03
-		starbase_upgrade_cost_mult = 0.03
 	}
 	
 	possible_precalc = can_fill_drone_job
@@ -257,10 +251,6 @@ starbase_prototype_parts_fabricator = {
 		upkeep = {
 			alloys = 20
 		}
-	}
-
-	country_modifier = {
-		starbases_upkeep_mult = 0.05
 	}
 	
 	possible_precalc = can_fill_drone_job

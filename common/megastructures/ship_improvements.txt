@@ -159,6 +159,7 @@ ship_improvement_hub_armor_1 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 }
 
@@ -195,6 +196,7 @@ ship_improvement_hub_armor_2 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 }
 
@@ -232,6 +234,7 @@ ship_improvement_hub_armor_3 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 }
 
@@ -269,6 +272,7 @@ ship_improvement_hub_armor_4 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 }
 
@@ -307,6 +311,7 @@ ship_improvement_hub_armor_5 = {
 
 	country_modifier = {
 		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
 	}
 }
 
@@ -470,6 +475,7 @@ ship_improvement_hub_shield_1 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 }
 
@@ -506,6 +512,7 @@ ship_improvement_hub_shield_2 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 
 
@@ -554,6 +561,7 @@ ship_improvement_hub_shield_3 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 	
 
@@ -602,6 +610,7 @@ ship_improvement_hub_shield_4 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 
 	
@@ -651,6 +660,7 @@ ship_improvement_hub_shield_5 = {
 
 	country_modifier = {
 		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
 	}
 
 	
