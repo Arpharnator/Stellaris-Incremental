@@ -13,7 +13,7 @@ decision_stellaris_incremental_stage_advanced_expansion_zone = {
 			multiplier = value:stellaris_incremental_basic_cost_mult_by_var_min_one|variable_used|stellaris_incremental_expansion_amount|
 		}
 	}
-	rerequisites = { stellaris_incremental_tech_planet_oversight_5 }
+	prerequisites = { stellaris_incremental_tech_planet_oversight_5 }
 	potential = {
 		#owner = {
 		#	has_technology = stellaris_incremental_tech_planet_oversight_5
@@ -24,8 +24,11 @@ decision_stellaris_incremental_stage_advanced_expansion_zone = {
 	}
 
 	effect = {
-		change_variable = { which = stellaris_incremental_expansion_amount value = 1 }
 		add_deposit = d_stellaris_incremental_expansion_zone
+	}
+
+	hidden_effect = {
+		change_variable = { which = stellaris_incremental_expansion_amount value = 1 }
 	}
 
 	ai_weight = {
