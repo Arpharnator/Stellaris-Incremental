@@ -44,8 +44,24 @@ building_ship_shield_attuner_2 = {
 		ships_energy_upkeep_mult = 0.01
 	}
 
-	planet_modifier = {
-		job_ship_shield_attuner_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_ship_shield_attuner_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_ship_shield_attuner_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -106,8 +122,24 @@ building_ship_armor_compressor_2 = {
 		ships_alloys_upkeep_mult = 0.01
 	}
 
-	planet_modifier = {
-		job_ship_armor_compressor_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_ship_armor_compressor_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_ship_armor_compressor_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -165,8 +197,24 @@ building_ship_armor_compressor_production_2 = {
 
 	category = resources
 
-	planet_modifier = {
-		job_ship_armor_compressor_assembler_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_ship_armor_compressor_assembler_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_ship_armor_compressor_assembler_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -223,8 +271,24 @@ building_ship_shield_capacitor_production_2 = {
 
 	category = resources
 
-	planet_modifier = {
-		job_ship_shield_capacitor_assembler_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_ship_shield_capacitor_assembler_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_ship_shield_capacitor_assembler_drone_add = 2
+		}
 	}
 
 	resources = {

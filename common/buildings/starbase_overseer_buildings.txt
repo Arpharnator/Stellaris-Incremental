@@ -46,8 +46,24 @@ building_starbase_integrity_overseer_2 = {
 		starbases_upkeep_mult = 0.05
 	}
 
-	planet_modifier = {
-		job_starbase_integrity_overseer_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_starbase_integrity_overseer_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_starbase_integrity_overseer_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -110,9 +126,24 @@ building_starbase_schematics_engineering_2 = {
 		shipclass_military_station_build_cost_mult = 0.03
 	}
 
-
-	planet_modifier = {
-		job_starbase_schematics_engineer_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_starbase_schematics_engineer_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_starbase_schematics_engineer_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -171,8 +202,24 @@ building_starbase_upgrade_overseer_2 = {
 		starbase_upgrade_speed_mult = 0.05
 	}
 
-	planet_modifier = {
-		job_starbase_upgrade_overseer_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_starbase_upgrade_overseer_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_starbase_upgrade_overseer_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -229,8 +276,24 @@ building_starbase_prototype_parts_production_2 = {
 
 	category = resources
 
-	planet_modifier = {
-		job_starbase_prototype_parts_fabricator_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_starbase_prototype_parts_fabricator_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_starbase_prototype_parts_fabricator_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -288,8 +351,24 @@ building_starbase_prototype_schematics_production_2 = {
 
 	category = resources
 
-	planet_modifier = {
-		job_starbase_schematics_scientist_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_starbase_schematics_scientist_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_starbase_schematics_scientist_drone_add = 2
+		}
 	}
 
 	resources = {

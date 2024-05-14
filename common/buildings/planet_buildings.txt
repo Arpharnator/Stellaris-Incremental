@@ -44,7 +44,26 @@ building_planet_district_expansion_2 = {
 		planet_non_artificial_max_districts_add = 2
 		planet_districts_cost_mult = 0.1
 		planet_building_build_speed_mult = -0.05
-		job_planet_accommodation_overseer_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_planet_accommodation_overseer_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_planet_accommodation_overseer_drone_add = 2
+		}
 	}
 
 	resources = {
@@ -167,8 +186,24 @@ building_planet_build_speed_2 = {
 		planet_building_build_speed_mult = 0.05
 	}
 
-	planet_modifier = {
-		job_planet_build_speed_overseer_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_planet_build_speed_overseer_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_planet_build_speed_overseer_drone_add = 2
+		}
 	}
 
 	resources = {
