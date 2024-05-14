@@ -3,7 +3,7 @@
 ####################
 
 #STARBASE DAMAGE AND HULL PERCENTAGE + UPKEEP
-starbase_integrity_overseer = {
+starbase_integrity_overseer_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -41,8 +41,46 @@ starbase_integrity_overseer = {
 	}
 }
 
+starbase_integrity_overseer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	country_modifier = {
+		shipclass_starbase_hull_mult = 0.03
+		shipclass_starbase_damage_mult = 0.02
+		starbases_upkeep_mult = 0.05
+	}
+
+	
+	resources = {
+		#category = planet_jobs
+		upkeep = {
+			starbase_prototype_parts = 1
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #STARBASE UPGRADE SPEED
-starbase_upgrade_overseer = {
+starbase_upgrade_overseer_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -69,6 +107,41 @@ starbase_upgrade_overseer = {
 	possible_precalc = can_fill_drone_job
 
 	possible = { can_think = yes }
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+starbase_upgrade_overseer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	country_modifier = {
+		shipclass_military_station_build_speed_mult = 0.05
+	}
+	
+	resources = {
+		category = planet_jobs
+		upkeep = {
+			starbase_prototype_parts = 1
+		}
+	}
 
 	weight = {
 		weight = @synapse_drone_job_weight
@@ -113,7 +186,7 @@ starbase_upgrade_overseer = {
 #}
 
 #STARBASE HULL FLAT + UPGRADE COST AND UPGRADE SPEED
-starbase_schematics_engineer = {
+starbase_schematics_engineer_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -150,12 +223,49 @@ starbase_schematics_engineer = {
 	}
 }
 
+starbase_schematics_engineer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	country_modifier = {
+		starbase_defense_platform_capacity_add = 1
+		starbase_upgrade_cost_mult = 0.03
+		shipclass_military_station_build_cost_mult = 0.03
+	}
+	
+	resources = {
+		category = planet_jobs
+		upkeep = {
+			starbase_prototype_schematics = 1
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 ###############
 # PRODUCTION
 ###############
 
 #STARBASE PROTOTYPE SCHEMATICS PRODUCTION
-starbase_schematics_scientist = {
+starbase_schematics_scientist_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -192,7 +302,44 @@ starbase_schematics_scientist = {
 	}
 }
 
-starbase_schematics_scientist_lossless = {
+starbase_schematics_scientist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			starbase_prototype_schematics = 1
+		}
+		upkeep = {
+			energy = 20
+			engineering_research = 15
+			society_research = 15
+			physics_research = 15
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+starbase_schematics_scientist_lossless_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -229,8 +376,45 @@ starbase_schematics_scientist_lossless = {
 	}
 }
 
+starbase_schematics_scientist_lossless = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			starbase_prototype_schematics = 1
+		}
+		upkeep = {
+			energy = 10
+			engineering_research = 7
+			society_research = 7
+			physics_research = 7
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #STARBASE PROTOTYPE PARTS PRODUCTION
-starbase_prototype_parts_fabricator = {
+starbase_prototype_parts_fabricator_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -264,7 +448,41 @@ starbase_prototype_parts_fabricator = {
 	}
 }
 
-starbase_prototype_parts_fabricator_lossless = {
+starbase_prototype_parts_fabricator = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			starbase_prototype_parts = 1
+		}
+		upkeep = {
+			alloys = 20
+		}
+	}
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+starbase_prototype_parts_fabricator_lossless_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -291,6 +509,40 @@ starbase_prototype_parts_fabricator_lossless = {
 
 	possible = { can_think = yes }
 
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+starbase_prototype_parts_fabricator_lossless = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			starbase_prototype_parts = 1
+		}
+		upkeep = {
+			alloys = 10
+		}
+	}
+	
 	weight = {
 		weight = @synapse_drone_job_weight
 		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|

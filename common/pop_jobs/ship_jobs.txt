@@ -1,5 +1,5 @@
 #SHIP SHIELD + ENERGY SHIP UPKEEP
-ship_shield_attuner = {
+ship_shield_attuner_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -36,9 +36,46 @@ ship_shield_attuner = {
 	}
 }
 
+ship_shield_attuner = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	country_modifier = {
+		ship_shield_mult = 0.025
+		ships_energy_upkeep_mult = 0.01
+	}
+
+	
+	resources = {
+		#category = planet_jobs
+		upkeep = {
+			ship_shield_capacitor = 1
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 
 #SHIP ARMOR + SHIP UPKEEP ALLOYS
-ship_armor_compressor = {
+ship_armor_compressor_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -75,12 +112,49 @@ ship_armor_compressor = {
 	}
 }
 
+ship_armor_compressor = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	country_modifier = {
+		ship_armor_mult = 0.025
+		ships_alloys_upkeep_mult = 0.01
+	}
+
+	
+	resources = {
+		#category = planet_jobs
+		upkeep = {
+			ship_armor_compressor_tool = 1
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 ##############
 # PRODUCTION #
 ##############
 
 #SHIP SHIELD CAPACITORS PRODUCTION
-ship_shield_capacitor_assembler = {
+ship_shield_capacitor_assembler_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -115,8 +189,43 @@ ship_shield_capacitor_assembler = {
 	}
 }
 
+ship_shield_capacitor_assembler = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			ship_shield_capacitor = 1
+			physics_research = 30
+		}
+		upkeep = {
+			energy = 160
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #SHIP ARMOR COMPRESSORS PRODUCTION
-ship_armor_compressor_assembler = {
+ship_armor_compressor_assembler_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -143,6 +252,41 @@ ship_armor_compressor_assembler = {
 	possible_precalc = can_fill_drone_job
 
 	possible = { can_think = yes }
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+ship_armor_compressor_assembler = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			ship_armor_compressor_tool = 1
+			alloys = 30
+		}
+		upkeep = {
+			minerals = 120
+		}
+	}
 
 	weight = {
 		weight = @synapse_drone_job_weight

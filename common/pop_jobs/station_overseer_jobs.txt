@@ -1,5 +1,5 @@
 #STATION PRODUCTION
-station_production_overseer = {
+station_production_overseer_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -35,8 +35,44 @@ station_production_overseer = {
 	}
 }
 
+station_production_overseer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		#category = planet_jobs
+		upkeep = {
+			station_data_feed = 1
+		}
+	}
+
+	country_modifier = {
+		stations_produces_mult = 0.05
+		empire_size_systems_mult = 0.025
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #STATION PARTS PRODUCTION
-station_data_feed_scientist = {
+station_data_feed_scientist_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -73,8 +109,45 @@ station_data_feed_scientist = {
 	}
 }
 
+station_data_feed_scientist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			station_data_feed = 1
+		}
+		upkeep = {
+			energy = 10
+			engineering_research = 6
+			society_research = 6
+			physics_research = 6
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #HABITABLE MEGA PRODUCTION JOB
-station_data_feed_scientist_lossless = {
+station_data_feed_scientist_lossless_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_simulation_1
@@ -103,6 +176,43 @@ station_data_feed_scientist_lossless = {
 	possible_precalc = can_fill_drone_job
 
 	possible = { can_think = yes }
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|evaluator|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
+station_data_feed_scientist_lossless = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	building_icon = building_simulation_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			station_data_feed = 1
+		}
+		upkeep = {
+			energy = 5
+			engineering_research = 3
+			society_research = 3
+			physics_research = 3
+		}
+	}
 
 	weight = {
 		weight = @synapse_drone_job_weight
