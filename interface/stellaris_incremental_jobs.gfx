@@ -2,6 +2,7 @@ spriteTypes = {
 	#################
 	###   JOBS    ###
 	#################
+	#REGULAR
 	spriteType = {
 		name = "GFX_job_starbase_schematics_scientist"
 		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist.dds"
@@ -69,5 +70,74 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_job_planet_research_overseer"
 		textureFile = "gfx/interface/icons/jobs/job_planet_research_overseer.dds"
+	}
+	#GESTALT
+	spriteType = {
+		name = "GFX_job_starbase_schematics_scientist_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_schematics_scientist_lossless_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_scientist_lossless_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_prototype_parts_fabricator_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_prototype_parts_fabricator_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_prototype_parts_fabricator_lossless_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_prototype_parts_fabricator_lossless_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_schematics_engineer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_schematics_engineer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_upgrade_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_upgrade_overseer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_starbase_integrity_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_starbase_integrity_overseer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_station_data_feed_scientist_drone"
+		textureFile = "gfx/interface/icons/jobs/job_station_data_feed_scientist_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_station_data_feed_scientist_lossless_drone"
+		textureFile = "gfx/interface/icons/jobs/job_station_data_feed_scientist_lossless_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_station_production_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_station_production_overseer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_planet_accommodation_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_planet_accommodation_overseer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_planet_build_speed_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_planet_build_speed_overseer_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_shield_attuner_drone"
+		textureFile = "gfx/interface/icons/jobs/job_ship_shield_attuner_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_armor_compressor_drone"
+		textureFile = "gfx/interface/icons/jobs/job_ship_armor_compressor_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_shield_capacitor_assembler_drone"
+		textureFile = "gfx/interface/icons/jobs/job_ship_shield_capacitor_assembler_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_ship_armor_compressor_assembler_drone"
+		textureFile = "gfx/interface/icons/jobs/job_ship_armor_compressor_assembler_drone.dds"
+	}
+	spriteType = {
+		name = "GFX_job_planet_research_overseer_drone"
+		textureFile = "gfx/interface/icons/jobs/job_planet_research_overseer_drone.dds"
 	}
 }

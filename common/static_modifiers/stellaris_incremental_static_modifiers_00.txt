@@ -5,5 +5,5 @@ prospecting_mega_cap_adjustment = {
 
 stellaris_incremental_upkeep_malus_station_data_feed = {
 	stellaris_incremental_tooltips_minerals_cost_mult = 1
-	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+	icon = "gfx/interface/icons/modifiers/mod_station_data_feed_cost_mult.dds"
 }
