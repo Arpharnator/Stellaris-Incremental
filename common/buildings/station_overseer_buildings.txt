@@ -149,6 +149,7 @@ building_station_data_feed_production_1 = {
 			engineering_research = 4
 			society_research = 4
 			physics_research = 4
+			mult = value:stellaris_incremental_building_upkeep_station_data_feed
 		}
 	}
 
@@ -200,6 +201,7 @@ building_station_data_feed_production_2 = {
 			engineering_research = 4
 			society_research = 4
 			physics_research = 4
+			mult = value:stellaris_incremental_building_upkeep_station_data_feed
 		}
 	}
 

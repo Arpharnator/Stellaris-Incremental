@@ -95,6 +95,7 @@ station_data_feed_scientist_drone = {
 			engineering_research = 6
 			society_research = 6
 			physics_research = 6
+			mult = value:stellaris_incremental_job_upkeep_station_data_feed
 		}
 	}
 
@@ -136,6 +137,7 @@ station_data_feed_scientist = {
 			engineering_research = 6
 			society_research = 6
 			physics_research = 6
+			mult = value:stellaris_incremental_job_upkeep_station_data_feed
 		}
 	}
 
@@ -170,6 +172,7 @@ station_data_feed_scientist_lossless_drone = {
 			engineering_research = 3
 			society_research = 3
 			physics_research = 3
+			mult = value:stellaris_incremental_job_upkeep_station_data_feed
 		}
 	}
 
@@ -211,6 +214,7 @@ station_data_feed_scientist_lossless = {
 			engineering_research = 3
 			society_research = 3
 			physics_research = 3
+			mult = value:stellaris_incremental_job_upkeep_station_data_feed
 		}
 	}
 

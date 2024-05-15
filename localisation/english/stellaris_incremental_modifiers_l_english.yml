@@ -27,6 +27,10 @@
 
 #PROSPECTING MEGA CAP
  prospecting_mega_cap_adjustment: "Prospection Megastructure Build Capacity Adjustment"
+#MALUS UPKEEP FOR STATION DATA PROCUREMENT
+ stellaris_incremental_upkeep_malus_station_data_feed: "Station Data Procurement Costs"
+#SEE ECONOMIC CATEGORY
+ mod_stellaris_incremental_tooltips_minerals_cost_mult:99 "Each resource deposit exploited by mining stations generates extra overhead costs when making improvements to output.\n\nUpkeep of all sources of Station Data are increased by "
 
 #MULTS TO NEW RESOURCES
  mod_country_station_data_feed_produces_mult: "Monthly Station Data"

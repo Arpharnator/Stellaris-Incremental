@@ -85,10 +85,17 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {
-		remove_modifier = test_mega_cap_adjustment
+	trigger = {
+		resource_revenue_compare = {
+			resource = station_data_feed
+			value > 0
+		}
+	}
 
-		set_variable = { which = total_production_by_stations value = 0 }
+	immediate = {
+		remove_modifier = stellaris_incremental_upkeep_malus_station_data_feed
+
+		set_variable = { which = total_production_by_stations_global value = 0 }
 
 		every_orbital_station = {
 			limit = {
@@ -539,7 +546,7 @@ country_event = {
 				change_variable = { which = total_production_by_stations value = mote_deposits_size_5 }
 				#owner gets the stuff?
 				space_owner = {
-					change_variable = { which = total_production_by_stations value = prev.total_production_by_stations }
+					change_variable = { which = total_production_by_stations_global value = prev.total_production_by_stations }
 				}
 			}
 
@@ -560,10 +567,26 @@ country_event = {
 		#change_variable = { which = total_production_by_stations value = gas_production_by_stations }
 		#change_variable = { which = total_production_by_stations value = crystal_production_by_stations }
 		#change_variable = { which = total_production_by_stations value = mote_production_by_stations }
+
+		#Calculate how much research per station_data_feed must be added
+		#set_variable = { which = test_income_si value = 0 }
+		#export_resource_income_to_variable = { resource = energy variable = test_income_si }
+		#export_trigger_value_to_variable = {
+		#	trigger = resource_revenue_compare
+		#	parameters = {
+		#		resource = station_data_feed
+		#		value > 0
+		#	}
+		#	variable = test_income_si
+		#}
+
+		#Adjustment for resource value
+		divide_variable = { which = total_production_by_stations_global value = 200 }
+
 		add_modifier = {
-			modifier = test_mega_cap_adjustment
+			modifier = stellaris_incremental_upkeep_malus_station_data_feed
 			days = -1
-			multiplier = total_production_by_stations
+			multiplier = total_production_by_stations_global
 		}
 	}
 }

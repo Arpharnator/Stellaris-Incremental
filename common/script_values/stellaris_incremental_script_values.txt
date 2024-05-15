@@ -5,3 +5,19 @@ stellaris_incremental_basic_cost_mult_by_var_min_one = {
 
 	min = 1
 }
+
+stellaris_incremental_megastructure_upkeep_station_data_feed = {
+	base = 1
+	add = owner.total_production_by_stations_global
+	
+}
+
+stellaris_incremental_building_upkeep_station_data_feed = {
+	base = 1
+	add = owner.total_production_by_stations_global
+}
+
+stellaris_incremental_job_upkeep_station_data_feed = {
+	base = 1
+	add = owner.total_production_by_stations_global
+}

@@ -1,0 +1,9 @@
+stellaris_incremental_tooltips = {
+	modifier_category = country
+	generate_add_modifiers = {
+		cost produces
+	}
+	generate_mult_modifiers = {
+		cost produces
+	}
+}

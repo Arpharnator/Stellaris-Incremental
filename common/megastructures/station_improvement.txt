@@ -146,6 +146,7 @@ station_improvement_hub_1 = {
 			engineering_research = 3
 			society_research = 3
 			physics_research = 3
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
@@ -186,6 +187,7 @@ station_improvement_hub_2 = {
 			engineering_research = 9
 			society_research = 9
 			physics_research = 9
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
@@ -238,6 +240,7 @@ station_improvement_hub_3 = {
 			engineering_research = 18
 			society_research = 18
 			physics_research = 18
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
@@ -289,6 +292,7 @@ station_improvement_hub_4 = {
 			engineering_research = 36
 			society_research = 36
 			physics_research = 36
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
@@ -341,6 +345,7 @@ station_improvement_hub_5 = {
 			engineering_research = 75
 			society_research = 75
 			physics_research = 75
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
@@ -393,6 +398,7 @@ station_improvement_hub_6 = {
 			engineering_research = 75
 			society_research = 75
 			physics_research = 75
+			mult = value:stellaris_incremental_megastructure_upkeep_station_data_feed
 		}
 	}
 
