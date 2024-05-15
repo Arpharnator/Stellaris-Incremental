@@ -152,10 +152,6 @@ building_station_data_feed_production_1 = {
 		}
 	}
 
-	country_modifier = {
-		empire_size_systems_mult = 0.01
-	}
-
 	upgrades = {
 		"building_station_data_feed_production_2"
 	}
@@ -205,10 +201,6 @@ building_station_data_feed_production_2 = {
 			society_research = 4
 			physics_research = 4
 		}
-	}
-
-	country_modifier = {
-		empire_size_systems_mult = 0.01
 	}
 
 	prerequisites = {

@@ -40,3 +40,6 @@
 
 #ALLOYS UPKEEP MULT
  mod_ships_alloys_upkeep_mult: "Alloys Ship Upkeep"
+
+#DEFENSE PLATFORM COST MULT
+ mod_starbase_stations_cost_mult: "Defense Platform Build Cost"

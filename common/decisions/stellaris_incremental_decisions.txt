@@ -25,11 +25,12 @@ decision_stellaris_incremental_stage_advanced_expansion_zone = {
 
 	effect = {
 		add_deposit = d_stellaris_incremental_expansion_zone
+		hidden_effect = {
+			change_variable = { which = stellaris_incremental_expansion_amount value = 1 }
+		}
 	}
 
-	hidden_effect = {
-		change_variable = { which = stellaris_incremental_expansion_amount value = 1 }
-	}
+	
 
 	ai_weight = {
 		weight = 0

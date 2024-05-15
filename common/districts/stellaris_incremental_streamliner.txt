@@ -85,9 +85,17 @@ district_stellaris_incremental_streamliner_station_produce = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
 		}
-		job_station_data_feed_scientist_lossless_add = 4 
+		job_station_data_feed_scientist_lossless_drone_add = 4 
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		job_station_data_feed_scientist_lossless_add = 4
 	}
 
 	# job descriptions
@@ -165,7 +173,15 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_production =
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_starbase_prototype_parts_fabricator_lossless_drone_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_starbase_prototype_parts_fabricator_lossless_add = 4
 	}
@@ -245,7 +261,15 @@ district_stellaris_incremental_streamliner_starbase_schematics_production = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_starbase_schematics_scientist_lossless_drone_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_starbase_schematics_scientist_lossless_add = 4
 	}
@@ -327,7 +351,15 @@ district_stellaris_incremental_streamliner_station_usage = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_station_production_overseer_drone_add = 8
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_station_production_overseer_add = 8
 	}
@@ -408,7 +440,15 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_us
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_starbase_integrity_overseer_drone_add = 8
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_starbase_integrity_overseer_add = 8
 	}
@@ -487,7 +527,15 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usag
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_starbase_upgrade_overseer_drone_add = 8
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_starbase_upgrade_overseer_add = 8
 	}
@@ -566,7 +614,15 @@ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_gestalt = yes }
+		}
+		job_starbase_schematics_engineer_drone_add = 8
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
 		}
 		job_starbase_schematics_engineer_add = 8
 	}

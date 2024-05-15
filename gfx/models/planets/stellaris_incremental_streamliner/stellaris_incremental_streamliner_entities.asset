@@ -31,7 +31,6 @@ entity = {
 	}	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
-		start_event = { time = 0.0 node = "planet" particle = "m_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}

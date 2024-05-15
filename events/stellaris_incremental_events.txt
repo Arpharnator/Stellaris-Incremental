@@ -78,5 +78,492 @@ country_event = {
 	}
 }
 
+#Calculate how much research consumed total
+#do that as well for jobs and buildings at worse ratios
+country_event = {
+	id = stellaris_incremental.7
+	hide_window = yes
+	is_triggered_only = yes
 
+	immediate = {
+		remove_modifier = test_mega_cap_adjustment
 
+		set_variable = { which = total_production_by_stations value = 0 }
+
+		every_orbital_station = {
+			limit = {
+				#
+				is_ship_size = mining_station
+			}
+			#planet
+			orbit = {
+
+				set_variable = { which = mineral_deposits_size_1 value = 0 }
+				set_variable = { which = mineral_deposits_size_2 value = 0 }
+				set_variable = { which = mineral_deposits_size_3 value = 0 }
+				set_variable = { which = mineral_deposits_size_4 value = 0 }
+				set_variable = { which = mineral_deposits_size_5 value = 0 }
+				set_variable = { which = mineral_deposits_size_6 value = 0 }
+				set_variable = { which = mineral_deposits_size_7 value = 0 }
+				set_variable = { which = mineral_deposits_size_8 value = 0 }
+				set_variable = { which = mineral_deposits_size_9 value = 0 }
+				set_variable = { which = mineral_deposits_size_10 value = 0 }
+				set_variable = { which = energy_deposits_size_1 value = 0 }
+				set_variable = { which = energy_deposits_size_2 value = 0 }
+				set_variable = { which = energy_deposits_size_3 value = 0 }
+				set_variable = { which = energy_deposits_size_4 value = 0 }
+				set_variable = { which = energy_deposits_size_5 value = 0 }
+				set_variable = { which = energy_deposits_size_6 value = 0 }
+				set_variable = { which = energy_deposits_size_7 value = 0 }
+				set_variable = { which = energy_deposits_size_8 value = 0 }
+				set_variable = { which = energy_deposits_size_9 value = 0 }
+				set_variable = { which = energy_deposits_size_10 value = 0 }
+				set_variable = { which = alloy_deposits_size_1 value = 0 }
+				set_variable = { which = alloy_deposits_size_2 value = 0 }
+				set_variable = { which = alloy_deposits_size_3 value = 0 }
+				set_variable = { which = alloy_deposits_size_4 value = 0 }
+				set_variable = { which = alloy_deposits_size_5 value = 0 }
+				set_variable = { which = alloy_deposits_size_10 value = 0 }
+				set_variable = { which = alloy_deposits_size_25 value = 0 }
+				set_variable = { which = gas_deposits_size_1 value = 0 }
+				set_variable = { which = gas_deposits_size_2 value = 0 }
+				set_variable = { which = gas_deposits_size_3 value = 0 }
+				set_variable = { which = gas_deposits_size_4 value = 0 }
+				set_variable = { which = gas_deposits_size_5 value = 0 }
+				set_variable = { which = crystal_deposits_size_1 value = 0 }
+				set_variable = { which = crystal_deposits_size_2 value = 0 }
+				set_variable = { which = crystal_deposits_size_3 value = 0 }
+				set_variable = { which = crystal_deposits_size_4 value = 0 }
+				set_variable = { which = crystal_deposits_size_5 value = 0 }
+				set_variable = { which = mote_deposits_size_1 value = 0 }
+				set_variable = { which = mote_deposits_size_2 value = 0 }
+				set_variable = { which = mote_deposits_size_3 value = 0 }
+				set_variable = { which = mote_deposits_size_4 value = 0 }
+				set_variable = { which = mote_deposits_size_5 value = 0 }
+
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_1
+					}
+					variable = mineral_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_2
+					}
+					variable = mineral_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_3
+					}
+					variable = mineral_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_4
+					}
+					variable = mineral_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_5
+					}
+					variable = mineral_deposits_size_5
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_6
+					}
+					variable = mineral_deposits_size_6
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_7
+					}
+					variable = mineral_deposits_size_7
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_8
+					}
+					variable = mineral_deposits_size_8
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_9
+					}
+					variable = mineral_deposits_size_9
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_minerals_10
+					}
+					variable = mineral_deposits_size_10
+				}
+				#ENERGY
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_1
+					}
+					variable = energy_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_2
+					}
+					variable = energy_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_3
+					}
+					variable = energy_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_4
+					}
+					variable = energy_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_5
+					}
+					variable = energy_deposits_size_5
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_6
+					}
+					variable = energy_deposits_size_6
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_7
+					}
+					variable = energy_deposits_size_7
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_8
+					}
+					variable = energy_deposits_size_8
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_9
+					}
+					variable = energy_deposits_size_9
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_energy_10
+					}
+					variable = energy_deposits_size_10
+				}
+
+				#ALLOYS
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_1
+					}
+					variable = alloy_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_2
+					}
+					variable = alloy_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_3
+					}
+					variable = alloy_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_4
+					}
+					variable = alloy_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_5
+					}
+					variable = alloy_deposits_size_5
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_10
+					}
+					variable = alloy_deposits_size_10
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_alloys_25
+					}
+					variable = alloy_deposits_size_25
+				}
+
+				#GASES
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_exotic_gases_1
+					}
+					variable = gas_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_exotic_gases_2
+					}
+					variable = gas_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_exotic_gases_3
+					}
+					variable = gas_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_exotic_gases_4
+					}
+					variable = gas_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_exotic_gases_5
+					}
+					variable = gas_deposits_size_5
+				}
+
+				#CRYSTALS
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_rare_crystals_1
+					}
+					variable = crystal_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_rare_crystals_2
+					}
+					variable = crystal_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_rare_crystals_3
+					}
+					variable = crystal_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_rare_crystals_4
+					}
+					variable = crystal_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_rare_crystals_5
+					}
+					variable = crystal_deposits_size_5
+				}
+
+				#MOTES
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_volatile_motes_1
+					}
+					variable = mote_deposits_size_1
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_volatile_motes_2
+					}
+					variable = mote_deposits_size_2
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_volatile_motes_3
+					}
+					variable = mote_deposits_size_3
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_volatile_motes_4
+					}
+					variable = mote_deposits_size_4
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_deposits
+					parameters = {
+						type = d_volatile_motes_5
+					}
+					variable = mote_deposits_size_5
+				}
+
+				#mineral_deposits_size_1
+				multiply_variable = { which = mineral_deposits_size_2 value = 2 }
+				multiply_variable = { which = mineral_deposits_size_3 value = 3 }
+				multiply_variable = { which = mineral_deposits_size_4 value = 4 }
+				multiply_variable = { which = mineral_deposits_size_5 value = 5 }
+				multiply_variable = { which = mineral_deposits_size_6 value = 6 }
+				multiply_variable = { which = mineral_deposits_size_7 value = 7 }
+				multiply_variable = { which = mineral_deposits_size_8 value = 8 }
+				multiply_variable = { which = mineral_deposits_size_9 value = 9 }
+				multiply_variable = { which = mineral_deposits_size_10 value = 10 }
+
+				#energy_deposits_size_1
+				multiply_variable = { which = energy_deposits_size_2 value = 2 }
+				multiply_variable = { which = energy_deposits_size_3 value = 3 }
+				multiply_variable = { which = energy_deposits_size_4 value = 4 }
+				multiply_variable = { which = energy_deposits_size_5 value = 5 }
+				multiply_variable = { which = energy_deposits_size_6 value = 6 }
+				multiply_variable = { which = energy_deposits_size_7 value = 7 }
+				multiply_variable = { which = energy_deposits_size_8 value = 8 }
+				multiply_variable = { which = energy_deposits_size_9 value = 9 }
+				multiply_variable = { which = energy_deposits_size_10 value = 10 }
+
+				multiply_variable = { which = alloy_deposits_size_1 value = 4 }
+				multiply_variable = { which = alloy_deposits_size_2 value = 8 }
+				multiply_variable = { which = alloy_deposits_size_3 value = 12 }
+				multiply_variable = { which = alloy_deposits_size_4 value = 16 }
+				multiply_variable = { which = alloy_deposits_size_5 value = 20 }
+				multiply_variable = { which = alloy_deposits_size_10 value = 40 }
+				multiply_variable = { which = alloy_deposits_size_25 value = 100 }
+
+				multiply_variable = { which = gas_deposits_size_1 value = 10 }
+				multiply_variable = { which = gas_deposits_size_2 value = 20 }
+				multiply_variable = { which = gas_deposits_size_3 value = 30 }
+				multiply_variable = { which = gas_deposits_size_4 value = 40 }
+				multiply_variable = { which = gas_deposits_size_5 value = 50 }
+
+				multiply_variable = { which = crystal_deposits_size_1 value = 10 }
+				multiply_variable = { which = crystal_deposits_size_2 value = 20 }
+				multiply_variable = { which = crystal_deposits_size_3 value = 30 }
+				multiply_variable = { which = crystal_deposits_size_4 value = 40 }
+				multiply_variable = { which = crystal_deposits_size_5 value = 50 }
+
+				multiply_variable = { which = mote_deposits_size_1 value = 10 }
+				multiply_variable = { which = mote_deposits_size_2 value = 20 }
+				multiply_variable = { which = mote_deposits_size_3 value = 30 }
+				multiply_variable = { which = mote_deposits_size_4 value = 40 }
+				multiply_variable = { which = mote_deposits_size_5 value = 50 }
+
+				set_variable = { which = total_production_by_stations value = 0 }
+
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_5 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_6 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_7 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_8 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_9 }
+				change_variable = { which = total_production_by_stations value = mineral_deposits_size_10 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_5 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_6 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_7 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_8 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_9 }
+				change_variable = { which = total_production_by_stations value = energy_deposits_size_10 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_5 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_10 }
+				change_variable = { which = total_production_by_stations value = alloy_deposits_size_25 }
+				change_variable = { which = total_production_by_stations value = gas_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = gas_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = gas_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = gas_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = gas_deposits_size_5 }
+				change_variable = { which = total_production_by_stations value = crystal_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = crystal_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = crystal_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = crystal_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = crystal_deposits_size_5 }
+				change_variable = { which = total_production_by_stations value = mote_deposits_size_1 }
+				change_variable = { which = total_production_by_stations value = mote_deposits_size_2 }
+				change_variable = { which = total_production_by_stations value = mote_deposits_size_3 }
+				change_variable = { which = total_production_by_stations value = mote_deposits_size_4 }
+				change_variable = { which = total_production_by_stations value = mote_deposits_size_5 }
+				#owner gets the stuff?
+				space_owner = {
+					change_variable = { which = total_production_by_stations value = prev.total_production_by_stations }
+				}
+			}
+
+		}
+		
+
+		
+
+		#multiply_variable = { which = mineral_production_by_stations value = 0.1 }
+		#multiply_variable = { which = energy_production_by_stations value = 0.1 }
+		#multiply_variable = { which = alloy_production_by_stations value = 1 }
+		#multiply_variable = { which = gas_production_by_stations value = 2 }
+		#multiply_variable = { which = crystal_production_by_stations value = 2 }
+		#multiply_variable = { which = mote_production_by_stations value = 2 }
+		#change_variable = { which = total_production_by_stations value = mineral_production_by_stations }
+		#change_variable = { which = total_production_by_stations value = energy_production_by_stations }
+		#change_variable = { which = total_production_by_stations value = alloy_production_by_stations }
+		#change_variable = { which = total_production_by_stations value = gas_production_by_stations }
+		#change_variable = { which = total_production_by_stations value = crystal_production_by_stations }
+		#change_variable = { which = total_production_by_stations value = mote_production_by_stations }
+		add_modifier = {
+			modifier = test_mega_cap_adjustment
+			days = -1
+			multiplier = total_production_by_stations
+		}
+	}
+}

@@ -169,7 +169,7 @@ building_starbase_upgrade_overseer_1 = {
 	category = army	
 
 	country_modifier = {
-		starbase_upgrade_speed_mult = 0.05
+		shipclass_military_station_build_speed_mult = 0.05
 	}
 
 	resources = {
@@ -199,7 +199,7 @@ building_starbase_upgrade_overseer_2 = {
 	category = army	
 
 	country_modifier = {
-		starbase_upgrade_speed_mult = 0.05
+		shipclass_military_station_build_speed_mult = 0.05
 	}
 
 	triggered_planet_modifier = {

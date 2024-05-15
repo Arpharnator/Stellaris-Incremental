@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ district_stellaris_incremental_streamliner_city: "City District"
+ district_stellaris_incremental_streamliner_city_plural: "City Districts"
+ district_stellaris_incremental_streamliner_city_desc: "A simple city with a lot of recreational buildings."
+
  district_stellaris_incremental_streamliner_station_produce: "Station Data Handler District"
  district_stellaris_incremental_streamliner_station_produce_plural: "Station Data Handler Districts"
  district_stellaris_incremental_streamliner_station_produce_desc: "These Districts host numerous antennae and servers in order to parse the data coming from the stations in our empire."

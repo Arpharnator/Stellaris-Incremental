@@ -98,7 +98,7 @@ starbase_upgrade_overseer_drone = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			starbase_prototype_parts = 1
 		}
@@ -137,7 +137,7 @@ starbase_upgrade_overseer = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			starbase_prototype_parts = 1
 		}
@@ -206,7 +206,7 @@ starbase_schematics_engineer_drone = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			starbase_prototype_schematics = 1
 		}
@@ -244,10 +244,12 @@ starbase_schematics_engineer = {
 		starbase_defense_platform_capacity_add = 1
 		starbase_upgrade_cost_mult = 0.03
 		shipclass_military_station_build_cost_mult = 0.03
+		#starbase_stations_cost_mult
+		
 	}
 	
 	resources = {
-		category = planet_jobs
+		#category = planet_jobs
 		upkeep = {
 			starbase_prototype_schematics = 1
 		}
