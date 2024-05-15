@@ -1,8 +1,8 @@
-#on_monthly_pulse_country = {	
-#	events = { 
-#		stellaris_incremental.100 #Update variables for max buildings and job numbers
-#	} 
-#} 
+on_monthly_pulse_country = {	
+	events = { 
+		stellaris_incremental.7
+	} 
+} 
 
 
 on_game_start_country = {
