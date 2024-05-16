@@ -6,10 +6,13 @@ district_stellaris_incremental_streamliner_city = {
 	
 	show_on_uncolonized = {
 		uses_district_set = stellaris_incremental_streamliner
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+
 	}
 	
 	potential = {
 		uses_district_set = stellaris_incremental_streamliner
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
 	}
 	
 	resources = {
@@ -64,24 +67,7 @@ district_stellaris_incremental_streamliner_station_produce = {
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -90,6 +76,7 @@ district_stellaris_incremental_streamliner_station_produce = {
 		job_station_data_feed_scientist_lossless_drone_add = 4 
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -97,29 +84,6 @@ district_stellaris_incremental_streamliner_station_produce = {
 		}
 		job_station_data_feed_scientist_lossless_add = 4
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 #STARBASE PROTOTYPE PARTS
@@ -152,24 +116,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_production =
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -178,6 +125,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_production =
 		job_starbase_prototype_parts_fabricator_lossless_drone_add = 4
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -185,29 +133,6 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_production =
 		}
 		job_starbase_prototype_parts_fabricator_lossless_add = 4
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 #STARBASE SCHEMATICS
@@ -240,24 +165,7 @@ district_stellaris_incremental_streamliner_starbase_schematics_production = {
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -266,6 +174,7 @@ district_stellaris_incremental_streamliner_starbase_schematics_production = {
 		job_starbase_schematics_scientist_lossless_drone_add = 4
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -273,29 +182,6 @@ district_stellaris_incremental_streamliner_starbase_schematics_production = {
 		}
 		job_starbase_schematics_scientist_lossless_add = 4
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 #UTILIZATION DISTRICTS
@@ -330,24 +216,7 @@ district_stellaris_incremental_streamliner_station_usage = {
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -356,6 +225,7 @@ district_stellaris_incremental_streamliner_station_usage = {
 		job_station_production_overseer_drone_add = 8
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -363,29 +233,6 @@ district_stellaris_incremental_streamliner_station_usage = {
 		}
 		job_station_production_overseer_add = 8
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 
@@ -419,24 +266,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_us
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -445,6 +275,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_us
 		job_starbase_integrity_overseer_drone_add = 8
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -452,29 +283,6 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_integrity_us
 		}
 		job_starbase_integrity_overseer_add = 8
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage = {
@@ -506,24 +314,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usag
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -532,6 +323,7 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usag
 		job_starbase_upgrade_overseer_drone_add = 8
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -539,29 +331,6 @@ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usag
 		}
 		job_starbase_upgrade_overseer_add = 8
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
 
 district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = {
@@ -593,24 +362,7 @@ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = 
 		planet_housing_add = 5
 	}
 
-	# jobs : regular empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	
-	#}
-	# jobs : hive empire
-	#triggered_planet_modifier = {
-	#	potential = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	job_brain_drone_add = 5
-	#}
-
-	# jobs : machine empire
+	#GESTALT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -619,6 +371,7 @@ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = 
 		job_starbase_schematics_engineer_drone_add = 8
 	}
 
+	#REGULAR
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -626,27 +379,4 @@ district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage = 
 		}
 		job_starbase_schematics_engineer_add = 8
 	}
-
-	# job descriptions
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_gestalt = no }
-	#	}
-	#	text = "job_researcher_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_hive_empire = yes }
-	#	}
-	#	text = "job_brain_drone_effect_desc"
-	#}
-	#triggered_desc = {
-	#	trigger = {
-	#		exists = owner
-	#		owner = { is_machine_empire = yes }
-	#	}
-	#	text = "job_calculator_effect_desc"
-	#}
 }
