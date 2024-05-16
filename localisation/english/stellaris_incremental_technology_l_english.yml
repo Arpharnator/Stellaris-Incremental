@@ -38,6 +38,9 @@
  stellaris_incremental_tech_ship_oversight_4_desc: "Larger planetside facilities are made possible due to advances in pressurization."
  stellaris_incremental_tech_ship_oversight_5: "Defensive Industries Mega-Production"
  stellaris_incremental_tech_ship_oversight_5_desc: "Better storage methods, compression methods, insulation methods can be used to overhaul our treatment mechanisms used in our spaceborne mega-industry."
+
+ stellaris_incremental_tech_ship_streamliner_1: "Planetary Scale Ship Assembly"
+ stellaris_incremental_tech_ship_streamliner_1_desc: "Putting in place new methods to withstand heat and conduct large amounts of energy at once, we are able to put together schematics for a far more efficient and productive ship upgrade program."
  
  #PLANET
  stellaris_incremental_tech_planet_oversight: "Megascale Planetary Assembly"
