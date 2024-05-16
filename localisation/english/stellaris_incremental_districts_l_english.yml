@@ -1,5 +1,6 @@
 ﻿l_english:
 
+#STATION
  district_stellaris_incremental_streamliner_city: "City District"
  district_stellaris_incremental_streamliner_city_plural: "City Districts"
  district_stellaris_incremental_streamliner_city_desc: "A simple city with a lot of recreational buildings."
@@ -26,9 +27,25 @@
 
  district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage: "Starbase Prototype Assembly District"
  district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage_plural: "Starbase Prototype Assembly Districts"
- district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage_desc: "Similar to its brother District where experimental parts are integrated in starbase components, with the difference that they are manufactured en masse in order to ease demand."
+ district_stellaris_incremental_streamliner_starbase_prototype_parts_upgrade_usage_desc: "Similar to its brother District where experimental parts are integrated in starbase components, with the difference that they are manufactured en masse in order to satisfy demand."
 
  district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage: "Starbase Schematic Server District"
  district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage_plural: "Starbase Schematic Server Districts"
  district_stellaris_incremental_streamliner_starbase_schematics_engineer_usage_desc: "This District is more like a giant server rather than an actually populated area, barring its outskirts. Indeed, this place is extremely hot, and scientists work in furthest possible place from the central server in order to feed it."
 
+#SHIP
+ district_stellaris_incremental_streamliner_ship_shield_capacitor_production: "Shield Capacitor Factory District"
+ district_stellaris_incremental_streamliner_ship_shield_capacitor_production_plural : "Shield Capacitor Factory Districts"
+ district_stellaris_incremental_streamliner_ship_shield_capacitor_production_desc: "Swathes of land converted to experimental facilities allowing for the production of high-tech Shield Capacitors."
+
+ district_stellaris_incremental_streamliner_ship_shield_attuner_usage: "Shield Attunement District"
+ district_stellaris_incremental_streamliner_ship_shield_attuner_usage_plural: "Shield Attunement Districts"
+ district_stellaris_incremental_streamliner_ship_shield_attuner_usage_desc: "A checkpoint in shield fabrication. Freighters disembark with shield components here, and embark with ever slightly heavier cargo."
+
+ district_stellaris_incremental_streamliner_ship_armor_compressor_production: "Armor Compressor Factory District"
+ district_stellaris_incremental_streamliner_ship_armor_compressor_production_plural: "Armor Compressor Factory Districts"
+ district_stellaris_incremental_streamliner_ship_armor_compressor_production: "Infernal heat emerges from every direction in this place, enough to convert any land to a barren wasteland as it ripples through the soil. However, with the alloys that now constitute said soil and key structures, great benefits can be extracted in the form of unique apparatus to make our ships' armor ever denser."
+
+ district_stellaris_incremental_streamliner_ship_armor_compressor_usage: "Armor Shaper District"
+ district_stellaris_incremental_streamliner_ship_armor_compressor_usage_plural : "Armor Shaper District"
+ district_stellaris_incremental_streamliner_ship_armor_compressor_usage_desc: "Any alloy used to make armor is relayed here before being sent forward, whether to a ship or another one of these stations."

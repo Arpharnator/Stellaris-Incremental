@@ -153,3 +153,176 @@ streamliner_2 = {
 		remove_megastructure = fromfrom
 	}
 }
+
+#SHIP STREAMLINER
+ship_streamliner_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	prerequisites = { stellaris_incremental_tech_planet_oversight_5 }
+	#show_prereqs = yes
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			influence = 150
+			unity = 2500
+		}
+		upkeep = { energy = 5 }
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_anomaly"				has_anomaly = no }
+			custom_tooltip = { fail_text = "requires_not_asteroid"				is_asteroid = no }
+			custom_tooltip = { fail_text = "requires_not_star"					is_star = no }
+			custom_tooltip = { fail_text = "requires_no_crisis_planet"			NOT = { has_planet_flag = crisis_vital_planet } }
+			custom_tooltip = {
+				fail_text = "must_build_around_comp"
+				NOT = {
+					is_planet_class = pc_stellaris_incremental_streamliner
+				}
+				habitable_structure = no
+				OR = {
+					is_planet_habitable = yes
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				OR = {
+					AND = {
+						is_surveyed = { who = prev.from status = yes }
+						prev.from = { is_ai = no }
+					}
+					AND = {
+						is_surveyed = { who = prev.from status = yes }
+						prev.from = { is_ai = yes }
+						is_planet_habitable = no
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
+}
+
+ship_streamliner_1 = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { ship_streamliner_0 }
+	prerequisites = { stellaris_incremental_tech_planet_oversight_5 }
+
+	build_time = 2500
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 50000
+			energy = 15000
+			unity = 5000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 10
+		}
+	}
+}
+
+ship_streamliner_2 = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { ship_streamliner_1 }
+	prerequisites = { stellaris_incremental_tech_planet_oversight_5 }
+	#show_prereqs = yes
+
+	build_time = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 150000
+			unity = 10000
+			
+		}
+	}
+}
+
+ship_streamliner_3 = {
+	entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { ship_streamliner_2 }
+	prerequisites = { stellaris_incremental_tech_planet_oversight_5 }
+	show_prereqs = yes
+
+	build_time = 5200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 140000
+			energy = 80000
+			unity = 10000
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = megastructure
+		    change_pc = pc_stellaris_incremental_ship_combat_streamliner
+		}
+		remove_megastructure = fromfrom
+	}
+}

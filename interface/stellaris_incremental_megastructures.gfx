@@ -173,18 +173,34 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/planet_improvement_hub_research_outliner_icon.dds"
 	}
 
-	#STREAMLINER
+	#STATION STREAMLINER
 	spriteType = {
 		name = "GFX_streamliner_0_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
 	}
 	spriteType = {
-		name = "GFX_pstreamliner_1_outliner_icon"
+		name = "GFX_streamliner_1_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
 	}
 	spriteType = {
 		name = "GFX_streamliner_2_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
 	}
-
+	#SHIP STREAMLINER
+	spriteType = {
+		name = "GFX_ship_streamliner_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_streamliner_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_streamliner_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_streamliner_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/generic_mega_outliner.dds"
+	}
 }

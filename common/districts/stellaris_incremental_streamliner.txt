@@ -5,14 +5,17 @@ district_stellaris_incremental_streamliner_city = {
 	exempt_from_ai_planet_specialization = yes
 	
 	show_on_uncolonized = {
-		uses_district_set = stellaris_incremental_streamliner
-		uses_district_set = stellaris_incremental_ship_combat_streamliner
-
+		OR = {
+			uses_district_set = stellaris_incremental_streamliner
+			uses_district_set = stellaris_incremental_ship_combat_streamliner
+		}
 	}
 	
 	potential = {
-		uses_district_set = stellaris_incremental_streamliner
-		uses_district_set = stellaris_incremental_ship_combat_streamliner
+		OR = {
+			uses_district_set = stellaris_incremental_streamliner
+			uses_district_set = stellaris_incremental_ship_combat_streamliner
+		}
 	}
 	
 	resources = {

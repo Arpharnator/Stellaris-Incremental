@@ -1,3 +1,6 @@
 ﻿l_english:
  pc_stellaris_incremental_streamliner: "Station Modular Streamliner"
  pc_stellaris_incremental_streamliner_desc: "A fully modular planet-sized factory churning out components made to enhance our space installations. Possesses none of the drawbacks typical onworld facilities have, and is also able to directly use its products."
+
+ pc_stellaris_incremental_ship_combat_streamliner: "Ship Modular Streamliner"
+ pc_stellaris_incremental_ship_combat_streamliner_desc: "A fully modular planet-sized factory churning out components made to enhance our ships' combat ability. Possesses none of the drawbacks typical onworld facilities have, and is also able to directly use its products."

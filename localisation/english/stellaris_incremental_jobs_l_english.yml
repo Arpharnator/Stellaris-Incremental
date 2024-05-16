@@ -89,6 +89,13 @@
  job_ship_shield_capacitor_assembler_drone: "Shield Capacitor Assembler Drone"
  job_ship_shield_capacitor_assembler_drone_plural: "Shield Capacitor Assembler Drones"
  job_ship_shield_capacitor_assembler_drone_desc: "Working in a high tech environment that uses a lot of energy, they are tasked with creating shield capacitors to be used by others."
+
+ job_ship_shield_capacitor_assembler_lossless: "Lossless Shield Capacitor Assembler"
+ job_ship_shield_capacitor_assembler_lossless_plural: "Lossless Shield Capacitor Assemblers"
+ job_ship_shield_capacitor_assembler_lossless_desc: "Working in a high tech environment that uses a lot of energy, they are tasked with creating shield capacitors to be used by others. This worker is working using adapted structures, reducing upkeep."
+ job_ship_shield_capacitor_assembler_lossless_drone: "Lossless Shield Capacitor Assembler Drone"
+ job_ship_shield_capacitor_assembler_lossless_drone_plural: "Lossless Shield Capacitor Assembler Drones"
+ job_ship_shield_capacitor_assembler_lossless_drone_desc: "Working in a high tech environment that uses a lot of energy, they are tasked with creating shield capacitors to be used by others. This worker is working using adapted structures, reducing upkeep."
  
  job_ship_armor_compressor_assembler: "Armor Compressor Assembler"
  job_ship_armor_compressor_assembler_plural: "Armor Compressor Assemblers"
@@ -96,6 +103,13 @@
  job_ship_armor_compressor_assembler_drone: "Armor Compressor Assembler Drone"
  job_ship_armor_compressor_assembler_drone_plural: "Armor Compressor Assembler Drones"
  job_ship_armor_compressor_assembler_drone_desc: "Using raw resources alongside some materials that have undergone travel through the void of space, the Armor Compressor Assembler makes armor compressors, which are to be used by someone else."
+
+ job_ship_armor_compressor_assembler_lossless: "Lossless Armor Compressor Assembler"
+ job_ship_armor_compressor_assembler_lossless_plural: "Lossless Armor Compressor Assemblers"
+ job_ship_armor_compressor_assembler_lossless_desc: "Using raw resources alongside some materials that have undergone travel through the void of space, the Armor Compressor Assembler makes armor compressors, which are to be used by someone else. This worker is working using adapted structures, reducing upkeep."
+ job_ship_armor_compressor_assembler_lossless_drone: "Lossless Armor Compressor Assembler Drone"
+ job_ship_armor_compressor_assembler_lossless_drone_plural: "Lossless Armor Compressor Assembler Drones"
+ job_ship_armor_compressor_assembler_lossless_drone_desc: "Using raw resources alongside some materials that have undergone travel through the void of space, the Armor Compressor Assembler makes armor compressors, which are to be used by someone else. This worker is working using adapted structures, reducing upkeep."
 
  job_planet_accommodation_overseer: "Planet Gravitic Sphere Handler"
  job_planet_accommodation_overseer_plural: "Planet Gravitic Sphere Handlers"

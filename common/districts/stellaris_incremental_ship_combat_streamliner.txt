@@ -1,0 +1,196 @@
+#PRODUCTION DISTRICTS
+district_stellaris_incremental_streamliner_ship_shield_capacitor_production = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 400
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	#GESTALT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_ship_shield_capacitor_assembler_drone_lossless_add = 4 
+	}
+
+	#REGULAR
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		job_ship_shield_capacitor_assembler_lossless_add = 4
+	}
+}
+
+district_stellaris_incremental_streamliner_ship_armor_compressor_production = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 400
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	#GESTALT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_ship_armor_compressor_assembler_drone_lossless_add = 4 
+	}
+
+	#REGULAR
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		job_ship_armor_compressor_assembler_lossless_add = 4
+	}
+}
+
+#CONSUMPTION DISTRICTS
+
+#SHIELD
+district_stellaris_incremental_streamliner_ship_shield_attuner_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 400
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	#GESTALT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_ship_shield_attuner_drone_add = 8 
+	}
+
+	#REGULAR
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		job_ship_shield_attuner_add = 8
+	}
+}
+
+#SHIELD
+district_stellaris_incremental_streamliner_ship_armor_compressor_usage = {
+	base_buildtime = @stellaris_incremental_district_time
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	potential = {
+		uses_district_set = stellaris_incremental_ship_combat_streamliner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 400
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+		}
+	}
+
+	#base stats
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	#GESTALT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_ship_armor_compressor_drone_add = 8 
+	}
+
+	#REGULAR
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		job_ship_armor_compressor_add = 8
+	}
+}

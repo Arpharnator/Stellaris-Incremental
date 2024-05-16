@@ -105,10 +105,21 @@
  planet_improvement_hub_research_2_DESC: "If the previous version of this facility could barely parse all the data sent to it, this one cannot without turning as hot as a star. Instead, planetside facilities are used to parse this data and then send it back, making this facility act more as a giant communications hub."
 
  #BUILDABLE PLANET
+ #STATION/STARBASE
  streamliner_0: "Station Planetary Streamlining Site"
  streamliner_0_DESC: "The construction site server as the base for the future industrialization of the planet below it."
  streamliner_0_MEGASTRUCTURE_DETAILS: "Digging out a portion of the crust, covering the surface with highly efficient electronics, all so the processes to upgrade our starbases and stations may be streamlined."
  streamliner_1: "Planetary Covering"
- streamliner_1_DESC: "Covering the Planet in electronics is a necessary step in order to advance towards making this it able to support advanced processes."
+ streamliner_1_DESC: "Covering the Planet in electronics is a necessary step in order to advance towards making this rock able to support advanced processes."
  streamliner_2: "Station Improvement Planet"
  streamliner_2_DESC: "A Planet made to produce a lot of advanced products, meant for starbases and stations."
+ #SHIP
+ ship_streamliner_0: "Ship Planetary Streamlining Site"
+ ship_streamliner_0_DESC: "The construction site server as the base for the future industrialization of the planet below it."
+ ship_streamliner_0_MEGASTRUCTURE_DETAILS: "Digging out a portion of the crust, covering the surface with highly efficient electronics, and then reinforcing all of it with a large quantity of alloys, all so the processes to upgrade our ships' combat ability may be streamlined."
+ ship_streamliner_1: "Planetary Covering"
+ ship_streamliner_1_DESC: "Covering the Planet in electronics is a necessary step in order to advance towards making this rock able to support advanced processes."
+ ship_streamliner_2: "Planetary Reinforcement"
+ ship_streamliner_2_DESC: "The soil of this celestial body is extremely solid, now capable of withstanding large temperatures and large amounts of kinetic force."
+ ship_streamliner_3: "Ship Improvement Planet"
+ ship_streamliner_3_DESC: "A Planet made to produce a lot of advanced products, meant for ships."
