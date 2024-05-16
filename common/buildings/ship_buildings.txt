@@ -178,7 +178,7 @@ building_ship_armor_compressor_production_1 = {
 			alloys = 30
 		}
 		upkeep = {
-			minerals = 90
+			minerals = 180
 		}
 	}
 
@@ -227,7 +227,7 @@ building_ship_armor_compressor_production_2 = {
 			alloys = 30
 		}
 		upkeep = {
-			minerals = 90
+			minerals = 180
 		}
 	}
 
@@ -249,7 +249,7 @@ building_ship_shield_capacitor_production_1 = {
 		}
 		produces = {
 			ship_shield_capacitor = 1
-			physics_research = 45
+			physics_research = 30
 		}
 		upkeep = {
 			energy = 120
@@ -298,7 +298,7 @@ building_ship_shield_capacitor_production_2 = {
 		}
 		produces = {
 			ship_shield_capacitor = 1
-			physics_research = 45
+			physics_research = 30
 		}
 		upkeep = {
 			energy = 120

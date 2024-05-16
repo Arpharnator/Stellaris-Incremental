@@ -495,7 +495,7 @@ ship_improvement_hub_shield_2 = {
 		}
 
 		produces = {
-			physics_research = 45
+			physics_research = 30
 			ship_shield_capacitor = 2
 		}
 
@@ -543,7 +543,7 @@ ship_improvement_hub_shield_3 = {
 		}
 
 		produces = {
-			physics_research = 135
+			physics_research = 90
 			ship_shield_capacitor = 6
 		}
 
@@ -592,7 +592,7 @@ ship_improvement_hub_shield_4 = {
 		}
 
 		produces = {
-			physics_research = 337
+			physics_research = 270
 			ship_shield_capacitor = 16
 		}
 
@@ -642,7 +642,7 @@ ship_improvement_hub_shield_5 = {
 		}
 
 		produces = {
-			physics_research = 675
+			physics_research = 540
 			ship_shield_capacitor = 32
 		}
 
