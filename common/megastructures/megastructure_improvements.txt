@@ -1,0 +1,545 @@
+# Megastructure improvement Hub
+
+######################
+### MEGASTRUCTURE  ###
+######################
+
+#PRODUCTION UPKEEP
+
+megastructure_production_upkeep_hub_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_production_upkeep }
+	#show_prereqs = yes
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			NOR = {
+				has_planet_flag = megastructure
+				has_planet_flag = has_megastructure
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam
+				is_planet_class = pc_ringworld_seam_damaged
+				is_planet_class = pc_habitat
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
+}
+
+# Mega Art Installation 1
+megastructure_production_upkeep_hub_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 100000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	upgrade_from = {
+		megastructure_production_upkeep_hub_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_production_upkeep }
+	show_prereqs = no
+}
+
+# Mega Art Installation 2
+megastructure_production_upkeep_hub_2 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 200000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	upgrade_from = {
+		megastructure_production_upkeep_hub_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_production_upkeep }
+	show_prereqs = no
+}
+
+# Mega Art Installation 3
+megastructure_production_upkeep_hub_3 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 300000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	country_modifier = {
+		megastructures_produces_mult = 0.02
+		megastructures_upkeep_mult = 0.05
+	}
+
+	upgrade_from = {
+		megastructure_production_upkeep_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_production_upkeep }
+	show_prereqs = yes
+}
+
+megastructure_production_upkeep_hub_loop = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 300000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			save_global_event_target_as = stellaris_incremental_mega_megastructure_improvement_planet
+			solar_system = {
+				spawn_megastructure = {
+					type = megastructure_production_upkeep_hub_3
+					planet = event_target:stellaris_incremental_mega_megastructure_improvement_planet
+					owner = space_owner
+				}
+			}
+		}
+		owner = {
+			country_event = { id = stellaris_incremental.8 }
+		}
+		
+		remove_megastructure = fromfrom
+		
+	}
+
+	upgrade_from = {
+		megastructure_production_upkeep_hub_3
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_production_upkeep }
+	show_prereqs = no
+}
+
+
+#SPEED COST
+
+megastructure_speed_cost_hub_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "stellaris_incremental_tech_megastructure_cost_speed" }
+	#show_prereqs = yes
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			NOR = {
+				has_planet_flag = megastructure
+				has_planet_flag = has_megastructure
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam
+				is_planet_class = pc_ringworld_seam_damaged
+				is_planet_class = pc_habitat
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
+}
+
+# Mega Art Installation 1
+megastructure_speed_cost_hub_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 100000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	upgrade_from = {
+		megastructure_speed_cost_hub_0
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_cost_speed }
+	show_prereqs = no
+}
+
+# Mega Art Installation 2
+megastructure_speed_cost_hub_2 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 200000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	upgrade_from = {
+		megastructure_speed_cost_hub_1
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_cost_speed }
+	show_prereqs = no
+}
+
+# Mega Art Installation 3
+megastructure_speed_cost_hub_3 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 300000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	country_modifier = {
+		megastructure_build_speed_mult = 0.05
+		megastructures_cost_mult = 0.02
+	}
+
+	upgrade_from = {
+		megastructure_speed_cost_hub_2
+	}
+
+	prerequisites = { stellaris_incremental_tech_planet_oversight_3 }
+	show_prereqs = yes
+}
+
+megastructure_speed_cost_hub_loop = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 4800
+	use_planet_resource = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 300000
+			unity = 20000
+		}
+
+		upkeep = {
+			minerals = 200
+			energy = 200
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			save_global_event_target_as = stellaris_incremental_mega_megastructure_improvement_planet
+			solar_system = {
+				spawn_megastructure = {
+					type = megastructure_speed_cost_hub_3
+					planet = event_target:stellaris_incremental_mega_megastructure_improvement_planet
+					owner = space_owner
+				}
+			}
+		}
+		owner = {
+			country_event = { id = stellaris_incremental.9 }
+		}
+		
+		remove_megastructure = fromfrom
+	}
+
+	upgrade_from = {
+		megastructure_speed_cost_hub_3
+	}
+
+	prerequisites = { stellaris_incremental_tech_megastructure_cost_speed }
+	show_prereqs = no
+}

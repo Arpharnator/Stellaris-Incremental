@@ -590,3 +590,63 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = stellaris_incremental.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit ={
+				NOT = {
+					is_variable_set = megastructure_production_upkeep_amount
+				}
+			}
+			set_variable = {
+				which = megastructure_production_upkeep_amount
+				value = 0
+			}
+		}
+		change_variable = {
+			which = megastructure_production_upkeep_amount
+			value = 1
+		}
+		remove_modifier = stellaris_incremental_megastructure_improvement_production_upkeep_modifier
+		add_modifier = {
+			modifier = stellaris_incremental_megastructure_improvement_production_upkeep_modifier
+			days = -1
+			multiplier = megastructure_production_upkeep_amount
+		}
+	}
+}
+
+country_event = {
+	id = stellaris_incremental.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit ={
+				NOT = {
+					is_variable_set = megastructure_speed_cost_amount
+				}
+			}
+			set_variable = {
+				which = megastructure_speed_cost_amount
+				value = 0
+			}
+		}
+		change_variable = {
+			which = megastructure_speed_cost_amount
+			value = 1
+		}
+		remove_modifier = stellaris_incremental_megastructure_improvement_speed_cost_modifier
+		add_modifier = {
+			modifier = stellaris_incremental_megastructure_improvement_speed_cost_modifier
+			days = -1
+			multiplier = megastructure_speed_cost_amount
+		}
+	}
+}

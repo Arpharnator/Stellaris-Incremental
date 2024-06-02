@@ -380,7 +380,22 @@ stellaris_incremental_tech_ship_streamliner_1 = {
 	}
 }
 
+stellaris_incremental_tech_megastructure_production_upkeep = {
+	cost = 800000
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "stellaris_incremental_tech_ship_streamliner_1" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
+	weight = @tier5weight3
 
+	weight_modifier = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+
+	ai_weight = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+}
 
 
 #TECHNOLOGY OVERSEERS

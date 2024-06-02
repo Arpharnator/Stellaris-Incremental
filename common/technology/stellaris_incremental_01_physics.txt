@@ -17,3 +17,20 @@ stellaris_incremental_tech_station_oversight_6 = {
 		modifier = { factor = 0 has_utopia = no }
 	}
 }
+
+stellaris_incremental_tech_megastructure_cost_speed = {
+	cost = 800000
+	area = physics
+	tier = 5
+	category = { computing }
+	prerequisites = { "stellaris_incremental_tech_ship_streamliner_1" "tech_mega_engineering" "tech_construction_templates" "tech_modular_engineering" }
+	weight = @tier5weight3
+
+	weight_modifier = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+
+	ai_weight = {
+		modifier = { factor = 0 has_utopia = no }
+	}
+}
