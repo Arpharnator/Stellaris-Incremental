@@ -2,7 +2,7 @@
 building_station_production_overseer_1 = {
 	base_buildtime = @stellaris_incremental_b1_time
 
-	category = resources
+	category = army
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -32,7 +32,7 @@ building_station_production_overseer_1 = {
 building_station_production_overseer_2 = {
 	base_buildtime = @stellaris_incremental_b2_time
 	can_build = no
-	category = resources
+	category = army
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -83,7 +83,7 @@ building_station_production_overseer_3 = {
 	base_buildtime = @stellaris_incremental_b3_time
 	can_build = no
 
-	category = resources
+	category = army
 
 	country_modifier = {
 		stations_produces_mult = 0.05
@@ -134,7 +134,7 @@ building_station_production_overseer_3 = {
 building_station_data_feed_production_1 = {
 	base_buildtime = @stellaris_incremental_b1_advanced_time
 
-	category = resources
+	category = army
 
 	resources = {
 		category = planet_buildings
@@ -166,7 +166,7 @@ building_station_data_feed_production_2 = {
 	base_buildtime = @stellaris_incremental_b2_advanced_time
 	can_build = no
 
-	category = resources
+	category = army
 
 	triggered_planet_modifier = {
 		potential = {

@@ -246,7 +246,7 @@ building_starbase_upgrade_overseer_2 = {
 building_starbase_prototype_parts_production_1 = {
 	base_buildtime = @stellaris_incremental_b1_advanced_time
 
-	category = resources
+	category = army
 
 	resources = {
 		category = planet_buildings
@@ -274,7 +274,7 @@ building_starbase_prototype_parts_production_2 = {
 	base_buildtime = @stellaris_incremental_b2_advanced_time
 	can_build = no
 
-	category = resources
+	category = army
 
 	triggered_planet_modifier = {
 		potential = {
@@ -318,7 +318,7 @@ building_starbase_prototype_parts_production_2 = {
 building_starbase_prototype_schematics_production_1 = {
 	base_buildtime = @stellaris_incremental_b1_advanced_time
 
-	category = resources
+	category = army
 
 	resources = {
 		category = planet_buildings
@@ -349,7 +349,7 @@ building_starbase_prototype_schematics_production_2 = {
 	base_buildtime = @stellaris_incremental_b2_advanced_time
 	can_build = no
 
-	category = resources
+	category = army
 
 	triggered_planet_modifier = {
 		potential = {
